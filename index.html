@@ -13,6 +13,7 @@
         <link rel="stylesheet"
               href="bootstrap-5.3.2-dist/css/bootstrap.min.css" 
               >
+        <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     </head>
     
     <header>
@@ -38,9 +39,6 @@
                   <!-- TODO: Put profile image here -->
                   <img width="100" height="100">
               </div>
-              
-              <p class="sidebar-blob">I am a software developer with nearly two years of professsional native Android app development.<br>
-              Located in Florida.</p>
               
               <ul>
                   <li>
@@ -72,24 +70,73 @@
             
             <!-- Navbar -->
             <div class="sticky-top bg-dark p-1">
-                <nav>
-                    <button>Hello</button>
-                    <button>World</button>
-                    <button>Testing</button>
+                <nav 
+                     class="nav nav-tabs" 
+                     id="myTabs" 
+                     role="tablist">
+                    <button 
+                            class="nav-link active" 
+                            id="hello-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#hello" 
+                            type="button" 
+                            role="tab">
+                        Hello
+                    </button>
+                    <button 
+                            class="nav-link" 
+                            id="projects-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#vanderbilt" 
+                            type="button" 
+                            role="tab">
+                        Vanderbilt
+                    </button>
+                    <button 
+                            class="nav-link" 
+                            id="other-tab" 
+                            data-bs-toggle="tab" 
+                            data-bs-target="#other" 
+                            type="button" 
+                            role="tab">
+                        Testing
+                    </button>
                 </nav>
+                
             </div>
             
-            <h2>Projects</h2>
+        <div class="tab-content" id="myTabsContent" role="tablist">
+            
+            <!-- Tab 1 -->
+            <div 
+                 class="tab-pane fade show active" 
+                 id="hello" 
+                 role="tabpanel">
+            <h1>Hello, there!</h1>
+            <p>
+                I am a software developer with nearly two years of professsional native Android app development.
+                <br>
+                Located in Florida.
+            </p>
+            <p>
+                During my professional career, I have worked with Bank of America on their Research Library Android app team and for Accenture.
+            </p>
+        </div>
+            
+            <!-- Tab 2 -->
+            <div 
+                 class="tab-pane fade" 
+                 id="vanderbilt" 
+                 role="tabpanel"
+                 >
+            <h2>Coursera Vanderbilt Android Capstone</h2>
             <ul>
                 <li>
-                    <h4>Coursera Vanderbilt Android Capstone</h4>
-                    <p>
                     <a href="https://github.com/DBerry07/VanderbiltCapstone_Kotlin"
                        target="_blank"
                        >
                         GitHub Repo
                     </a>
-                    </p>
                     <p>
                     <a href="https://www.coursera.org/account/accomplishments/specialization/3UC5PUXBGCJK"
                        target="_blank"
@@ -102,6 +149,11 @@
                     </p>
                 </li>
             </ul>
+                </div>
+            
+            
+            <!-- Tab 3 -->
+            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
             <h1>Hello, World!</h1>
             <ul>
           <li>Lorem ipsum dolor sit amet</li>
@@ -153,6 +205,8 @@
           <li>Ut enim ad minim veniam</li>
         </ul>
                 </div>
+            </div>
+        </div>
         
     </div>
     </body>
