@@ -1,5 +1,10 @@
 
-body {
+.body {
     /* body font */
-    font-family: "Gill Sans", sans-serif;
+/*    font-family: "Gill Sans", sans-serif;*/
+    font-family: "Verdana", sans-serif;
+}
+
+.sidebar-blob {
+    font-size: 14px;
 }
