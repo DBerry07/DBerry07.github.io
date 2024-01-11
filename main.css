@@ -5,6 +5,31 @@
     font-family: "Verdana", sans-serif;
 }
 
-.sidebar-blob {
-    font-size: 14px;
+footer {
+    color: white;
+    font-family: "Verdana", sans-serif;
+}
+
+.tab-pane {
+    color: white;
+}
+
+.nav-link {
+    color: #04AA6D;
+}
+
+.site-link {
+    color: coral;
+}
+
+.floating-panel {
+    border-style: solid;
+    border-width: thick;
+    border-color: coral;
+    border-radius: 5px;
+}
+
+.nav-tabs > button.nav-button {
+    color: coral;
+    font-weight: bold;
 }

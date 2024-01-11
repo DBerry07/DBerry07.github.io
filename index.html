@@ -30,8 +30,8 @@
              >
           <div class="sticky-top 
                       p-3 
-                      bg-light bg-gradient 
-                      border rounded border-warning border-4
+                      bg-light
+                      floating-panel
                       ">
               <!-- Sidebar Heading -->
               <div class="text-center">
@@ -43,19 +43,25 @@
               <ul>
                   <li>
                     <a href="https://github.com/DBerry07" 
-                       target="_blank">
+                       target="_blank"
+                       class="site-link"
+                       >
                         GitHub
                       </a>
                   </li>
                   <li>
                     <a href="https://www.linkedin.com/in/david-wj-berry/" 
-                       target="_blank">
+                       target="_blank"
+                       class="site-link"
+                       >
                         LinkedIn
                       </a>
                   </li>
                   <li>
                     <a href="https://www.upwork.com/freelancers/~0141f8b41c4a7d9ee6"
-                       target="_blank">
+                       target="_blank"
+                       class="site-link"
+                       >
                       Upwork
                       </a>
                   </li>
@@ -66,7 +72,7 @@
         
         
         <!-- Main body -->
-        <div class="flex-fill p-3 text-light">
+        <div class="flex-fill p-3">
             
             <!-- Navbar -->
             <div class="sticky-top bg-dark p-1">
@@ -75,30 +81,36 @@
                      id="myTabs" 
                      role="tablist">
                     <button 
-                            class="nav-link active" 
+                            class="nav-link 
+                                   active 
+                                   nav-button
+                                   flex-sm-fill text-sm-center" 
                             id="hello-tab" 
                             data-bs-toggle="tab" 
                             data-bs-target="#hello" 
                             type="button" 
-                            role="tab">
+                            role="tab"
+                            >
                         Hello!
                     </button>
                     <button 
-                            class="nav-link" 
+                            class="nav-link nav-button flex-sm-fill text-sm-center" 
                             id="projects-tab" 
                             data-bs-toggle="tab" 
                             data-bs-target="#vanderbilt" 
                             type="button" 
-                            role="tab">
+                            role="tab"
+                            >
                         Vanderbilt
                     </button>
                     <button 
-                            class="nav-link" 
+                            class="nav-link nav-button flex-sm-fill text-sm-center" 
                             id="other-tab" 
                             data-bs-toggle="tab" 
                             data-bs-target="#other" 
                             type="button" 
-                            role="tab">
+                            role="tab"
+                            >
                         Testing
                     </button>
                 </nav>
