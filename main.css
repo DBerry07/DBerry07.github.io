@@ -33,3 +33,7 @@ footer {
     color: coral;
     font-weight: bold;
 }
+
+#site-links-list {
+    list-style-type: none;
+}
