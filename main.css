@@ -3,6 +3,7 @@
     /* body font */
 /*    font-family: "Gill Sans", sans-serif;*/
     font-family: "Verdana", sans-serif;
+    background-color: black;
 }
 
 footer {
@@ -23,17 +24,39 @@ footer {
 }
 
 .floating-panel {
+    color: white;
+    background-color: grey;
     border-style: solid;
     border-width: thick;
-    border-color: coral;
+    border-color: grey;
     border-radius: 20px;
 }
 
-.nav-tabs > button.nav-button {
+.nav-pills > button.nav-button {
     color: coral;
+    font-weight: bold;
+}
+
+.nav-pills > button.nav-button.active {
+    background-color: white;
+    color: black;
     font-weight: bold;
 }
 
 #site-links-list {
     list-style-type: none;
+}
+
+.main-part {
+    background-color: grey;
+    min-height: 600px;
+        background-color: grey;
+    border-style: solid;
+    border-width: thick;
+    border-color: grey;
+    border-radius: 20px;
+}
+
+#main-nav-bar {
+    background-color: black;
 }

@@ -19,7 +19,7 @@
     <header>
     </header>
     
-    <body class="body bg-dark">
+    <body class="body">
     <div class="container-fluid d-flex">
         
         <!-- Fixed Sidebar -->
@@ -30,15 +30,24 @@
              >
           <div class="sticky-top 
                       p-3 
-                      bg-light
                       floating-panel
                       ">
               <!-- Sidebar Heading -->
+              
               <div class="text-center">
                   <h2 class="text-center">David WJ Berry</h2>
                   <!-- TODO: Put profile image here -->
                   <img width="100" height="100">
                   <br><br>
+              </div>
+              
+              <div id="contact-info-list">
+                  <p> Email <br>
+                    david.wj.berry@gmail.com
+                  </p>
+                  <p> Location<br>
+                    South Florida, USA
+                  </p>
               </div>
               
               <div id="site-links-list" class="">
@@ -73,12 +82,11 @@
         
         
         <!-- Main body -->
-        <div class="flex-fill p-3">
-            
+        <div class="p-2 flex-fill">
             <!-- Navbar -->
-            <div class="sticky-top bg-dark p-1">
+            <div id="main-nav-bar" class="sticky-top p-1">
                 <nav 
-                     class="nav nav-tabs" 
+                     class="nav nav-pills" 
                      id="myTabs" 
                      role="tablist">
                     <button 
@@ -117,8 +125,11 @@
                 </nav>
                 
             </div>
+        <div class="p-3 main-part">
             
-        <div class="tab-content" id="myTabsContent" role="tablist">
+            
+            
+        <div class="tab-content flex-fill" id="myTabsContent" role="tablist">
             
             <!-- Tab 1 -->
             <div 
@@ -126,10 +137,9 @@
                  id="hello" 
                  role="tabpanel">
             <h1>Hello, there!</h1>
+                <h3>My name is David WJ Berry</h3>
             <p>
-                I am a software developer with nearly two years of professsional native Android app development.
-                <br>
-                Located in Florida.
+                I am a software developer with nearly two years of professsional native Android app development experience.
             </p>
             <p>
                 During my professional career, I have worked with Bank of America on their Research Library Android app team and for Accenture.
@@ -138,7 +148,7 @@
             
             <!-- Tab 2 -->
             <div 
-                 class="tab-pane fade" 
+                 class="tab-pane flex-fill" 
                  id="vanderbilt" 
                  role="tabpanel"
                  >
@@ -179,7 +189,7 @@
             
             
             <!-- Tab 3 -->
-            <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+            <div class="tab-pane flex-fill" id="other" role="tabpanel" >
             <h1>Hello, World!</h1>
             <ul>
           <li>Lorem ipsum dolor sit amet</li>
@@ -233,8 +243,8 @@
                 </div>
             </div>
         </div>
-        
-    </div>
+            </div>
+        </div>
     </body>
     <footer class= "p-2 pr-3" style="float: right">
         Hosted on GitHub Pages
