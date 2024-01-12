@@ -6,7 +6,7 @@
         <!-- Custom CSS file -->
         <link rel="stylesheet" 
               type="text/css" 
-              href="main.css"
+              href="css/main.css"
               >
         
         <!-- Bootstrap core CSS -->
@@ -42,9 +42,6 @@
               </div>
               
               <div id="contact-info-list">
-                  <p> Email <br>
-                    david.wj.berry@gmail.com
-                  </p>
                   <p> Location<br>
                     South Florida, USA
                   </p>
@@ -153,39 +150,85 @@
                  role="tabpanel"
                  >
             <h2>Coursera Vanderbilt Android Capstone</h2>
-                <p>
-                    <a href="https://github.com/DBerry07/VanderbiltCapstone_Kotlin"
-                       target="_blank"
-                       >
+                <div class="row">
+                    <div class="col-sm" align="left">
+                        <a 
+                           class="my-link"
+                           href="https://github.com/DBerry07/
+                                 VanderbiltCapstone_Kotlin"
+                           target="_blank">
                         GitHub Repo
-                    </a>
-                    <br>
-                    <a href="https://www.coursera.org/account/accomplishments/specialization/3UC5PUXBGCJK"
-                       target="_blank"
-                       >
+                        </a>
+                    </div>
+                    <div class="col-sm" align="right">
+                        <a
+                           class="my-link"
+                           href="https://www.coursera.org/account/
+                                 accomplishments/specialization/3UC5PUXBGCJK"
+                           target="_blank">
                         Coursera Certificate Link
                     </a>
-                    </p>
-                    <p>
-                        My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
-                    </p>
-
+                    </div>
+                </div>
+                <br>
+                <p>
+                    My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
+                    <br><br>
+                    Uses a simple user interface to allow the user to create, retreive, edit, and delete small notes.
+                    <br><br>
+                    Contains a Service, Activity, Broadcast Receiver, and a Content Provider - all four of the main components of an Android application.
+                </p>
+                <ul>
+                <li>Service: Used to download an image in a background thread. The image is displayed on the first screen of the app.
+                    </li>
+                    <li>
+                        Activity: Each screen is an Activity.
+                    </li>
+                    <li>
+                        Broadcast Receiver: used to take the image downloaded by the Service and displays it on the first screen of the app. Also, gets broadcasts sent from the Content Provider when database actions are completed.
+                    </li>
+                    <li>
+                        Content Provider: Used to hold and retreive the user-created notes.
+                    </li>
+                </ul>
+                <br>
+                
+                <div class="row">
+                    <div class="col-sm-4" align="center">
+                        <iframe 
+                            id="capstone-short" 
+                            class="embed-responsive"
+                            src="res/Coursera%20Android%20Capstone%20Project%20Recording.mp4"
+                            ></iframe>
+                    </div>
+                    <div class="col-sm-8" align="center">
+                        <div 
+                             id="vanderbilt-carousel" 
+                             class="carousel slide" 
+                             data-ride="carousel">
+                            <div 
+                                 class="carousel-inner">
+                                <div 
+                                     class="carousel-item active">
+                                    <img 
+                                         class="d-block w-75" 
+                                         src="res/blank-image.svg" 
+                                         alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img>
+                                </div>
+                                <div class="carousel-item">
+                                    <img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <!-- Vanderbilt Screenshot Carousel -->
                 <!-- TODO: Add screenshots -->
-                <div id="vanderbilt-carousel" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img>
-                    </div>
-                    <div class="carousel-item">
-                      <img>
-                    </div>
-                    <div class="carousel-item">
-                      <img>
-                    </div>
-                  </div>
+                
                 </div>
-                </div>
+            </div>
             
             
             <!-- Tab 3 -->
