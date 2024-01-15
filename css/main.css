@@ -1,27 +1,47 @@
 
 :root {
     --body-background-colour: #1A120B;
-    --floating-panel-bg-colour: #3C2A21;
-    --main-panel-bg-colour: #3C2A21;
+    --floating-panel-bg-colour: #49433B;
+    --main-panel-bg-colour: #49433B;
     --border-colour: #D5CEA3;
     --text-colour: #FFFFFF;
-    --link-colour: #D5CEA3;
+    --link-colour: #FAD6A5;
+    --gill-sans: "Gill Sans", sans-serif;
+    --verdana: "Verdana", sans-serif;
+    --font-size-normal: 1.2vw;
+    --font-size-larger: 2.7vw;
+    --font-size-large: 2.0vw;
+    --font-size-my-name: 2.6vw;
+    --video-size-width: 15.0vmax;
+    --video-size-height: 26.3vmax;
 }
 
-.body {
+body.body {
     /* body font */
 /*    font-family: "Gill Sans", sans-serif;*/
-    font-family: "Verdana", sans-serif;
+    font-family: var(--verdana);
     background-color: var(--body-background-colour);
+}
+
+.my-text {
+    font-size: var(--font-size-normal);
+}
+
+span.heading {
+    font-size: var(--font-size-larger)
+}
+
+span.subheading {
+    font-size: var(--font-size-large)
 }
 
 footer {
     color: var(--text-colour);
-    font-family: "Verdana", sans-serif;
+    font-family: var(--verdana);
 }
 
 .tab-pane {
-    color: #E5E5CB;
+    color: var(--body-background-colour);
 }
 
 .nav-link {
@@ -29,8 +49,8 @@ footer {
 }
 
 .site-link {
-    color: #D5CEA3;
-    font-weight: bold;
+    color: var(--link-colour);
+    font-size: var(--font-size-normal);
 }
 
 .floating-panel {
@@ -45,12 +65,14 @@ footer {
 .nav-pills > button.nav-button {
     color: var(--link-colour);
     font-weight: bold;
+    font-size: var(--font-size-normal);
 }
 
 .nav-pills > button.nav-button.active {
     background-color: var(--floating-panel-bg-colour);
     color: var(--link-colour);
     font-weight: bold;
+    font-size: var(--font-size-normal)
 }
 
 #site-links-list {
@@ -71,11 +93,19 @@ footer {
 }
 
 #capstone-short {
-    width: 200px;
-    height: 340px;
+    width: var(--video-size-width);
+    height: var(--video-size-height);
 }
 
 .my-link {
     color: var(--link-colour);
-    font-weight: bold;
+    font-size: var(--font-size-large);
+}
+
+.tab-pane {
+    color: var(--text-colour);
+}
+
+.my-name {
+    font-size: var(--font-size-my-name);
 }
