@@ -2,21 +2,21 @@
 :root {
     
     /* BACKGROUND COLOURS */
-    --body-background-colour: #1A120B;
-    --floating-panel-bg-colour: #333333;
-    --main-panel-bg-colour: #333333;
+    --body-background-colour: #2C061F;
+    --floating-panel-bg-colour: #374045;
+    --main-panel-bg-colour: #374045;
     
     /* BORDER COLOURS */
-    --border-colour: #D5CEA3;
+    --border-colour: #D89216;
     
     /* TEXT COLOURS */
     --text-colour: #FFFFFF;
-    --link-colour: #FAD6A5;
-    --nav-button-text-colour: #FFFFFF;
+    --link-colour: #E1D89F;
     
     /* NAV BUTTON COLOURS */
+    --nav-button-text-colour: #FFFFFF;
     --nav-button-text-active-colour: #1A120B;
-    --nav-button-active-bg-colour: #FAD6A5;
+    --nav-button-active-bg-colour: #D89216;
     
     /* FONT STYLES */
     --gill-sans: "Gill Sans", sans-serif;
