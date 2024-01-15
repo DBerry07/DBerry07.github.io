@@ -1,14 +1,28 @@
 
 :root {
+    
+    /* BACKGROUND COLOURS */
     --body-background-colour: #1A120B;
-    --floating-panel-bg-colour: #3A3A3A;
-    --main-panel-bg-colour: #3A3A3A;
+    --floating-panel-bg-colour: #333333;
+    --main-panel-bg-colour: #333333;
+    
+    /* BORDER COLOURS */
     --border-colour: #D5CEA3;
+    
+    /* TEXT COLOURS */
     --text-colour: #FFFFFF;
     --link-colour: #FAD6A5;
+    --nav-button-text-colour: #FFFFFF;
+    
+    /* NAV BUTTON COLOURS */
+    --nav-button-text-active-colour: #1A120B;
+    --nav-button-active-bg-colour: #FAD6A5;
+    
+    /* FONT STYLES */
     --gill-sans: "Gill Sans", sans-serif;
     --verdana: "Verdana", sans-serif;
     
+    /* FONT SIZES */
     --font-size-normal: 20px;
     --font-size-larger: 34px;
     --font-size-large: 28px;
@@ -68,14 +82,14 @@ footer {
 }
 
 .nav-pills > button.nav-button {
-    color: var(--link-colour);
+    color: var(--nav-button-text-colour);
     font-weight: bold;
     font-size: var(--font-size-normal);
 }
 
 .nav-pills > button.nav-button.active {
-    background-color: var(--floating-panel-bg-colour);
-    color: var(--link-colour);
+    background-color: var(--nav-button-active-bg-colour);
+    color: var(--nav-button-text-active-colour);
     font-weight: bold;
     font-size: var(--font-size-normal)
 }
