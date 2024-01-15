@@ -35,14 +35,14 @@
               <!-- Sidebar Heading -->
               
               <div class="text-center">
-                  <h2 class="text-center">David WJ Berry</h2>
+                  <p class="text-center my-name">David WJ Berry</p>
                   <!-- TODO: Put profile image here -->
                   <img width="100" height="100">
                   <br><br>
               </div>
               
               <div id="contact-info-list">
-                  <p> Location<br>
+                  <p class="my-text"> Location:<br>
                     South Florida, USA
                   </p>
               </div>
@@ -133,18 +133,19 @@
                  class="tab-pane fade show active" 
                  id="hello" 
                  role="tabpanel">
-                <h2><u>Hello, there!</u></h2>
-                <h4>My name is David Berry</h4>
+                <span class="heading"><u>Hello, there!</u></span>
                 <br>
-                <p>
+                <span class="subheading"><i>My name is David Berry</i></span>
+                <br><br>
+                <p class="my-text">
                     I am a software developer with nearly two years of professsional native Android app development experience.
                     <br>
                     During my professional career, I have worked for Bank of America and for Accenture.
                 </p>
-                <p>
+                <p class="my-text">
                     I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.
                 </p>
-                <p>
+                <p class="my-text">
                     I have been described as "detail-oriented" and "analytical".
                     <br>
                     My passion for software development stems from my enjoyment of puzzle-solving and of building functional things.
@@ -159,8 +160,10 @@
                  id="vanderbilt" 
                  role="tabpanel"
                  >
-                <h2><u>Coursera Vanderbilt Android Capstone</u></h2>
+                <span class="heading"><u>Coursera Project</u></span>
                 <br>
+                <span class="subheading"><i>Android Developer Specialization Capstone</i></span>
+                <br><br>
                 <div class="row">
                     <div class="col-sm" align="center">
                         <h5><a 
@@ -188,7 +191,7 @@
                             src="res/Coursera%20Android%20Capstone%20Project%20Recording.mp4"
                             ></iframe>
                     </div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 my-text">
                         My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
                         <br><br>
                         This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage. The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.
@@ -226,32 +229,25 @@
                 -->
                 </div>
                 <br>
-                <ul>
-                    <li>
+                <p class="my-text">
                         The WEB SERVICE implemented in this app is a simple image download. The ImageDownloaderService runs the DownloadAsyncTask that downloads the image. Both files are found under the "imagedownloader" package.
-                    </li>
-                    <br>
-                    <li>
+                    <br><br>
                         The notes themselves are saved to an SQLite Database using a Content Provider - MyContentProvider.
-                    </li>
-                    <br>
-                    <li>
+                    <br><br>
                         ImageDownloadService is used to download an image for display on MainActivity. This is the remote Web Service as required by the project specifications.
-                    </li>
-                    <br>
-                    <li>
+                    <br><br>
                         Two Broadcast Receivers are used in this app: one is used to receive the image bitmap data from the Download Async Task that handles the image download process; the other displays notifications to the user when Content Provider tasks are executed.
-                    </li>
-                    <br>
-                    <li>
-                        Activities are used to allow the user to interact with the app. There are 5 Activities with one Activity acting as a superclass for the other four.
-                        <br>MainActivity is the Activity first displayed when the user starts the app. The user can download an image from the internet and proceed further into the app. 
-                        <br>ListActivity is where the user's notes are listed for the user to select.
-                        <br>ReadActivity allows the user to read a given note - but not edit it. 
-                        <br>EditActivity is where the user writes or edits a given note. 
-                        <br>LoggingActivity is the superclass mentioned and is mainly used for logging state changes.
-                    </li>
-                </ul>
+                    <br><br>
+                        Activities are used to allow the user to interact with the app. There are 5 Activities 
+                    with one Activity acting as a superclass for the other four.
+                    <ul>
+                        <li>MainActivity is the Activity first displayed when the user starts the app. The user can download an image from the internet and proceed further into the app.</li> 
+                        <li>ListActivity is where the user's notes are listed for the user to select.</li>
+                        <li>ReadActivity allows the user to read a given note - but not edit it.</li>
+                        <li>EditActivity is where the user writes or edits a given note.</li>
+                        <li>LoggingActivity is the superclass mentioned and is mainly used for logging state changes.</li>
+                        </ul>
+                </p>
                 <br>
                 
                 
