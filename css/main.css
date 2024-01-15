@@ -8,11 +8,11 @@
     --link-colour: #FAD6A5;
     --gill-sans: "Gill Sans", sans-serif;
     --verdana: "Verdana", sans-serif;
-    --font-size-normal: 1.2vmax;
-    --font-size-larger: 2.7vmax;
-    --font-size-large: 2.0vmax;
-    --font-size-my-name: 2.6vmax;
-    --video-size-width: 15.0vmax;
+    --font-size-normal: 1.2vw;
+    --font-size-larger: 2.7vw;
+    --font-size-large: 2.0vw;
+    --font-size-my-name: 2.4vw;
+    --video-size-width: 15.0vw;
     --video-size-height: 26.3vmax;
     --side-bar-size:90.0vh;
     --main-panel-height:80.0vh;
@@ -62,7 +62,6 @@ footer {
     border-width: thick;
     border-color: var(--border-colour);
     border-radius: 20px;
-    min-height: var(--side-bar-size);
 }
 
 .nav-pills > button.nav-button {
