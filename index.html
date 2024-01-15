@@ -107,7 +107,7 @@
                             type="button" 
                             role="tab"
                             >
-                        Vanderbilt
+                        Coursera Project
                     </button>
                     <button 
                             class="nav-link nav-button flex-sm-fill text-sm-center" 
@@ -168,29 +168,7 @@
                     </a>
                     </div>
                 </div>
-                <br>
-                <p>
-                    My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
-                    <br><br>
-                    Uses a simple user interface to allow the user to create, retreive, edit, and delete small notes.
-                    <br><br>
-                    Contains a Service, Activity, Broadcast Receiver, and a Content Provider - all four of the main components of an Android application.
-                </p>
-                <ul>
-                <li>Service: Used to download an image in a background thread. The image is displayed on the first screen of the app.
-                    </li>
-                    <li>
-                        Activity: Each screen is an Activity.
-                    </li>
-                    <li>
-                        Broadcast Receiver: used to take the image downloaded by the Service and displays it on the first screen of the app. Also, gets broadcasts sent from the Content Provider when database actions are completed.
-                    </li>
-                    <li>
-                        Content Provider: Used to hold and retreive the user-created notes.
-                    </li>
-                </ul>
-                <br>
-                
+                <br><br>
                 <div class="row">
                     <div class="col-sm-4" align="center">
                         <iframe 
@@ -199,6 +177,18 @@
                             src="res/Coursera%20Android%20Capstone%20Project%20Recording.mp4"
                             ></iframe>
                     </div>
+                    <div class="col-sm-8">
+                        My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
+                        <br><br>
+                        This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage. The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.
+                        <br><br>
+                        Contains all four of the major Android app components - Activities, Broadcast Receivers, Services, and Content Providers. The app is written in Kotlin.
+                    </div>
+                    
+                    
+                    <!--
+                    <!-- Vanderbilt Screenshot Carousel
+                    <!-- TODO: Add screenshots
                     <div class="col-sm-8" align="center">
                         <div 
                              id="vanderbilt-carousel" 
@@ -222,10 +212,33 @@
                             </div>
                         </div>
                     </div>
-                <!-- Vanderbilt Screenshot Carousel -->
-                <!-- TODO: Add screenshots -->
-                
+                -->
                 </div>
+                <br>
+                <ul>
+                    <li>
+                        The WEB SERVICE implemented in this app is a simple image download. The ImageDownloaderService runs the DownloadAsyncTask that downloads the image. Both files are found under the "imagedownloader" package.
+                    </li>
+                    <br>
+                    <li>
+                        The notes themselves are saved to an SQLite Database using a Content Provider - MyContentProvider.
+                    </li>
+                    <br>
+                    <li>
+                        ImageDownloadService is used to download an image for display on MainActivity. This is the remote Web Service as required by the project specifications.
+                    </li>
+                    <br>
+                    <li>
+                        Two Broadcast Receivers are used in this app: one is used to receive the image bitmap data from the Download Async Task that handles the image download process; the other displays notifications to the user when Content Provider tasks are executed.
+                    </li>
+                    <br>
+                    <li>
+                        Activities are used to allow the user to interact with the app. There are 4 Activities with one acting as a superclass for the other four. EditActivity is where the user writes or edits a given note. ListActivity is where the user's notes are listed for the user to select. MainActivity is the landing page where the user can download an image from the internet and can proceed further into the app. ReadActivity allows the user to read a given note - but not edit it. LoggingActivity is the superclass mentioned and is mainly used for logging state changes.
+                    </li>
+                </ul>
+                <br>
+                
+                
             </div>
             
             
