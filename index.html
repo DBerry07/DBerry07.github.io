@@ -15,9 +15,6 @@
               >
         <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     </head>
-    <script>
-        lock(landscape)
-    </script>
     
     <header>
     </header>
@@ -27,7 +24,7 @@
         
         <!-- Fixed Sidebar -->
         <div class="d-flex flex-column flex-shrink-0 
-                    offcanvas-md offcanvas-start 
+                    offcanvas-lg offcanvas-start 
                     col-md-3 
                     p-2"
              >
@@ -187,14 +184,14 @@
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-sm-4" align="center">
+                    <div class="col-sm-6" align="center">
                         <iframe 
                             id="capstone-short" 
                             class="embed-responsive"
                             src="res/Coursera%20Android%20Capstone%20Project%20Recording.mp4"
                             ></iframe>
                     </div>
-                    <div class="col-sm-8 my-text">
+                    <div class="col-sm-6 my-text">
                         My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.
                         <br><br>
                         This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage. The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.
@@ -243,7 +240,7 @@
                     <br><br>
                         Activities are used to allow the user to interact with the app. There are 5 Activities 
                     with one Activity acting as a superclass for the other four.
-                    <ul>
+                    <ul class="my-text">
                         <li>MainActivity is the Activity first displayed when the user starts the app. The user can download an image from the internet and proceed further into the app.</li> 
                         <li>ListActivity is where the user's notes are listed for the user to select.</li>
                         <li>ReadActivity allows the user to read a given note - but not edit it.</li>
