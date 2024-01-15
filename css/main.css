@@ -1,19 +1,23 @@
 
 :root {
     --body-background-colour: #1A120B;
-    --floating-panel-bg-colour: #49433B;
-    --main-panel-bg-colour: #49433B;
+    --floating-panel-bg-colour: #3A3A3A;
+    --main-panel-bg-colour: #3A3A3A;
     --border-colour: #D5CEA3;
     --text-colour: #FFFFFF;
     --link-colour: #FAD6A5;
     --gill-sans: "Gill Sans", sans-serif;
     --verdana: "Verdana", sans-serif;
-    --font-size-normal: 1.2vw;
-    --font-size-larger: 2.7vw;
-    --font-size-large: 2.0vw;
-    --font-size-my-name: 2.4vw;
-    --video-size-width: 15.0vw;
-    --video-size-height: 26.3vmax;
+    
+    --font-size-normal: 20px;
+    --font-size-larger: 34px;
+    --font-size-large: 28px;
+    --font-size-my-name: 34px;
+    
+    /* 1:1.75 aspect ratio */
+    --video-size-width: 300px;
+    --video-size-height: 525px;
+    
     --main-panel-height:80.0vh;
 }
 
