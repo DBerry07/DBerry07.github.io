@@ -67,10 +67,17 @@ footer {
     color: var(--link-colour);
 }
 
+.site-link.my-btn {
+    font-size: var(--font-size-normal);
+    color: var(--text-colour);
+    background-color: var(--border-colour);
+}
+
 .site-link {
     color: var(--link-colour);
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-large);
 }
+
 
 .floating-panel {
     color: var(--text-colour);
