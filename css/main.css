@@ -23,6 +23,7 @@
     --verdana: "Verdana", sans-serif;
     
     /* FONT SIZES */
+    --font-size-small: 17px;
     --font-size-normal: 20px;
     --font-size-larger: 34px;
     --font-size-large: 28px;
@@ -44,6 +45,10 @@ body.body {
 
 .my-text {
     font-size: var(--font-size-normal);
+}
+
+.my-text.my-email {
+    font-size: var(--font-size-small)
 }
 
 span.heading {
