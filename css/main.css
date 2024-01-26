@@ -36,6 +36,10 @@
     --main-panel-height:80.0vh;
 }
 
+.my-footer {
+    color: var(--main-panel-bg-colour)
+}
+
 body.body {
     /* body font */
 /*    font-family: "Gill Sans", sans-serif;*/
