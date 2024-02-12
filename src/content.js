@@ -1,4 +1,9 @@
-export const content = [
+export const titles = [
+    "Hello, there!",
+    "Coursera Project",
+]
+
+export const text = [
     [
         // Intro page text
         "I am a software developer currently located in South Florida with nearly two years of professsional native Android app development experience.",
