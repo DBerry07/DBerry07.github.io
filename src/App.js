@@ -1,23 +1,22 @@
 import './App.css';
-import { titles } from './content'
-import { text } from './content'
+import * as content from './content'
 
 function App() {
   return (
     <div className="App">
-      { entry(0) }
-      { entry(1) }
+      { Entry(0) }
+      { Entry(1) }
     </div>
   );
 }
 
-function entry(index) {
+function Entry(index) {
   return(
     <div>
-      <h2>{ titles[index] }</h2>
+      <h2>{ content.titles[index] }</h2>
       <div>
           {
-            text[index].map( (item) => (
+            content.text[index].map( (item) => (
               <p> { item }</p>
             ) )
           }
