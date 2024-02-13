@@ -1,14 +1,19 @@
 import { useState } from "react";
-import "./App.css";
-import Entry from "./Entry.jsx";
+import "./css/App.css";
+import Entry from "./components/Entry.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Entry index={0} />
-      <Entry index={1} />
+      <menu>
+        <button onClick={() => setCount(0)}>Hello!</button>
+        <button onClick={() => setCount(1)}>Coursera</button>
+      </menu>
+      <box>
+        <Entry index={count} />
+      </box>
     </div>
   );
 }
