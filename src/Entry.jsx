@@ -1,11 +1,11 @@
 import * as content from "./content";
 
-function Entry(index) {
+function Entry(props) {
   return (
     <div>
-      <h2>{content.titles[index]}</h2>
+      <h2>{content.titles[props.index]}</h2>
       <div>
-        {content.text[index].map((item) => (
+        {content.text[props.index].map((item) => (
           <p> {item}</p>
         ))}
       </div>

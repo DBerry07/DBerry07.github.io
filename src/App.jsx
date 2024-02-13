@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      {Entry(0)}
-      {Entry(1)}
+      <Entry index={0} />
+      <Entry index={1} />
     </div>
   );
 }
