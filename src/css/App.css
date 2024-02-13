@@ -44,3 +44,10 @@
 .hidden {
   display: none;
 }
+
+#content-box {
+  height: 500px;
+  width: 1250px;
+  border: 1px solid black;
+  border-radius: 15px;
+}

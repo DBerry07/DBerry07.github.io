@@ -11,9 +11,9 @@ function App() {
         <button onClick={() => setCount(0)}>Hello!</button>
         <button onClick={() => setCount(1)}>Coursera</button>
       </menu>
-      <box>
+      <div id="content-box">
         <Entry index={count} />
-      </box>
+      </div>
     </div>
   );
 }
