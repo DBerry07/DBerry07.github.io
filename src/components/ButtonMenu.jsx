@@ -1,16 +1,10 @@
 import * as content from "../data/content.js";
 
-function ButtonMenu(props) {
+function ButtonMenu({ onSelect }) {
   return (
     <menu>
-      {content.pageContent.map((item) => (
-        <button
-          onClick={() => {
-            //TODO: Change shown tab via button click.
-          }}
-        >
-          {item.title}
-        </button>
+      {content.pageContent.map((item, index) => (
+        <button onClick={() => onSelect(index)}>{item.title}</button>
       ))}
     </menu>
   );
