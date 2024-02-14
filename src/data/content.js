@@ -14,7 +14,13 @@ export const pageContent = [
             "I am always eager to learn new things, particularly if those new things help me get better at my job.",
         ],
     ),
-
+    new MyContent(
+        "This Webpage",
+        [
+            "This webpage (hosted on GitHub Pages) is created with React and initially set up using Vite.", 
+            "JSX, Components, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications."
+        ]
+    ),
     //Second Tab Content: Coursera Project Tab
     new MyContent(
         "Coursera Project",
