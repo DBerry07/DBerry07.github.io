@@ -40,15 +40,3 @@
 .read-the-docs {
   color: #888;
 }
-
-.hidden {
-  display: none;
-}
-
-#content-box {
-  height: 80vh;
-  width: 90vw;
-  border: 1px solid black;
-  border-radius: 15px;
-  overflow-y: scroll;
-}

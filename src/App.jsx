@@ -10,9 +10,7 @@ function App() {
   return (
     <div className="App">
       <ButtonMenu />
-      <div id="content-box">
-        <Entry index={count} />
-      </div>
+      <Entry index={count} />
       <Footer />
     </div>
   );
