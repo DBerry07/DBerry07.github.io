@@ -27,7 +27,15 @@ export const pageContent = [
             "The app is written in Kotlin.",
         ]
     ),
-    new MyContent(),
+    new MyContent(
+        "Filler",
+        [
+            "filler", "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",
+            "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",
+            "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",
+        ]
+    ),
+    new MyContent()
 ]
 
 export const titles = [
