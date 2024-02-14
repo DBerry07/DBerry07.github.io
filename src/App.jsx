@@ -7,14 +7,14 @@ import Footer from "./components/Footer.jsx";
 function App() {
   const [count, setCount] = useState(0);
 
-  function onSelect(value) {
+  function handleSelect(value) {
     setCount(value);
   }
 
   return (
     <div className="App">
       <main>
-        <ButtonMenu onSelect={onSelect} />
+        <ButtonMenu onSelect={handleSelect} />
         <Entry index={count} />
       </main>
       <Footer />
