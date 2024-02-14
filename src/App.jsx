@@ -9,8 +9,10 @@ function App() {
 
   return (
     <div className="App">
-      <ButtonMenu />
-      <Entry index={count} />
+      <main>
+        <ButtonMenu />
+        <Entry index={count} />
+      </main>
       <Footer />
     </div>
   );
