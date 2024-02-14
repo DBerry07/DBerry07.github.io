@@ -3,9 +3,9 @@ import * as content from "../data/content";
 function Entry(props) {
   return (
     <div>
-      <h2>{content.titles[props.index]}</h2>
+      <h2>{content.pageContent[props.index].title}</h2>
       <div>
-        {content.text[props.index].map((item) => (
+        {content.pageContent[props.index].body.map((item) => (
           <p> {item}</p>
         ))}
       </div>
