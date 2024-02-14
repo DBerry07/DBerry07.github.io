@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./css/App.css";
 import Entry from "./components/Entry.jsx";
-import * as content from "./data/content.js";
 import ButtonMenu from "./components/ButtonMenu.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +13,7 @@ function App() {
       <div id="content-box">
         <Entry index={count} />
       </div>
+      <Footer />
     </div>
   );
 }
