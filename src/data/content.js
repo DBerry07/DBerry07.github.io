@@ -5,6 +5,9 @@ export const pageContent = [
     new MyContent(
         "Hello, there!",
         [
+            ["https://linkedin.com/in/david-wj-berry", "LinkedIn"],
+        ],
+        [
             // Intro page text
             "I am a software developer currently located in South Florida with nearly two years of professsional native Android app development experience.",
             "During my professional career, I have worked for Bank of America and for Accenture.",
@@ -17,6 +20,9 @@ export const pageContent = [
     new MyContent(
         "This Webpage",
         [
+            ["http://", "GitHub Repo"],
+        ],
+        [
             "This webpage (hosted on GitHub Pages) is created with React and initially set up using Vite.", 
             "JSX, Components, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications."
         ]
@@ -24,6 +30,9 @@ export const pageContent = [
     //Second Tab Content: Coursera Project Tab
     new MyContent(
         "Coursera Project",
+        [
+            ["http://", "GitHub Repo"],
+        ],
         [
             // Coursera Project text
             "My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.",
@@ -35,6 +44,9 @@ export const pageContent = [
     ),
     new MyContent(
         "Filler",
+        [
+            ["http://", "Hello, World!"],
+        ],
         [
             "filler", "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",
             "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",
