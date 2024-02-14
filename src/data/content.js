@@ -1,6 +1,7 @@
 import {MyContent} from "./MyContent.js"
 
 export const pageContent = [
+    // First Tab Content: Hello Tab
     new MyContent(
         "Hello, there!",
         [
@@ -13,6 +14,8 @@ export const pageContent = [
             "I am always eager to learn new things, particularly if those new things help me get better at my job.",
         ],
     ),
+
+    //Second Tab Content: Coursera Project Tab
     new MyContent(
         "Coursera Project",
         [
