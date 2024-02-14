@@ -46,8 +46,8 @@
 }
 
 #content-box {
-  height: 600px;
-  width: 1250px;
+  height: 80vh;
+  width: 90vw;
   border: 1px solid black;
   border-radius: 15px;
   overflow-y: scroll;
