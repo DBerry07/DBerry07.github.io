@@ -1,4 +1,4 @@
-import {MyContent} from "./MyContent.js"
+import MyContent from "./MyContent.js"
 
 export const pageContent = [
     // First Tab Content: Hello Tab
