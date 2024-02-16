@@ -1,10 +1,18 @@
 import * as content from "../data/content.js";
+import { Tab } from "../data/constants.js";
+import "../css/ButtonMenu.css";
 
 function ButtonMenu({ onSelect }) {
+  const buttons = Object.keys(Tab);
+
   return (
     <menu>
-      {content.pageContent.map((item, index) => (
-        <button onClick={() => onSelect(index)}>{item.title}</button>
+      {buttons.map((item, index) => (
+        <span>
+          <button class="menu_button" onClick={() => onSelect(index)}>
+            {item}
+          </button>
+        </span>
       ))}
     </menu>
   );

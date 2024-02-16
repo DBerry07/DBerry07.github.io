@@ -10,3 +10,8 @@
   border-radius: 15px;
   overflow-y: scroll;
 }
+
+#content-box p {
+  text-align: start;
+  padding-left: 10px;
+}

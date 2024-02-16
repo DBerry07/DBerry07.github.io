@@ -1,8 +1,10 @@
+import "../css/Footer.css";
+
 function Footer() {
   return (
     <footer>
-      Designed and developed by David Berry <br />
-      Made using React
+      <span id="footer-left">Made using React</span>
+      <span id="footer-right">Designed and developed by David Berry</span>
     </footer>
   );
 }

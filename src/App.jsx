@@ -3,9 +3,11 @@ import "./css/App.css";
 import Entry from "./components/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
 import Footer from "./components/Footer.jsx";
+import { Tab } from "./data/constants.js";
 
 function App() {
   const [count, setCount] = useState(0);
+  const entries = Object.keys(Tab);
 
   function handleSelect(value) {
     setCount(value);
@@ -15,7 +17,7 @@ function App() {
     <div className="App">
       <main>
         <ButtonMenu onSelect={handleSelect} />
-        <Entry index={count} />
+        <Entry screen={entries[count]} />
       </main>
       <Footer />
     </div>
