@@ -1,8 +1,8 @@
 
 #footer-right {
-    align-items: end;
+    float: inline-end;
 }
 
 #footer-left {
-    text-align: start;
+    float: inline-start;
 }
