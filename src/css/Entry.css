@@ -4,14 +4,21 @@
 }
 
 #content-box {
-  height: 80svh;
+  height: 75svh;
   width: 90vw;
   border: 1px solid black;
   border-radius: 15px;
   overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 #content-box p {
   text-align: start;
   padding-left: 10px;
+}
+
+.entry-video {
+  float: inline-start;
 }

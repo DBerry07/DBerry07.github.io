@@ -30,7 +30,7 @@ export const Webpage = new MyContent(
 export const Coursera = new MyContent(
     "Coursera Project",
     [
-        ["http://", "GitHub Repo"],
+        ["https://gitfront.io/r/DWJBerry/WR3GdmWmmRRS/VanderbiltCapstone-Kotlin/", "GitFront Repo Display"],
     ],
     [
         // Coursera Project text
@@ -39,7 +39,8 @@ export const Coursera = new MyContent(
         "The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.",
         "Contains all four of the major Android app components - Activities, Broadcast Receivers, Services, and Content Providers.", 
         "The app is written in Kotlin.",
-    ]
+    ],
+    ["../../src/assets/coursera_video.mp4"],
 )
 
 export const Filler = new MyContent(

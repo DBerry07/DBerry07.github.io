@@ -3,7 +3,11 @@
     min-width: 100px;
 }
 
+menu {
+    margin: 5px;
+}
+
 menu span {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }

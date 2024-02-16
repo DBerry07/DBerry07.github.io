@@ -9,6 +9,7 @@ function Entry(props) {
   const title = entry.title;
   const htmls = entry.htmls;
   const body = entry.body;
+  const videos = entry.videos;
 
   // console.log("Title: " + title);
   // console.log("HTMLs: " + htmls);
@@ -22,11 +23,19 @@ function Entry(props) {
           {html[1]}
         </a>
       ))}
-
       <div>
-        {body.map((item, index) => (
-          <p>{item}</p>
-        ))}
+        <div>
+          {videos.map((video, index) => (
+            <video class="entry-video" width="320" height="540" controls>
+              <source src={video} type="video/mp4" />
+            </video>
+          ))}
+        </div>
+        <div class="entry-body">
+          {body.map((item, index) => (
+            <p>{item}</p>
+          ))}
+        </div>
       </div>
     </div>
   );
