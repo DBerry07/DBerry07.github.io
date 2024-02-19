@@ -1,44 +1,51 @@
 import content from "../data/constants/content.js";
 import "../css/Entry.css";
+import { Tab } from "../data/classes/Tab.js";
+import MyContent from "../data/classes/MyContent.js";
 
 function Entry({ tab, children }) {
-  console.log("In Entry = " + tab);
-  const data = content[tab];
+  console.log("Selected tab = " + tab);
 
-  // console.log("Title: " + title);
-  // console.log("HTMLs: " + htmls);
-  // console.log("Body: " + body);
+  let data = content[Tab.Hello];
+
+  if (Object.keys(Tab).includes(tab)) {
+    data = content[tab];
+  }
+
+  const title = <h2>{data.title}</h2>;
+
+  const htmls = data.htmls.map((html, index) => (
+    <span class="link">
+      <a href={html[0]} target="_blank" class="link-button">
+        {html[1]}
+      </a>
+    </span>
+  ));
+
+  const videos = (
+    <div>
+      {data.videos.map((video, index) => (
+        <video class="entry-video" width="320" height="540" controls>
+          <source src={video} type="video/mp4" />
+        </video>
+      ))}
+    </div>
+  );
+
+  const body = (
+    <div class="entry-body">
+      {data.body.map((item, index) => (
+        <p>{item}</p>
+      ))}
+    </div>
+  );
+
   return (
     <div id="content-box">
-      {console.log("Generating content for tab: " + tab)}
-      <h2>{tab ? data.title : null}</h2>
-      {tab
-        ? data.htmls.map((html, index) => (
-            <span class="link">
-              <a href={html[0]} target="_blank" class="link-button">
-                {html[1]}
-              </a>
-            </span>
-          ))
-        : null}
-      <div>
-        <div>
-          {tab
-            ? data.videos.map((video, index) => (
-                <video class="entry-video" width="320" height="540" controls>
-                  <source src={video} type="video/mp4" />
-                </video>
-              ))
-            : null}
-        </div>
-        <div class="entry-body">
-          {tab ? (
-            data.body.map((item, index) => <p>{item}</p>)
-          ) : (
-            <p>Invalid selection</p>
-          )}
-        </div>
-      </div>
+      {title}
+      {htmls}
+      {videos}
+      {body}
     </div>
   );
 }
