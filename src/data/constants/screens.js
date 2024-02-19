@@ -22,7 +22,7 @@ export const Webpage = new MyContent(
   "This Webpage",
   [[LINKS.webpage, "GitHub Repo"]],
   [
-    "This webpage (hosted on GitHub Pages) is created with React and initially set up using Vite.",
+    "This webpage (hosted on GitHub Pages) is created with React, set up and tested using Vite.",
     "JSX, Components, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications.",
   ]
 );
