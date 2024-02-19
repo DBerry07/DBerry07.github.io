@@ -1,0 +1,13 @@
+
+.menu_button {
+    min-width: 100px;
+}
+
+menu {
+    margin: 5px;
+}
+
+menu span {
+    margin-left: 20px;
+    margin-right: 20px;
+}
