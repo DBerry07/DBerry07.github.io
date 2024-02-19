@@ -4,8 +4,6 @@
   /* padding: 2rem; */
   padding: 0px;
   text-align: center;
-  max-width: 99vw;
-  max-height: 99vh;
 }
 
 .logo {
@@ -47,6 +45,8 @@
 main {
   overflow-x: hidden;
   overflow-y: hidden;
+  max-width: 97vw !important;
+  max-height: 98vh !important;
 }
 
 .center {

@@ -14,7 +14,7 @@
 
 @media (max-width : 500px) {
   #content-box { 
-    width: 98vw !important; 
+    width: 99% !important; 
   }
   #entry-body {
     padding-left: 2vw;
@@ -29,15 +29,15 @@
   footer {
     padding-right: 2vw;
   }
-  video {
-    max-height: 80vw;
-    max-width: 50vw;
+  .entry-video {
+    padding: 1vh !important;
+    max-height: 70vh !important;
+    max-width: 60vw !important;
   }
 }
 
 #content-box p {
   text-align: start;
-  padding: 1vw;
 }
 
 #link-bar {
@@ -48,6 +48,11 @@
   display: flex;
   justify-content: center;
   min-height: 5vh;
+}
+
+#entry-body {
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .link {
@@ -62,7 +67,7 @@
 }
 
 .entry-video {
-  padding: 5px;
+  padding: 1vw;
   justify-content: center;
   max-width: 40vw; 
   max-height: 70vh;
