@@ -3,7 +3,7 @@ import "./css/App.css";
 import Entry from "./components/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
 import Footer from "./components/Footer.jsx";
-import { Tab } from "./data/constants.js";
+import { Tab } from "./data/Tab.js";
 
 function App() {
   const [count, setCount] = useState(0);
