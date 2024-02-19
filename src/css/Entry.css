@@ -27,3 +27,9 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.link-button {
+  border:solid;
+  border-radius: 5px;
+  padding: 5px;
+}

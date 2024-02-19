@@ -19,7 +19,7 @@ function Entry({ tab, children }) {
       <h2>{title}</h2>
       {htmls.map((html, index) => (
         <span class="link">
-          <a href={html[0]} target="_blank">
+          <a href={html[0]} target="_blank" class="link-button">
             {html[1]}
           </a>
         </span>
