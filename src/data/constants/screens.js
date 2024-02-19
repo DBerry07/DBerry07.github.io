@@ -1,4 +1,4 @@
-import MyContent from "./MyContent.js"
+import MyContent from "../classes/MyContent.js"
 import { LINKS } from "./links.js"
 
 export const Hello = new MyContent(

@@ -1,5 +1,5 @@
-import * as content from "../data/content.js";
-import { Tab } from "../data/Tab.js";
+import * as content from "../data/constants/content.js";
+import { Tab } from "../data/classes/Tab.js";
 import "../css/ButtonMenu.css";
 
 function ButtonMenu({ onSelect }) {
