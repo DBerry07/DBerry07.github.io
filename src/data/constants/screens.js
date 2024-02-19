@@ -9,7 +9,7 @@ export const Hello = new MyContent(
   ],
   [
     // Intro page text
-    "I am a software developer currently located in South Florida with nearly two years of professsional native Android app development experience.",
+    "I am a software developer currently located in South Florida with nearly two years of professional native Android app development experience.",
     "During my professional career, I have worked for Bank of America and for Accenture.",
     "I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.",
     "I have been described as detail-oriented and analytical.",
