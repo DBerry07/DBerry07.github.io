@@ -18,7 +18,7 @@ function Entry({ children, tab }) {
   const htmls = (
     <div id="link-bar">
       {data.htmls.map((html, index) => (
-        <span className="link">
+        <span key={html} className="link">
           <a href={html[0]} target="_blank" className="link-button">
             {html[1]}
           </a>
@@ -40,7 +40,7 @@ function Entry({ children, tab }) {
   const body = (
     <div className="entry-body">
       {data.body.map((item, index) => (
-        <p>{item}</p>
+        <p key={item}>{item}</p>
       ))}
     </div>
   );
