@@ -3,7 +3,8 @@ import "../css/Entry.css";
 import { Tab } from "../data/classes/Tab.js";
 import MyContent from "../data/classes/MyContent.js";
 
-function Entry({ tab, children }) {
+// Remember: children must come first!
+function Entry({ children, tab }) {
   console.log("Selected tab = " + tab);
 
   let data = content[Tab.Hello];
