@@ -18,8 +18,8 @@ function Entry({ children, tab }) {
   const htmls = (
     <div id="link-bar">
       {data.htmls.map((html, index) => (
-        <span class="link">
-          <a href={html[0]} target="_blank" class="link-button">
+        <span className="link">
+          <a href={html[0]} target="_blank" className="link-button">
             {html[1]}
           </a>
         </span>
@@ -30,7 +30,7 @@ function Entry({ children, tab }) {
   const videos = (
     <span id="video-section">
       {data.videos.map((video, index) => (
-        <video class="entry-video" width="320" height="540" controls>
+        <video className="entry-video" width="320" height="540" controls>
           <source src={video} type="video/mp4" />
         </video>
       ))}
@@ -38,7 +38,7 @@ function Entry({ children, tab }) {
   );
 
   const body = (
-    <div class="entry-body">
+    <div className="entry-body">
       {data.body.map((item, index) => (
         <p>{item}</p>
       ))}
