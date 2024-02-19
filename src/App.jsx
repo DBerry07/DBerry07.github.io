@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <main>
+      <main className="">
         <ButtonMenu onSelect={handleSelect} />
         <Entry tab={tab} />
       </main>

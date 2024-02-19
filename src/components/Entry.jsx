@@ -29,17 +29,17 @@ function Entry({ children, tab }) {
 
   const videos =
     data.videos.length > 0 ? (
-      <span id="video-section">
+      <div id="video-section">
         {data.videos.map((video, index) => (
-          <video className="entry-video" width="320" height="560" controls>
+          <video className="entry-video" controls>
             <source src={video} type="video/mp4" />
           </video>
         ))}
-      </span>
+      </div>
     ) : null;
 
   const body = (
-    <div className="entry-body">
+    <div id="entry-body">
       {data.body.map((item, index) => (
         <p>{item}</p>
       ))}
