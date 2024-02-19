@@ -33,6 +33,7 @@
 .entry-video {
   float:inline-start;
   padding: 30px;
+  padding-bottom: 10px;
 }
 
 #video-section {
