@@ -6,7 +6,7 @@ function ButtonMenu({ onSelect }) {
   const buttons = Object.keys(Tab);
 
   return (
-    <menu>
+    <menu id="button-menu">
       {buttons.map((item, index) => (
         <span>
           <button class="menu_button" onClick={() => onSelect(item)}>

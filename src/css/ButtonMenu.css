@@ -1,6 +1,6 @@
 
 .menu_button {
-    min-width: 100px;
+    width: 115px;
 }
 
 menu {
@@ -8,6 +8,7 @@ menu {
 }
 
 menu span {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
+
