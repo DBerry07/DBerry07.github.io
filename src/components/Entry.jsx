@@ -14,22 +14,26 @@ function Entry({ tab, children }) {
 
   const title = <h2>{data.title}</h2>;
 
-  const htmls = data.htmls.map((html, index) => (
-    <span class="link">
-      <a href={html[0]} target="_blank" class="link-button">
-        {html[1]}
-      </a>
-    </span>
-  ));
+  const htmls = (
+    <div id="link-bar">
+      {data.htmls.map((html, index) => (
+        <span class="link">
+          <a href={html[0]} target="_blank" class="link-button">
+            {html[1]}
+          </a>
+        </span>
+      ))}
+    </div>
+  );
 
   const videos = (
-    <div>
+    <span id="video-section">
       {data.videos.map((video, index) => (
         <video class="entry-video" width="320" height="540" controls>
           <source src={video} type="video/mp4" />
         </video>
       ))}
-    </div>
+    </span>
   );
 
   const body = (

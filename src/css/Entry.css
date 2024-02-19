@@ -19,10 +19,6 @@
   padding-left: 10px;
 }
 
-.entry-video {
-  float: inline-start;
-}
-
 .link {
   padding-left: 10px;
   padding-right: 10px;
@@ -32,4 +28,13 @@
   border:solid;
   border-radius: 5px;
   padding: 5px;
+}
+
+.entry-video {
+  float:inline-start;
+  padding: 30px;
+}
+
+#video-section {
+  padding: 10px;
 }
