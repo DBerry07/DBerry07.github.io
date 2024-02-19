@@ -9,7 +9,7 @@ function ButtonMenu({ onSelect }) {
     <menu>
       {buttons.map((item, index) => (
         <span>
-          <button class="menu_button" onClick={() => onSelect(index)}>
+          <button class="menu_button" onClick={() => onSelect(item)}>
             {item}
           </button>
         </span>

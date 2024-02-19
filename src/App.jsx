@@ -4,20 +4,20 @@ import Entry from "./components/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
 import Footer from "./components/Footer.jsx";
 import { Tab } from "./data/classes/Tab.js";
+import content from "./data/constants/content.js";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const entries = Object.keys(Tab);
+  const [tab, setTab] = useState(Tab.Hello);
 
   function handleSelect(value) {
-    setCount(value);
+    setTab(value);
   }
 
   return (
     <div className="App">
       <main>
         <ButtonMenu onSelect={handleSelect} />
-        <Entry screen={entries[count]} />
+        <Entry tab={tab} />
       </main>
       <Footer />
     </div>

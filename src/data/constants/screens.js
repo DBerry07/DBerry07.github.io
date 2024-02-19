@@ -5,6 +5,7 @@ export const Hello = new MyContent(
     "Hello, there!",
     [
         [LINKS.linkedin, "LinkedIn"],
+        [LINKS.github, "GitHub"],
     ],
     [
         // Intro page text

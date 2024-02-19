@@ -1,27 +1,28 @@
-import content from "../data/constants/content";
+import content from "../data/constants/content.js";
 import "../css/Entry.css";
 
-function Entry(props) {
-  const entryString = props.screen;
-  console.log("In Entry=" + entryString);
+function Entry({ tab, children }) {
+  console.log("In Entry = " + tab);
+  const data = content[tab];
 
-  const entry = content[entryString];
-  const title = entry.title;
-  const htmls = entry.htmls;
-  const body = entry.body;
-  const videos = entry.videos;
+  const title = data.title;
+  const htmls = data.htmls;
+  const body = data.body;
+  const videos = data.videos;
 
   // console.log("Title: " + title);
   // console.log("HTMLs: " + htmls);
   // console.log("Body: " + body);
   return (
     <div id="content-box">
-      {console.log("Generating content for tab: " + entryString)}
+      {console.log("Generating content for tab: " + tab)}
       <h2>{title}</h2>
-      {htmls.map((html) => (
-        <a href={html[0]} target="_blank">
-          {html[1]}
-        </a>
+      {htmls.map((html, index) => (
+        <span class="link">
+          <a href={html[0]} target="_blank">
+            {html[1]}
+          </a>
+        </span>
       ))}
       <div>
         <div>
