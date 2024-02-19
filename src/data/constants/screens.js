@@ -102,5 +102,6 @@ export const Filler = new MyContent(
     "filler",
     "filler",
     "filler",
-  ]
+  ],
+  []
 );
