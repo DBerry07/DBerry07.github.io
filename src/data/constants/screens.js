@@ -21,7 +21,7 @@ export const Hello = new MyContent(
 export const Webpage = new MyContent(
     "This Webpage",
     [
-        [LINKS.blank, "GitHub Repo"],
+        [LINKS.webpage, "GitHub Repo"],
     ],
     [
         "This webpage (hosted on GitHub Pages) is created with React and initially set up using Vite.", 
