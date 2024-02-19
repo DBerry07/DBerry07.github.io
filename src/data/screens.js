@@ -1,9 +1,10 @@
 import MyContent from "./MyContent.js"
+import { LINKS } from "./links.js"
 
 export const Hello = new MyContent(
     "Hello, there!",
     [
-        ["https://linkedin.com/in/david-wj-berry", "LinkedIn"],
+        [LINKS.linkedin, "LinkedIn"],
     ],
     [
         // Intro page text
@@ -19,7 +20,7 @@ export const Hello = new MyContent(
 export const Webpage = new MyContent(
     "This Webpage",
     [
-        ["http://", "GitHub Repo"],
+        [LINKS.blank, "GitHub Repo"],
     ],
     [
         "This webpage (hosted on GitHub Pages) is created with React and initially set up using Vite.", 
@@ -30,7 +31,7 @@ export const Webpage = new MyContent(
 export const Coursera = new MyContent(
     "Coursera Project",
     [
-        ["https://gitfront.io/r/DWJBerry/WR3GdmWmmRRS/VanderbiltCapstone-Kotlin/", "GitFront Repo Display"],
+        [LINKS.coursera, "GitFront Repo Display"],
     ],
     [
         // Coursera Project text
@@ -46,7 +47,7 @@ export const Coursera = new MyContent(
 export const Filler = new MyContent(
     "Filler",
     [
-        ["http://", "Hello, World!"],
+        [LINKS.blank, "Hello, World!"],
     ],
     [
         "filler", "filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler","filler",

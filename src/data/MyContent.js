@@ -12,11 +12,4 @@ class MyContent {
     }
 }
 
-export class Link {
-    constructor(html = "", description = "") {
-        this.html = "";
-        this.description = "";
-    }
-}
-
 export default MyContent
