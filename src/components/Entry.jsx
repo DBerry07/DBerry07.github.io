@@ -2,7 +2,11 @@ import content from "../data/constants/content.js";
 import "../css/Entry.css";
 import { tabs } from "../data/constants/tabs.js";
 
-// Remember: children must come first!
+/**
+ * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
+ * @param {Object} tab An object containing data on which tab the user selected.
+ * @returns The React component in question.
+ */
 function Entry({ children, tab }) {
   console.log("Selected tab = " + tab);
 
