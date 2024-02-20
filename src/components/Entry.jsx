@@ -1,7 +1,6 @@
 import content from "../data/constants/content.js";
 import "../css/Entry.css";
 import { Tab } from "../data/classes/Tab.js";
-import MyContent from "../data/classes/MyContent.js";
 
 // Remember: children must come first!
 function Entry({ children, tab }) {
