@@ -45,11 +45,13 @@ export const Coursera = {
       "handles the image download process;" +
       "the other displays notifications to the user when Content Provider tasks are executed.",
     "Activities are used to allow the user to interact with the app. There are 4 Activities with one acting as a superclass for the other four.",
-    "EditActivity is where the user writes or edits a given note." +
-      " ListActivity is where the user's notes are listed for the user to select." +
-      " MainActivity is the landing page where the user can download an image from the internet and can proceed further into the app." +
-      " ReadActivity allows the user to read a given note - but not edit it." +
-      "LoggingActivity is the superclass mentioned and is mainly used for logging state changes.",
+  ],
+  activityList: [
+    "EditActivity is where the user writes or edits a given note.",
+    "ListActivity is where the user's notes are listed for the user to select.",
+    "MainActivity is the landing page where the user can download an image from the internet and can proceed further into the app.",
+    "ReadActivity allows the user to read a given note - but not edit it.",
+    "LoggingActivity is the superclass mentioned and is mainly used for logging state changes.",
   ],
   videos: ["../../src/assets/coursera_video.mp4"],
 };

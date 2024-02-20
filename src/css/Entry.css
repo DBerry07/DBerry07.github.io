@@ -40,6 +40,10 @@
   text-align: start;
 }
 
+#content-box li {
+  text-align: start;
+}
+
 #link-bar {
   overflow-x: auto;
   overflow-y: hidden;

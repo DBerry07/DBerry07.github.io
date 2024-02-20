@@ -14,7 +14,8 @@ function Entry({ children, tab }) {
   let title = null,
     htmls = null,
     videos = null,
-    body = null;
+    body = null,
+    list = null;
 
   if (Object.hasOwn(data, "title")) {
     title = <h2>{data.title}</h2>;
@@ -64,12 +65,31 @@ function Entry({ children, tab }) {
     body = null;
   }
 
+  if (Object.hasOwn(data, "activityList")) {
+    list = (
+      <ul>
+        {data.activityList.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    );
+  } else {
+    list = null;
+  }
+
+  const wholeBody = (
+    <div>
+      {body}
+      {list}
+    </div>
+  );
+
   return (
     <div id="content-box">
       {title}
       {htmls}
       {videos}
-      {body}
+      {wholeBody}
     </div>
   );
 }
