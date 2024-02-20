@@ -26,7 +26,7 @@ function Entry({ children, tab }) {
     htmls = (
       <div id="link-bar">
         {data.htmls.map((html, index) => (
-          <span key={html} className="link">
+          <span key={index} className="link">
             <a href={html[0]} target="_blank" className="link-button">
               {html[1]}
             </a>
@@ -42,7 +42,7 @@ function Entry({ children, tab }) {
     videos = (
       <div id="video-section">
         {data.videos.map((video, index) => (
-          <video className="entry-video" controls>
+          <video className="entry-video" controls key={index}>
             <source src={video} type="video/mp4" />
           </video>
         ))}
@@ -56,7 +56,7 @@ function Entry({ children, tab }) {
     body = (
       <div id="entry-body">
         {data.body.map((item, index) => (
-          <p key={item}>{item}</p>
+          <p key={index}>{item}</p>
         ))}
       </div>
     );
