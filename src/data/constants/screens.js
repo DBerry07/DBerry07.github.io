@@ -32,17 +32,15 @@ export const Coursera = {
   body: [
     // Coursera Project text
     "My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.",
-    "This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage." +
+    "This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage. " +
       "The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.",
     "Contains all four of the major Android app components - Activities, Broadcast Receivers, Services, and Content Providers.",
     "This version of the app is written in Kotlin.",
-    "The WEB SERVICE implemented in this app is a simple image download. The ImageDownloaderService runs the DownloadAsyncTask that downloads the image." +
-      "Both files are found under the 'imagedownloader' package.",
     "The notes themselves are saved to an SQLite Database using a Content Provider - MyContentProvider.",
-    "ImageDownloadService is used to download an image for display on LaunchActivity. This is the remote Web Service as required" +
+    "ImageDownloadService is used to download an image for display on LaunchActivity. This is the remote Web Service as required " +
       "by the project specifications.",
-    "Two Broadcast Receivers are used in this app: one is used to receive the image bitmap data from the Download Async Task that" +
-      "handles the image download process;" +
+    "Two Broadcast Receivers are used in this app: one is used to receive the image bitmap data from the Download Async Task that " +
+      "handles the image download process; " +
       "the other displays notifications to the user when Content Provider tasks are executed.",
     "Activities are used to allow the user to interact with the app. There are 4 Activities with one acting as a superclass for the other four.",
   ],
