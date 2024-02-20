@@ -1,21 +1,23 @@
 import content from "../data/constants/content.js";
 import "../css/Entry.css";
-import { Tab } from "../data/classes/Tab.js";
+import { tabs } from "../data/constants/tabs.js";
 
 // Remember: children must come first!
 function Entry({ children, tab }) {
   console.log("Selected tab = " + tab);
 
-  let data = content[Tab.Hello];
-  if (Object.keys(Tab).includes(tab)) {
+  let data = content[tabs.Hello];
+  if (Object.keys(tabs).includes(tab)) {
     data = content[tab];
   }
 
-  let title = null,
+  let wholeBody = null,
+    title = null,
     htmls = null,
     videos = null,
     body = null,
-    list = null;
+    list = null,
+    subheading = null;
 
   if (Object.hasOwn(data, "title")) {
     title = <h2>{data.title}</h2>;
@@ -77,18 +79,54 @@ function Entry({ children, tab }) {
     list = null;
   }
 
-  const wholeBody = (
-    <div>
-      {body}
-      {list}
-    </div>
-  );
+  if (Object.hasOwn(data, "subheading")) {
+    subheading = (
+      <h4>
+        <i>{data.subheading}</i>
+      </h4>
+    );
+  } else {
+    subheading = null;
+  }
+
+  //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
+  if (tab === tabs.Coursera) {
+    wholeBody = (
+      <div>
+        {subheading}
+        {htmls}
+        {videos}
+        {body}
+        {list}
+      </div>
+    );
+  }
+  //console.log("tab = Hello?: " + (tab === Tab.Hello.name));
+  if (tab === tabs.Hello) {
+    wholeBody = (
+      <div>
+        {subheading}
+        {htmls}
+        {videos}
+        {list}
+        {body}
+      </div>
+    );
+  } else {
+    wholeBody = (
+      <div>
+        {htmls}
+        {subheading}
+        {videos}
+        {list}
+        {body}
+      </div>
+    );
+  }
 
   return (
     <div id="content-box">
       {title}
-      {htmls}
-      {videos}
       {wholeBody}
     </div>
   );

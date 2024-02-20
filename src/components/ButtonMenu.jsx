@@ -1,9 +1,9 @@
 import * as content from "../data/constants/content.js";
-import { Tab } from "../data/classes/Tab.js";
+import { tabs } from "../data/constants/tabs.js";
 import "../css/ButtonMenu.css";
 
 function ButtonMenu({ onSelect }) {
-  const buttons = Object.keys(Tab);
+  const buttons = Object.keys(tabs);
 
   return (
     <menu id="button-menu">

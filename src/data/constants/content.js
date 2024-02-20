@@ -1,19 +1,18 @@
-import { Tab } from "../classes/Tab.js"
-import * as SCREENS from "./screens.js"
+import { tabs } from "./tabs.js";
+import * as SCREENS from "./screens.js";
 
-console.log("In content.js file.")
+// console.log("In content.js file.")
 
 const pageContent = {};
 
-    pageContent[Tab.Hello] = SCREENS.Hello;
-    
-    pageContent[Tab.Webpage] = SCREENS.Webpage;
+pageContent[tabs.Hello] = SCREENS.Hello;
 
-    pageContent[Tab.Coursera] = SCREENS.Coursera;
+pageContent[tabs.Webpage] = SCREENS.Webpage;
 
-    pageContent[Tab.Filler] = SCREENS.Filler;
+pageContent[tabs.Coursera] = SCREENS.Coursera;
 
+pageContent[tabs.Filler] = SCREENS.Filler;
 
-console.log(pageContent);
+// console.log(pageContent);
 
-export default pageContent
+export default pageContent;
