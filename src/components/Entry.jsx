@@ -56,7 +56,7 @@ function Entry({ children, tab }) {
     body = (
       <div id="entry-body">
         {data.body.map((item, index) => (
-          <p>{item}</p>
+          <p key={item}>{item}</p>
         ))}
       </div>
     );
