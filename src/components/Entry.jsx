@@ -100,9 +100,7 @@ function Entry({ children, tab }) {
         {list}
       </div>
     );
-  }
-  //console.log("tab = Hello?: " + (tab === Tab.Hello.name));
-  if (tab === tabs.Hello) {
+  } else if (tab === tabs.Hello) {
     wholeBody = (
       <div>
         {subheading}
@@ -122,6 +120,7 @@ function Entry({ children, tab }) {
         {body}
       </div>
     );
+    //console.log("tab = Hello?: " + (tab === Tab.Hello.name));
   }
 
   return (
