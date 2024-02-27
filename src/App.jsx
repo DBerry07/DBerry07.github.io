@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import "./css/App.css";
 import Entry from "./components/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
@@ -14,13 +14,13 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <main className="">
+    <Fragment>
+      <main className="App">
         <ButtonMenu onSelect={handleSelect} />
         <Entry tab={tab} />
       </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

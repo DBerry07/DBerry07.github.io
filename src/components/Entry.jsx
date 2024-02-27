@@ -1,6 +1,7 @@
 import content from "../data/constants/content.js";
 import "../css/Entry.css";
 import { tabs } from "../data/constants/tabs.js";
+import { Fragment } from "react";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -96,33 +97,33 @@ function Entry({ children, tab }) {
   //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
   if (tab === tabs.Coursera) {
     wholeBody = (
-      <div>
+      <Fragment>
         {subheading}
         {htmls}
         {videos}
         {body}
         {list}
-      </div>
+      </Fragment>
     );
   } else if (tab === tabs.Hello) {
     wholeBody = (
-      <div>
+      <Fragment>
         {subheading}
         {htmls}
         {videos}
         {list}
         {body}
-      </div>
+      </Fragment>
     );
   } else {
     wholeBody = (
-      <div>
+      <Fragment>
         {htmls}
         {subheading}
         {videos}
         {list}
         {body}
-      </div>
+      </Fragment>
     );
     //console.log("tab = Hello?: " + (tab === Tab.Hello.name));
   }
