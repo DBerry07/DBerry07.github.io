@@ -5,8 +5,8 @@
 export const tabs = {
   Hello: "Hello",
   React: "React",
-  Coursera: "Coursera",
-  Android: "Android",
+  AndroidJava: "AndroidJava",
+  AndroidKotlin: "AndroidKotlin",
   ReactNative: "ReactNative",
   iOS: "iOS",
   Spring: "Spring",

@@ -1,6 +1,6 @@
 
 .menu_button {
-    width: 135px;
+    width: 145px;
     padding: 20px;
 }
 
@@ -8,7 +8,7 @@ menu {
     margin: auto;
     overflow-y: auto;
     overflow-x: hidden;
-    width: 150px;
+    width: max-content;
     padding: 0px;
     margin-right: 1vw;
 }

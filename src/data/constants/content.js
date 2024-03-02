@@ -9,9 +9,9 @@ pageContent[tabs.Hello] = SCREENS.Hello;
 
 pageContent[tabs.React] = SCREENS.React;
 
-pageContent[tabs.Coursera] = SCREENS.Coursera;
+pageContent[tabs.AndroidJava] = SCREENS.AndroidJava;
 
-pageContent[tabs.Android] = SCREENS.Android;
+pageContent[tabs.AndroidKotlin] = SCREENS.AndroidKotlin;
 
 pageContent[tabs.ReactNative] = SCREENS.ReactNative;
 

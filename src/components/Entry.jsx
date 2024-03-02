@@ -95,17 +95,7 @@ function Entry({ children, tab }) {
   }
 
   //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
-  if (tab === tabs.Coursera) {
-    wholeBody = (
-      <Fragment>
-        {subheading}
-        {htmls}
-        {videos}
-        {body}
-        {list}
-      </Fragment>
-    );
-  } else if (tab === tabs.Hello) {
+  if (tab === tabs.Hello) {
     wholeBody = (
       <Fragment>
         {subheading}
@@ -118,8 +108,8 @@ function Entry({ children, tab }) {
   } else {
     wholeBody = (
       <Fragment>
-        {htmls}
         {subheading}
+        {htmls}
         {videos}
         {list}
         {body}

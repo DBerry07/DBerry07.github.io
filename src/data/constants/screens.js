@@ -27,8 +27,8 @@ export const React = {
   ],
 };
 
-export const Coursera = {
-  title: "Coursera Project",
+export const AndroidJava = {
+  title: "Native Android App (Java)",
   subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
   body: [
@@ -56,8 +56,8 @@ export const Coursera = {
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
-export const Android = {
-  title: "Native Android App",
+export const AndroidKotlin = {
+  title: "Native Android App (Kotlin)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description, videos, and screenshots",
