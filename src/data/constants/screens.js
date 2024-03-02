@@ -90,6 +90,16 @@ export const iOS = {
   ].concat(filler(20)),
 };
 
+export const Spring = {
+  title: "Spring Boot project",
+  body: [
+    "Put description,",
+    "screenshots, and videos,",
+    "of my Spring Boot (or maybe just Spring) project",
+    "HERE",
+  ].concat(filler(15)),
+};
+
 export const Filler = {
   title: "Filler",
   htmls: [[LINKS.blank, "Hello, World!"]],

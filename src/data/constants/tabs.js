@@ -8,6 +8,7 @@ export const tabs = {
   Android: "Android",
   ReactNative: "ReactNative",
   iOS: "iOS",
+  Spring: "Spring",
 
   Filler: "Filler",
 };
