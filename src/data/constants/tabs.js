@@ -10,5 +10,5 @@ export const tabs = {
   iOS: "iOS",
   Spring: "Spring",
 
-  Filler: "Filler",
+  // Filler: "Filler",
 };
