@@ -11,6 +11,8 @@ pageContent[tabs.Webpage] = SCREENS.Webpage;
 
 pageContent[tabs.Coursera] = SCREENS.Coursera;
 
+pageContent[tabs.ReactNative] = SCREENS.ReactNative;
+
 pageContent[tabs.Filler] = SCREENS.Filler;
 
 // console.log(pageContent);

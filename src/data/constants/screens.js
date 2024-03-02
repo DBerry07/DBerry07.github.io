@@ -55,6 +55,19 @@ export const Coursera = {
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
+export const ReactNative = {
+  title: "React Native App",
+  htmls: [[LINKS.blank, "Hello, World!"]],
+  body: [
+    "Put description",
+    "and videos",
+    "and screenshots",
+    "of",
+    "my React Native project",
+    "here",
+  ],
+};
+
 export const Filler = {
   title: "Filler",
   htmls: [[LINKS.blank, "Hello, World!"]],
