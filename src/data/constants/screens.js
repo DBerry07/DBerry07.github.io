@@ -6,7 +6,7 @@ export const Hello = {
     [LINKS.linkedin, "Link: LinkedIn"],
     [LINKS.github, "Link: GitHub"],
   ],
-  subheading: "Click on the tabs at the top of the page to navigate!",
+  subheading: "Click on the buttons to navigate!",
   body: [
     // Intro page text
     "I am a software developer currently located in South Florida with nearly two years of professional native Android app development experience.",
