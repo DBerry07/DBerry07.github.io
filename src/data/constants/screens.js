@@ -3,8 +3,8 @@ import { LINKS } from "./links.js";
 export const Hello = {
   title: "Hello, there!",
   htmls: [
-    [LINKS.linkedin, "Link: LinkedIn"],
-    [LINKS.github, "Link: GitHub"],
+    [LINKS.linkedin, "[LinkedIn Profile]"],
+    [LINKS.github, "[GitHub Profile]"],
   ],
   subheading: "Click on the buttons to navigate!",
   body: [
@@ -20,7 +20,7 @@ export const Hello = {
 
 export const React = {
   title: "This Webpage",
-  htmls: [[LINKS.webpage, "Link: GitHub Repo"]],
+  htmls: [[LINKS.webpage, "[GitHub Repo]"]],
   body: [
     "This webpage (hosted on GitHub Pages) is created with React, set up and tested using Vite.",
     "JSX, Components, State, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications.",
@@ -29,7 +29,7 @@ export const React = {
 
 export const Coursera = {
   title: "Coursera Project",
-  htmls: [[LINKS.coursera, "Link: GitFront Repo Display"]],
+  htmls: [[LINKS.coursera, "[GitFront Repo]"]],
   body: [
     // Coursera Project text
     "My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization capstone course.",
@@ -57,7 +57,7 @@ export const Coursera = {
 
 export const Android = {
   title: "Native Android App",
-  htmls: [[LINKS.blank, "Hello, World!"]],
+  htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description, videos, and screenshots",
     "of the ResidentalManager app I am making",
@@ -67,7 +67,7 @@ export const Android = {
 
 export const ReactNative = {
   title: "React Native App",
-  htmls: [[LINKS.blank, "Hello, World!"]],
+  htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description",
     "and videos",
@@ -80,7 +80,7 @@ export const ReactNative = {
 
 export const iOS = {
   title: "Native iOS App",
-  htmls: [[LINKS.blank, "Hello, World!"]],
+  htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description",
     "and videos",
@@ -102,7 +102,7 @@ export const Spring = {
 
 export const Filler = {
   title: "Filler",
-  htmls: [[LINKS.blank, "Hello, World!"]],
+  htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: filler(50),
 };
 
