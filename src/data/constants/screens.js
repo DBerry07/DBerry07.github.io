@@ -18,7 +18,7 @@ export const Hello = {
   ],
 };
 
-export const Webpage = {
+export const React = {
   title: "This Webpage",
   htmls: [[LINKS.webpage, "Link: GitHub Repo"]],
   body: [
@@ -32,7 +32,7 @@ export const Coursera = {
   htmls: [[LINKS.coursera, "Link: GitFront Repo Display"]],
   body: [
     // Coursera Project text
-    "My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization.",
+    "My project that I submittted to Coursera's Vanderbilt-developed Android developer specialization capstone course.",
     "This is a note-taking and -saving app. The user is able to write their own notes and save those notes to their local phone storage. " +
       "The notes are displayed using a RecyclerView in order of date created. Users can also edit a previously created note or delete a note.",
     "Contains all four of the major Android app components - Activities, Broadcast Receivers, Services, and Content Providers.",
@@ -55,6 +55,16 @@ export const Coursera = {
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
+export const Android = {
+  title: "Native Android App",
+  htmls: [[LINKS.blank, "Hello, World!"]],
+  body: [
+    "Put description, videos, and screenshots",
+    "of the ResidentalManager app I am making",
+    "here",
+  ],
+};
+
 export const ReactNative = {
   title: "React Native App",
   htmls: [[LINKS.blank, "Hello, World!"]],
@@ -64,6 +74,18 @@ export const ReactNative = {
     "and screenshots",
     "of",
     "my React Native project",
+    "here",
+  ],
+};
+
+export const iOS = {
+  title: "Native iOS App",
+  htmls: [[LINKS.blank, "Hello, World!"]],
+  body: [
+    "Put description",
+    "and videos",
+    "and screenshots",
+    "of my iOS app",
     "here",
   ],
 };

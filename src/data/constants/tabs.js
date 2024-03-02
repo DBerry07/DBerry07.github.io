@@ -3,9 +3,11 @@
  */
 export const tabs = {
   Hello: "Hello",
-  Webpage: "Webpage",
+  React: "React",
   Coursera: "Coursera",
+  Android: "Android",
   ReactNative: "ReactNative",
+  iOS: "iOS",
 
   Filler: "Filler",
 };
