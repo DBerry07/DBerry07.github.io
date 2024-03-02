@@ -29,6 +29,7 @@ export const React = {
 
 export const Coursera = {
   title: "Coursera Project",
+  subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
   body: [
     // Coursera Project text
