@@ -62,7 +62,7 @@ export const Android = {
     "Put description, videos, and screenshots",
     "of the ResidentalManager app I am making",
     "here",
-  ],
+  ].concat(filler(20)),
 };
 
 export const ReactNative = {
@@ -75,7 +75,7 @@ export const ReactNative = {
     "of",
     "my React Native project",
     "here",
-  ],
+  ].concat(filler(20)),
 };
 
 export const iOS = {
@@ -87,55 +87,21 @@ export const iOS = {
     "and screenshots",
     "of my iOS app",
     "here",
-  ],
+  ].concat(filler(20)),
 };
 
 export const Filler = {
   title: "Filler",
   htmls: [[LINKS.blank, "Hello, World!"]],
-  body: [
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-    "filler",
-  ],
+  body: filler(50),
 };
+
+function filler(times) {
+  let i = 0;
+  let body = [];
+  while (i < times) {
+    i++;
+    body.push("filler");
+  }
+  return body;
+}
