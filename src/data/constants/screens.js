@@ -101,6 +101,11 @@ export const Spring = {
   ].concat(filler(15)),
 };
 
+export const Angular = {
+  title: "Angular Project",
+  body: ["TO BE DONE"].concat(filler(20)),
+};
+
 export const Filler = {
   title: "Filler",
   htmls: [[LINKS.blank, "[Hello, World!]"]],

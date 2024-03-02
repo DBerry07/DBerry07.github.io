@@ -19,6 +19,8 @@ pageContent[tabs.iOS] = SCREENS.iOS;
 
 pageContent[tabs.Spring] = SCREENS.Spring;
 
+pageContent[tabs.Angular] = SCREENS.Angular;
+
 pageContent[tabs.Filler] = SCREENS.Filler;
 
 // console.log(pageContent);

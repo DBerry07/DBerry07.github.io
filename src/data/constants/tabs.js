@@ -10,6 +10,7 @@ export const tabs = {
   ReactNative: "ReactNative",
   iOS: "iOS",
   Spring: "Spring",
+  Angular: "Angular",
 
   // Filler: "Filler",
 };
