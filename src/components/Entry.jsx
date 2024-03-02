@@ -105,6 +105,16 @@ function Entry({ children, tab }) {
         {body}
       </Fragment>
     );
+  } else if (tab === tabs.AndroidJava) {
+    wholeBody = (
+      <Fragment>
+        {subheading}
+        {htmls}
+        {videos}
+        {body}
+        {list}
+      </Fragment>
+    );
   } else {
     wholeBody = (
       <Fragment>
