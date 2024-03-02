@@ -1,4 +1,4 @@
-@media (max-width : 500px) {
+@media (pointer: coarse) {
     #content-box { 
       width: 99% !important; 
     }

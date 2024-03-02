@@ -1,5 +1,6 @@
 import { useState, Fragment } from "react";
 import "./css/App.css";
+import "./css/Mobile.css";
 import Entry from "./components/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
 import Footer from "./components/Footer.jsx";
