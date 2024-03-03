@@ -1,4 +1,4 @@
-export async function getText(fileName) {
+export async function getText(fileURL) {
   let solution = undefined;
 
   try {

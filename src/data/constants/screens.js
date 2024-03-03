@@ -1,4 +1,5 @@
 import { LINKS } from "./links.js";
+import { getText } from "./fetching.js";
 
 export const Hello = {
   title: "Hello, there!",
@@ -7,16 +8,17 @@ export const Hello = {
     [LINKS.github, "[GitHub Profile]"],
   ],
   subheading: "Click on the buttons to navigate!",
-  body: [
-    // Intro page text
-    "My name is David WJ Berry. Welcome to my webpage!",
-    "I am a software developer currently located in South Florida with nearly two years of professional native Android app development experience.",
-    "During my professional career, I have worked for Bank of America and for Accenture.",
-    "I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.",
-    "I have been described as detail-oriented and analytical.",
-    "My passion for software development stems from my enjoyment of puzzle-solving and of building functional things.",
-    "I am always eager to learn new things and have completed (and in the process of completing) a number of courses on Coursera and Udemy.",
-  ],
+  body: await getText("http://localhost:5173/src/data/hellobody.txt"),
+  // body: [
+  //   // Intro page text
+  //   "My name is David WJ Berry. Welcome to my webpage!",
+  //   "I am a software developer currently located in South Florida with nearly two years of professional native Android app development experience.",
+  //   "During my professional career, I have worked for Bank of America and for Accenture.",
+  //   "I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.",
+  //   "I have been described as detail-oriented and analytical.",
+  //   "My passion for software development stems from my enjoyment of puzzle-solving and of building functional things.",
+  //   "I am always eager to learn new things and have completed (and in the process of completing) a number of courses on Coursera and Udemy.",
+  // ],
 };
 
 export const React = {
