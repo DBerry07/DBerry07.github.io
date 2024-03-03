@@ -28,7 +28,7 @@ function Entry({ children, tab }) {
     subheading = null;
 
   if (Object.hasOwn(data, "title")) {
-    title = <h2>{data.title}</h2>;
+    title = <div id="title">{data.title}</div>;
   } else {
     title = null;
   }
@@ -89,9 +89,9 @@ function Entry({ children, tab }) {
 
   if (Object.hasOwn(data, "subheading")) {
     subheading = (
-      <h4>
+      <div id="subheading">
         <i>{data.subheading}</i>
-      </h4>
+      </div>
     );
   } else {
     subheading = null;

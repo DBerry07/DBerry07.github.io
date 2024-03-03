@@ -5,16 +5,17 @@
 
 #headbar {
   grid-area: heading;
-}
-
-h2 {
+  font-size: 22pt;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  /* font-weight: bold; */
 }
 
-h4 {
+#subheading {
+  font-size: 15pt;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  /* font-weight: bold; */
 }
 
 #content-box {
@@ -26,6 +27,7 @@ h4 {
   overflow-y: visible;
   overflow-x: hidden;
   margin: 0 auto;
+  font-size: 13pt;
 }
 
 #content-box p {
@@ -37,6 +39,7 @@ h4 {
 }
 
 #link-bar {
+  font-size: 15pt;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -44,6 +47,8 @@ h4 {
   display: flex;
   justify-content: center;
   min-height: 5vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 #entry-body {
