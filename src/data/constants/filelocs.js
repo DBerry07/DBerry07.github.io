@@ -1,7 +1,7 @@
 const urlStart = "http://localhost:5173/";
 // const urlStart = "http://dberry07.github.com/";
 
-const folders = "src/data/";
+const folders = "src/data/texts/";
 
 export const locations = {
   HelloBody: urlStart + folders + "hellobody.txt",
