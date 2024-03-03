@@ -1,0 +1,15 @@
+export const projects = {
+  Back: "Back",
+  AndroidJava: "AndroidJava",
+  AndroidKotlin: "AndroidKotlin",
+  ReactNative: "ReactNative",
+  iOS: "iOS",
+  DartFlutter: "DartFlutter",
+  // Spring: "Spring",
+  // Angular: "Angular",
+  // Ionic: "Ionic",
+  // Xamarin: "Xamarin",
+  AndroidJava2: "AndroidJava2",
+  AndroidKotlin2: "AndroidKotlin2",
+  React: "React",
+};

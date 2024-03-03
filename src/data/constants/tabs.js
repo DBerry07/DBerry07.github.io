@@ -4,16 +4,10 @@
  */
 export const tabs = {
   Hello: "Hello",
-  React: "React",
-  AndroidJava: "AndroidJava",
-  AndroidKotlin: "AndroidKotlin",
-  ReactNative: "ReactNative",
-  iOS: "iOS",
-  DartFlutter: "DartFlutter",
-  Spring: "Spring",
-  Angular: "Angular",
-  Ionic: "Ionic",
-  Xamarin: "Xamarin",
+  About: "About",
+  Projects: "Projects",
+  Education: "Education",
+  WorkHistory: "WorkHistory",
 
-  Filler: "Filler",
+  // Filler: "Filler",
 };
