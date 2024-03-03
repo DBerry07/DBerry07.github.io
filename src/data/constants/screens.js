@@ -1,4 +1,5 @@
 import { LINKS } from "./links.js";
+import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 
 export const Hello = {
@@ -8,36 +9,29 @@ export const Hello = {
     [LINKS.github, "[GitHub Profile]"],
   ],
   subheading: "Click on the buttons to navigate!",
-  body: await getText("hellobody.txt"),
+  body: await getText(locations.HelloBody),
 };
 
 export const React = {
   title: "React Project",
   subheading: "It's this webpage!",
   htmls: [[LINKS.webpage, "[GitHub Repo]"]],
-  body: [
-    "This webpage (hosted on GitHub Pages) is created with React, set up and tested using Vite.",
-    "JSX, Components, State, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications.",
-  ],
+  body: await getText(locations.ReactBody),
 };
 
 export const AndroidJava = {
   title: "Native Android App (Java)",
   subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
-  body: await getText("courserabody.txt"),
-  activityList: await getText("courseralist.txt"),
+  body: await getText(locations.CouseraBody),
+  activityList: await getText(locations.CouseraList),
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
 export const AndroidKotlin = {
   title: "Native Android App (Kotlin)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: [
-    "Put description, videos, and screenshots",
-    "of the ResidentalManager app I am making",
-    "here",
-  ].concat(filler(20)),
+  body: await getText(locations.AndroidKotlinBody),
 };
 
 export const ReactNative = {
