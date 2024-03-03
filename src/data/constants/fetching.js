@@ -1,5 +1,7 @@
-export async function getText(fileURL) {
+export async function getText(fileName) {
   let solution = undefined;
+  const fileURLStart = "http://localhost:5173/src/data/";
+  const fileURL = fileURLStart + fileName;
 
   try {
     const response = await fetch(fileURL);
