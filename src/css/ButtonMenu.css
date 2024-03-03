@@ -1,7 +1,7 @@
 
 .menu_button {
     width: 145px;
-    padding: 20px;
+    padding: 2vh;
 }
 
 menu {
@@ -25,3 +25,6 @@ menu span {
     padding-bottom: 1vh;
 }
 
+#blank {
+    grid-area: blank;
+}

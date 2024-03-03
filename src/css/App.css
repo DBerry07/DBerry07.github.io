@@ -47,7 +47,7 @@
 main {
   display: grid;
   grid-template-areas: 
-    'menu heading heading heading heading heading'
+    'blank heading heading heading heading heading'
     'menu main main main main main'
     'menu main main main main main';
   gap: 5px;
