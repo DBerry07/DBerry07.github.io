@@ -15,7 +15,7 @@ export const Hello = {
     "I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.",
     "I have been described as detail-oriented and analytical.",
     "My passion for software development stems from my enjoyment of puzzle-solving and of building functional things.",
-    "I am always eager to learn new things, particularly if those new things help me get better at my job.",
+    "I am always eager to learn new things and have completed (and in the process of completing) a number of courses on Coursera and Udemy.",
   ],
 };
 
