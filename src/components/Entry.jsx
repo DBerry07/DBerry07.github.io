@@ -15,6 +15,9 @@ function Entry({ children, tab }) {
   if (Object.keys(tabs).includes(tab)) {
     data = content[tab];
   }
+  if (data === undefined) {
+    data = content[tabs.Hello];
+  }
 
   let wholeBody = null,
     title = null,
