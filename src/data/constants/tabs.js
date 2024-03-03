@@ -9,6 +9,7 @@ export const tabs = {
   AndroidKotlin: "AndroidKotlin",
   ReactNative: "ReactNative",
   iOS: "iOS",
+  DartFlutter: "DartFlutter",
   Spring: "Spring",
   Angular: "Angular",
 
