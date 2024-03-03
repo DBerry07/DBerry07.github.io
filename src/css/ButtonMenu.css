@@ -12,6 +12,7 @@ menu {
     width: max-content;
     padding: 0px;
     margin-right: 1vw;
+    max-height: 90vh;
 }
 
 menu span {
