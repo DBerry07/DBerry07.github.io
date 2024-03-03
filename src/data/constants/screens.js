@@ -9,21 +9,21 @@ export const Hello = {
     [LINKS.github, "[GitHub Profile]"],
   ],
   subheading: "Click on the buttons to navigate!",
-  body: await getText(locations.HelloBody),
+  body: await getText(locations.HelloBody), // "await" here is very important! Page won't work without it!
 };
 
 export const React = {
   title: "React Project",
   subheading: "It's this webpage!",
   htmls: [[LINKS.webpage, "[GitHub Repo]"]],
-  body: await getText(locations.ReactBody),
+  body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
 
 export const AndroidJava = {
   title: "Native Android App (Java)",
   subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
-  body: await getText(locations.CouseraBody),
+  body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
   activityList: await getText(locations.CouseraList),
   videos: ["../../src/assets/coursera_video.mp4"],
 };
@@ -31,20 +31,13 @@ export const AndroidJava = {
 export const AndroidKotlin = {
   title: "Native Android App (Kotlin)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: await getText(locations.AndroidKotlinBody),
+  body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!
 };
 
 export const ReactNative = {
   title: "React Native App",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: [
-    "Put description",
-    "and videos",
-    "and screenshots",
-    "of",
-    "my React Native project",
-    "here",
-  ].concat(filler(20)),
+  body: await getText(locations.ReactNativeBody), // "await" here is very important! Page won't work without it!
 };
 
 export const iOS = {

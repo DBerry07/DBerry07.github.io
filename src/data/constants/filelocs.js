@@ -9,6 +9,5 @@ export const locations = {
   CouseraList: urlStart + folders + "courseralist.txt",
   ReactBody: urlStart + folders + "reactbody.txt",
   AndroidKotlinBody: urlStart + folders + "androidkotlinbody.txt",
+  ReactNativeBody: urlStart + folders + "reactnativebody.txt",
 };
-
-console.log(locations.HelloBody);

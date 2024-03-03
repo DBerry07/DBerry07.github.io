@@ -1,0 +1,6 @@
+Put description
+and videos
+and screenshots
+of
+my React Native project
+HERE
