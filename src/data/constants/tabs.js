@@ -12,6 +12,8 @@ export const tabs = {
   DartFlutter: "DartFlutter",
   Spring: "Spring",
   Angular: "Angular",
+  Ionic: "Ionic",
+  Xamarin: "Xamarin",
 
   Filler: "Filler",
 };
