@@ -9,6 +9,7 @@ export const Hello = {
   subheading: "Click on the buttons to navigate!",
   body: [
     // Intro page text
+    "My name is David WJ Berry. Welcome to my webpage!",
     "I am a software developer currently located in South Florida with nearly two years of professional native Android app development experience.",
     "During my professional career, I have worked for Bank of America and for Accenture.",
     "I earned a Bachelor of Science in Computer Science from Florida Atlantic University in 2019.",
@@ -19,7 +20,8 @@ export const Hello = {
 };
 
 export const React = {
-  title: "This Webpage",
+  title: "React Project",
+  subheading: "It's this webpage!",
   htmls: [[LINKS.webpage, "[GitHub Repo]"]],
   body: [
     "This webpage (hosted on GitHub Pages) is created with React, set up and tested using Vite.",
