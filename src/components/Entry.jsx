@@ -132,10 +132,10 @@ function Entry({ children, tab }) {
   }
 
   return (
-    <div id="content-box">
-      {title}
-      {wholeBody}
-    </div>
+    <Fragment>
+      <div id="headbar">{title}</div>
+      <div id="content-box">{wholeBody}</div>
+    </Fragment>
   );
 }
 

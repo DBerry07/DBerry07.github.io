@@ -3,6 +3,10 @@
   display: none;
 }
 
+#headbar {
+  grid-area: heading;
+}
+
 h2 {
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -14,7 +18,8 @@ h4 {
 }
 
 #content-box {
-  height: 92vh;
+  grid-area: main;
+  height: 88vh;
   width: 81vw;
   border: 1px solid black;
   border-radius: 15px;

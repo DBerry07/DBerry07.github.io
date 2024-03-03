@@ -5,6 +5,7 @@
 }
 
 menu {
+    grid-area: menu;
     margin: auto;
     overflow-y: auto;
     overflow-x: hidden;
