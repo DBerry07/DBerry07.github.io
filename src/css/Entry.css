@@ -3,9 +3,19 @@
   display: none;
 }
 
+h2 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+h4 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
 #content-box {
-  height: 83vh;
-  width: 79vw;
+  height: 92vh;
+  width: 81vw;
   border: 1px solid black;
   border-radius: 15px;
   overflow-y: visible;
