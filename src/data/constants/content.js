@@ -1,4 +1,5 @@
 import { tabs } from "./tabs.js";
+import { projects } from "./project_tabs.js";
 import * as SCREENS from "./screens.js";
 
 // console.log("In content.js file.")
@@ -7,19 +8,19 @@ const pageContent = {};
 
 pageContent[tabs.Hello] = SCREENS.Hello;
 
-pageContent[tabs.React] = SCREENS.React;
+pageContent[projects.React] = SCREENS.React;
 
-pageContent[tabs.AndroidJava] = SCREENS.AndroidJava;
+pageContent[projects.AndroidJava] = SCREENS.AndroidJava;
 
-pageContent[tabs.AndroidKotlin] = SCREENS.AndroidKotlin;
+pageContent[projects.AndroidKotlin] = SCREENS.AndroidKotlin;
 
-pageContent[tabs.ReactNative] = SCREENS.ReactNative;
+pageContent[projects.ReactNative] = SCREENS.ReactNative;
 
-pageContent[tabs.iOS] = SCREENS.iOS;
+pageContent[projects.iOS] = SCREENS.iOS;
 
-pageContent[tabs.Spring] = SCREENS.Spring;
+pageContent[projects.Spring] = SCREENS.Spring;
 
-pageContent[tabs.Angular] = SCREENS.Angular;
+pageContent[projects.Angular] = SCREENS.Angular;
 
 pageContent[tabs.Filler] = SCREENS.Filler;
 

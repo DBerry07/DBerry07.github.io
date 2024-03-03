@@ -9,8 +9,8 @@ import { Fragment } from "react";
  *  thus changing the displayed tab.
  * @returns The react component in question.
  */
-function ButtonMenu({ onSelect }) {
-  const buttons = Object.keys(tabs);
+function ButtonMenu({ items, onSelect }) {
+  const buttons = Object.keys(items);
 
   return (
     <Fragment>

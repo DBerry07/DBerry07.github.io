@@ -15,7 +15,7 @@ export async function getText(fileURL) {
 
     // console.log('Formatted text with newlines:');
     // console.log(formattedText);
-    console.log(lines);
+    // console.log(lines);
   } catch (error) {
     console.error("Error reading local file:", error);
   }
