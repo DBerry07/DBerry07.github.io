@@ -5,9 +5,9 @@
 export const tabs = {
   Hello: "Hello",
   About: "About",
-  Projects: "Projects",
   Education: "Education",
   WorkHistory: "WorkHistory",
+  Projects: "Projects",
 
   // Filler: "Filler",
 };
