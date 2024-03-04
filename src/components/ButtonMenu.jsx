@@ -9,11 +9,17 @@ import { Fragment } from "react";
  *  thus changing the displayed tab.
  * @returns The react component in question.
  */
-function ButtonMenu({ items, onSelect }) {
+function ButtonMenu({ children, items, onSelect, visible }) {
   const buttons = Object.keys(items);
+  let show = "";
+  if (visible === true) {
+    show = { visibility: "visible" };
+  } else {
+    show = { visibility: "collapse" };
+  }
 
   return (
-    <Fragment>
+    <div style={show}>
       <div id="blank"></div>
       <menu id="button-menu">
         {buttons.map((item, index) => (
@@ -24,7 +30,7 @@ function ButtonMenu({ items, onSelect }) {
           </span>
         ))}
       </menu>
-    </Fragment>
+    </div>
   );
 }
 
