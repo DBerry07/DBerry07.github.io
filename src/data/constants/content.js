@@ -9,6 +9,8 @@ const pageContent = {};
 
 pageContent[tabs.Hello] = SCREENS.Hello;
 
+pageContent[tabs.Education] = SCREENS.Education;
+
 pageContent[projects.React] = PROJECTS.React;
 
 pageContent[projects.AndroidJava] = PROJECTS.AndroidJava;
