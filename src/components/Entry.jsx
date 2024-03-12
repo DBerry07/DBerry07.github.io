@@ -112,7 +112,7 @@ function Entry({ children, tab }) {
         {body}
       </Fragment>
     );
-  } else if (tab === tabs.AndroidJava) {
+  } else if (tab === projects.AndroidJava) {
     wholeBody = (
       <Fragment>
         {subheading}
