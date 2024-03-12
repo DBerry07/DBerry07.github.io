@@ -9,8 +9,8 @@ export const React = {
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
 
-export const AndroidJava = {
-  title: "Native Android App (Java)",
+export const AndroidKotlin = {
+  title: "Native Android App (Kotlin)",
   subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
@@ -18,8 +18,8 @@ export const AndroidJava = {
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
-export const AndroidKotlin = {
-  title: "Native Android App (Kotlin)",
+export const AndroidJava = {
+  title: "Native Android App (Java)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!
 };

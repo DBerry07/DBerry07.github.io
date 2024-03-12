@@ -1,6 +1,6 @@
 export const projects = {
   Back: "Back",
-  AndroidJava: "AndroidJava",
+  // AndroidJava: "AndroidJava",
   AndroidKotlin: "AndroidKotlin",
   ReactNative: "ReactNative",
   iOS: "iOS",
@@ -9,7 +9,7 @@ export const projects = {
   // Angular: "Angular",
   // Ionic: "Ionic",
   // Xamarin: "Xamarin",
-  AndroidJava2: "AndroidJava2",
+  // AndroidJava2: "AndroidJava2",
   AndroidKotlin2: "AndroidKotlin2",
   React: "React",
 };

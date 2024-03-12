@@ -112,7 +112,7 @@ function Entry({ children, tab }) {
         {body}
       </Fragment>
     );
-  } else if (tab === projects.AndroidJava) {
+  } else if (tab === projects.AndroidKotlin) {
     wholeBody = (
       <Fragment>
         {subheading}
