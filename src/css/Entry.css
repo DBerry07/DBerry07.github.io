@@ -1,8 +1,8 @@
 
 :root {
-  --fsize: 16pt;
-  --hsize: 22pt;
-  --bsize: 13pt;
+  --fsize: 17pt;
+  --hsize: 24pt;
+  --bsize: 16pt;
 }
 
 .hidden {
@@ -12,13 +12,14 @@
 #headbar {
   grid-area: heading;
   font-size: var(--hsize);
-  font-weight: bold;
+  font-weight: 600;
   padding-top: 2vh;
   padding-bottom: 1vh;
   /* font-weight: bold; */
 }
 
 #subheading {
+  /* font-weight: 300; */
   font-size:  var(--fsize);
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -30,6 +31,7 @@
 }
 
 #content-box {
+  /* font-weight: 300; */
   text-wrap: wrap;
   grid-area: main;
   height: 86vh;
@@ -53,6 +55,7 @@
 
 #link-bar {
   font-size: var(--fsize);
+  /* font-weight: 300; */
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;

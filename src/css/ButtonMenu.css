@@ -2,6 +2,8 @@
 .menu_button {
     width: 145px;
     padding: 1vh;
+    font-size: 16pt;
+    font-weight: 350;
 }
 
 menu {
