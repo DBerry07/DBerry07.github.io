@@ -1,6 +1,8 @@
 @media (pointer: coarse) {
+
     #content-box { 
-      width: 99% !important; 
+      width: 99% !important;
+      border: none !important;
     }
     #entry-body {
       padding-left: 2vw;
@@ -22,19 +24,22 @@
     }
     main {
       display: block;
+      max-height: 94vh;
     }
   
     menu {
+      flex-direction: row !important;
+      justify-content: unset !important;
+      border-bottom: 1px solid black;
       margin: 0 !important;
       overflow-y: hidden !important;
       overflow-x: auto !important;
       width: 100vw !important;
       height: max-content;
       max-height: 10vh;
-      max-width: 100vw;
       white-space: nowrap;
       padding: 0px;
-      padding-bottom: 1vh !important;
+      margin-bottom: 1vh !important;
     }
   
     menu span {
@@ -43,6 +48,10 @@
   
     button {
       padding: 2vh !important;
+    }
+
+    #headbar {
+      border-top: 1px solid black;
     }
     
   }

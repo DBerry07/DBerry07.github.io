@@ -13,8 +13,8 @@
   grid-area: heading;
   font-size: var(--hsize);
   font-weight: bold;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
   /* font-weight: bold; */
 }
 
