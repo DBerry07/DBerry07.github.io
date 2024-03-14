@@ -13,12 +13,9 @@ function Entry({ children, tab }) {
   // console.log("Selected tab = " + tab);
 
   let data = content[tabs.Hello];
-  if (Object.keys(tabs).includes(tab)) {
-    data = content[tab];
-  } else if (Object.keys(projects).includes(tab)) {
+  if (Object.keys(tabs).includes(tab) || Object.keys(projects).includes(tab)) {
     data = content[tab];
   }
-
   if (data === undefined) {
     data = content[tabs.Hello];
   }
