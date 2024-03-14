@@ -1,33 +1,44 @@
 
+:root {
+  --fsize: 16pt;
+  --hsize: 22pt;
+  --bsize: 13pt;
+}
+
 .hidden {
   display: none;
 }
 
 #headbar {
   grid-area: heading;
-  font-size: 22pt;
-  margin-top: 1vh;
+  font-size: var(--hsize);
+  font-weight: bold;
+  margin-top: 2vh;
   margin-bottom: 1vh;
   /* font-weight: bold; */
 }
 
 #subheading {
-  font-size: 15pt;
+  font-size:  var(--fsize);
   margin-top: 1vh;
   margin-bottom: 1vh;
   /* font-weight: bold; */
 }
 
+.bodyheading {
+  font-size: var(--fsize);
+}
+
 #content-box {
   grid-area: main;
-  height: 88vh;
+  height: 86vh;
   width: 81vw;
   border: 1px solid black;
   border-radius: 15px;
   overflow-y: visible;
   overflow-x: hidden;
   margin: 0 auto;
-  font-size: 13pt;
+  font-size: var(--bsize);
 }
 
 #content-box p {
@@ -39,7 +50,7 @@
 }
 
 #link-bar {
-  font-size: 15pt;
+  font-size: var(--fsize);
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
