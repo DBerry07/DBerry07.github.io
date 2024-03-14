@@ -5,6 +5,10 @@
 }
 
 menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     grid-area: menu;
     margin: auto;
     overflow-y: auto;
@@ -13,6 +17,7 @@ menu {
     padding: 0px;
     margin-right: 1vw;
     max-height: 90vh;
+    border-right: 1px black solid;
 }
 
 menu span {

@@ -33,8 +33,9 @@
   grid-area: main;
   height: 86vh;
   width: 81vw;
-  border: 1px solid black;
-  border-radius: 15px;
+  /* border: 1px solid black; */
+  /* border-radius: 15px; */
+  border-left: 1px solid black;
   overflow-y: visible;
   overflow-x: hidden;
   margin: 0 auto;
