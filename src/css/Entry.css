@@ -30,9 +30,10 @@
 }
 
 #content-box {
+  text-wrap: wrap;
   grid-area: main;
   height: 86vh;
-  width: 91vw;
+  width: 81vw;
   /* border: 1px solid black; */
   /* border-radius: 15px; */
   border-left: 1px solid black;
