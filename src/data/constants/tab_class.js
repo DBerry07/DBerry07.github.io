@@ -1,10 +1,11 @@
 export default class Tabs {
-  static Hello = new Tabs("Hello", "Hello, There!");
+  static Hello = new Tabs("Hello", "Hello, there!");
   static About = new Tabs("About", "About Me");
   static Education = new Tabs("Education", "My Education");
   static History = new Tabs("History", "Work History");
-  static Projects = new Tabs("Projects", "Projects");
-  static Back = new Tabs("Back", "Back");
+  static Projects = new Tabs("Projects", ">> Projects");
+
+  static Back = new Tabs("Back", "<< Back");
   static Kotlin = new Tabs("Kotlin", "Android: Kotlin");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
