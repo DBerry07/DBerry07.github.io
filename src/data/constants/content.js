@@ -1,3 +1,5 @@
+import myTabs from "./tab_class.js";
+import myProjects from "./projects_tabs_class.js";
 import { tabs } from "./tabs.js";
 import { projects } from "./project_tabs.js";
 import * as SCREENS from "./screens.js";
@@ -7,25 +9,23 @@ import * as PROJECTS from "./screens_projects.js";
 
 const pageContent = {};
 
-pageContent[tabs.Hello] = SCREENS.Hello;
+pageContent[myTabs.Hello.name] = SCREENS.Hello;
 
-pageContent[tabs.Education] = SCREENS.Education;
+pageContent[myTabs.Education.name] = SCREENS.Education;
 
-pageContent[projects.React] = PROJECTS.React;
+pageContent[myProjects.ReactNative.name] = PROJECTS.React;
 
-pageContent[projects.AndroidJava] = PROJECTS.AndroidJava;
+pageContent[myProjects.Java.name] = PROJECTS.Java;
 
-pageContent[projects.AndroidKotlin] = PROJECTS.AndroidKotlin;
+pageContent[myProjects.Kotlin.name] = PROJECTS.Kotlin;
 
-pageContent[projects.ReactNative] = PROJECTS.ReactNative;
+pageContent[myProjects.iOS.name] = PROJECTS.iOS;
 
-pageContent[projects.iOS] = PROJECTS.iOS;
+// pageContent[projects.Spring] = PROJECTS.Spring;
 
-pageContent[projects.Spring] = PROJECTS.Spring;
+// pageContent[projects.Angular] = PROJECTS.Angular;
 
-pageContent[projects.Angular] = PROJECTS.Angular;
-
-pageContent[tabs.Filler] = SCREENS.Filler;
+// pageContent[tabs.Filler] = SCREENS.Filler;
 
 // console.log(pageContent);
 

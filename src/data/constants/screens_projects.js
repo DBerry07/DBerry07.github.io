@@ -9,7 +9,7 @@ export const React = {
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
 
-export const AndroidKotlin = {
+export const Kotlin = {
   title: "Native Android App (Kotlin)",
   subheading: "Vanderbilt Specialization Capstone",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
@@ -18,7 +18,7 @@ export const AndroidKotlin = {
   videos: ["../../src/assets/coursera_video.mp4"],
 };
 
-export const AndroidJava = {
+export const Java = {
   title: "Native Android App (Java)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!

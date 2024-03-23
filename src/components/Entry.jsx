@@ -3,6 +3,8 @@ import "../css/Entry.css";
 import { tabs } from "../data/constants/tabs.js";
 import { Fragment } from "react";
 import { projects } from "../data/constants/project_tabs.js";
+import myTabs from "../data/constants/tab_class.js";
+import myProjects from "../data/constants/projects_tabs_class.js";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -10,14 +12,16 @@ import { projects } from "../data/constants/project_tabs.js";
  * @returns The React component in question.
  */
 function Entry({ children, tab }) {
-  // console.log("Selected tab = " + tab);
+  //console.log("In ENTRY");
+  //console.log(content);
 
-  let data = content[tabs.Hello];
-  if (Object.keys(tabs).includes(tab) || Object.keys(projects).includes(tab)) {
-    data = content[tab];
-  }
+  let data = content[myTabs.Hello.name];
+  //console.log("data = " + data);
+  // console.log("tab = " + tab);
+  data = content[tab];
+  // console.log("data = " + data);
   if (data === undefined) {
-    data = content[tabs.Hello];
+    data = content[myTabs.Hello.name];
   }
 
   let wholeBody = null,
