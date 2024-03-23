@@ -11,6 +11,7 @@ import { projects } from "./data/constants/project_tabs.js";
 import { panels } from "./data/constants/panels.js";
 import MyProjects from "./data/constants/projects_tabs_class.js";
 import MyTabs from "./data/constants/tab_class.js";
+import NamePanel from "./components/NamePanel.jsx";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
@@ -42,6 +43,7 @@ function App() {
   return (
     <Fragment>
       <main className="App">
+        <NamePanel />
         {showPanel()}
         <Entry tab={tab} />
       </main>

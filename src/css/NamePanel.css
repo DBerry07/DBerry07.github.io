@@ -1,0 +1,6 @@
+
+#namepanel {
+    grid-area: name;
+    align-self: center;
+    font-size: 16pt;
+}

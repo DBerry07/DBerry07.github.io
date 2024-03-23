@@ -49,7 +49,7 @@ main {
   overflow-y: hidden;
   display: grid;
   grid-template-areas: 
-    'blank heading heading heading heading heading'
+    'name heading heading heading heading heading'
     'menu main main main main main'
     'menu main main main main main';
   gap: 5px;
