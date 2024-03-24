@@ -7,6 +7,7 @@ import myTabs from "../data/constants/tab_class.js";
 import myProjects from "../data/constants/projects_tabs_class.js";
 import Sections from "./Sections.jsx";
 import Htmls from "./Htmls.jsx";
+import Videos from "./Videos.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -45,19 +46,7 @@ function Entry({ children, tab }) {
 
   htmls = Htmls(data);
 
-  if (Object.hasOwn(data, "videos")) {
-    videos = (
-      <div id="video-section">
-        {data.videos.map((video, index) => (
-          <video className="entry-video" controls key={index}>
-            <source src={video} type="video/mp4" />
-          </video>
-        ))}
-      </div>
-    );
-  } else {
-    videos = null;
-  }
+  videos = Videos(data);
 
   if (Object.hasOwn(data, "body")) {
     body = (
