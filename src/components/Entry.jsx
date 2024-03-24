@@ -10,6 +10,7 @@ import Htmls from "./Htmls.jsx";
 import Videos from "./Videos.jsx";
 import Body from "./Body.jsx";
 import List from "./List.jsx";
+import Subheading from "./Subheading.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -45,24 +46,11 @@ function Entry({ children, tab }) {
   }
 
   sections = Sections(data);
-
   htmls = Htmls(data);
-
   videos = Videos(data);
-
   body = Body(data);
-
   list = List(data);
-
-  if (Object.hasOwn(data, "subheading")) {
-    subheading = (
-      <div id="subheading">
-        <i>{data.subheading}</i>
-      </div>
-    );
-  } else {
-    subheading = null;
-  }
+  subheading = Subheading(data);
 
   //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
   if (tab === myTabs.Hello.name) {
