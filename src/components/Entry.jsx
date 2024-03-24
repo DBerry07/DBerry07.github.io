@@ -31,13 +31,7 @@ function Entry({ children, tab }) {
   }
 
   let wholeBody = null,
-    title = null,
-    htmls = null,
-    videos = null,
-    body = null,
-    sections = null,
-    list = null,
-    subheading = null;
+    title = null;
 
   if (Object.hasOwn(data, "title")) {
     title = <div id="title">{data.title}</div>;
@@ -45,12 +39,12 @@ function Entry({ children, tab }) {
     title = null;
   }
 
-  sections = Sections(data);
-  htmls = Htmls(data);
-  videos = Videos(data);
-  body = Body(data);
-  list = List(data);
-  subheading = Subheading(data);
+  let sections = Sections(data);
+  let htmls = Htmls(data);
+  let videos = Videos(data);
+  let body = Body(data);
+  let list = List(data);
+  let subheading = Subheading(data);
 
   //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
   if (tab === myTabs.Hello.name) {
