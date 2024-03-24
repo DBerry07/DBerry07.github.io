@@ -20,7 +20,12 @@ export const Filler = {
 
 export const Education = {
   title: "My Education",
-  body: await getText(locations.EducationBody), // "await" here is very important! Page won't work without it!
+  //body: await getText(locations.EducationBody), // "await" here is very important! Page won't work without it!
+  sections: [
+    await getText(locations.Edu01),
+    await getText(locations.Edu02),
+    await getText(locations.Edu03),
+  ],
 };
 
 function filler(times) {

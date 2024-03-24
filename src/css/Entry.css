@@ -18,6 +18,10 @@
   /* font-weight: bold; */
 }
 
+.section_title {
+  text-align: start;
+}
+
 #subheading {
   /* font-weight: 300; */
   font-size:  var(--fsize);
