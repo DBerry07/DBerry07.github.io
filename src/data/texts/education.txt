@@ -4,7 +4,7 @@ Graduated from FAU in May of 2019 with a Bachelor of Science in Computer Science
 At FAU, I formed the foundation of my programming knowledge. I took courses on operating system operation, algorithm design, as well as a little on artificial intelligence and machine learning.
 
 Revature, LLC.
-At Revature, I took (and passed) an 11 week bootcamp in Java and Android app development, taught first by an expert in Java and then by a longtime Android developer.
+At Revature, I took (and passed) an eleven week bootcamp in Java and Android app development, taught first by an expert in Java and then by a longtime Android developer.
 
 Broward College
 Here is where I first got my exposure to - and where I fell in love with it.
