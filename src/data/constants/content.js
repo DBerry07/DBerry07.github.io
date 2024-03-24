@@ -13,13 +13,13 @@ pageContent[myTabs.Hello.name] = SCREENS.Hello;
 
 pageContent[myTabs.Education.name] = SCREENS.Education;
 
-pageContent[myProjects.ReactNative.name] = PROJECTS.React;
+pageContent[myTabs.React.name] = PROJECTS.React;
 
-pageContent[myProjects.Java.name] = PROJECTS.Java;
+pageContent[myTabs.Java.name] = PROJECTS.Java;
 
-pageContent[myProjects.Kotlin.name] = PROJECTS.Kotlin;
+pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
 
-pageContent[myProjects.iOS.name] = PROJECTS.iOS;
+pageContent[myTabs.iOS.name] = PROJECTS.iOS;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 
