@@ -9,6 +9,7 @@ import Sections from "./Sections.jsx";
 import Htmls from "./Htmls.jsx";
 import Videos from "./Videos.jsx";
 import Body from "./Body.jsx";
+import List from "./List.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -51,17 +52,7 @@ function Entry({ children, tab }) {
 
   body = Body(data);
 
-  if (Object.hasOwn(data, "activityList")) {
-    list = (
-      <ul>
-        {data.activityList.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    );
-  } else {
-    list = null;
-  }
+  list = List(data);
 
   if (Object.hasOwn(data, "subheading")) {
     subheading = (
