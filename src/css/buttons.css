@@ -1,0 +1,15 @@
+
+menu{button{
+    background-color: whitesmoke;
+}
+}
+
+button#Projects {
+    background-color:cornsilk;
+    font-style: italic;
+}
+
+button#Back {
+    background-color: cornsilk;
+    font-style: italic;
+}
