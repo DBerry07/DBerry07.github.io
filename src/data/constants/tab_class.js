@@ -7,6 +7,7 @@ export default class Tabs {
 
   static Back = new Tabs("Back", "<< Back");
   static Kotlin = new Tabs("Kotlin", "Android: Kotlin");
+  static React = new Tabs("React", "React");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
   static DartFlutter = new Tabs("DartFlutter", "Flutter");
@@ -24,6 +25,7 @@ export default class Tabs {
     this.Back,
     this.Kotlin,
     this.Java,
+    this.React,
     this.ReactNative,
     this.iOS,
     this.DartFlutter,
