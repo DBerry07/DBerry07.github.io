@@ -6,6 +6,7 @@ import { projects } from "../data/constants/project_tabs.js";
 import myTabs from "../data/constants/tab_class.js";
 import myProjects from "../data/constants/projects_tabs_class.js";
 import Sections from "./Sections.jsx";
+import Htmls from "./Htmls.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -42,21 +43,7 @@ function Entry({ children, tab }) {
 
   sections = Sections(data);
 
-  if (Object.hasOwn(data, "htmls")) {
-    htmls = (
-      <div id="link-bar">
-        {data.htmls.map((html, index) => (
-          <span key={index} className="link">
-            <a href={html[0]} target="_blank" className="link-button">
-              {html[1]}
-            </a>
-          </span>
-        ))}
-      </div>
-    );
-  } else {
-    htmls = null;
-  }
+  htmls = Htmls(data);
 
   if (Object.hasOwn(data, "videos")) {
     videos = (
