@@ -1,3 +1,5 @@
+import "../../css/Subheading.css";
+
 export default function Subheading(data) {
   var subheading = null;
 

@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import "../../css/Sections.css";
 
 export default function Sections(data) {
   var sections = null;
