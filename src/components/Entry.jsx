@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { projects } from "../data/constants/project_tabs.js";
 import myTabs from "../data/constants/tab_class.js";
 import myProjects from "../data/constants/projects_tabs_class.js";
+import Sections from "./Sections.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -39,46 +40,7 @@ function Entry({ children, tab }) {
     title = null;
   }
 
-  if (Object.hasOwn(data, "sections")) {
-    data.sections.map((sec, index) => {
-      console.log(sec);
-      console.log(sec[0]);
-      let item = (
-        <Fragment>
-          <h4 className="section_title">{sec[0]}</h4>
-        </Fragment>
-      );
-      if (sections != null) {
-        sections = (
-          <Fragment>
-            {sections}
-            {item}
-          </Fragment>
-        );
-      } else {
-        sections = item;
-      }
-      // console.log(sections);
-      sec.map((line, ind) => {
-        if (ind != 0) {
-          let thing = (
-            <Fragment>
-              <p>{line}</p>
-            </Fragment>
-          );
-          sections = (
-            <Fragment>
-              {sections}
-              {thing}
-            </Fragment>
-          );
-        }
-      });
-    });
-    sections = <div id="entry-body">{sections}</div>;
-  } else {
-    sections = null;
-  }
+  sections = Sections(data);
 
   if (Object.hasOwn(data, "htmls")) {
     htmls = (
