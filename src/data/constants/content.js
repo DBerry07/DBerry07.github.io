@@ -13,6 +13,8 @@ pageContent[myTabs.Hello.name] = SCREENS.Hello;
 
 pageContent[myTabs.Education.name] = SCREENS.Education;
 
+pageContent[myTabs.History.name] = SCREENS.History;
+
 pageContent[myTabs.React.name] = PROJECTS.React;
 
 pageContent[myTabs.Java.name] = PROJECTS.Java;

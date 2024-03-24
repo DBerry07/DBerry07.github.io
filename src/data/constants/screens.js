@@ -28,6 +28,11 @@ export const Education = {
   ],
 };
 
+export const History = {
+  title: "Work History",
+  sections: [await getText(locations.His01), await getText(locations.His02)],
+};
+
 function filler(times) {
   let i = 0;
   let body = [];

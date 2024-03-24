@@ -11,7 +11,11 @@ export const locations = {
   AndroidKotlinBody: urlStart + folders + "androidkotlinbody.txt",
   ReactNativeBody: urlStart + folders + "reactnativebody.txt",
   EducationBody: urlStart + folders + "education.txt",
+
   Edu01: urlStart + folders + "edu01.txt",
   Edu02: urlStart + folders + "edu02.txt",
   Edu03: urlStart + folders + "edu03.txt",
+
+  His01: urlStart + folders + "history01.txt",
+  His02: urlStart + folders + "history02.txt",
 };
