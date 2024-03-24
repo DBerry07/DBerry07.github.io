@@ -11,6 +11,7 @@ import Videos from "./Videos.jsx";
 import Body from "./Body.jsx";
 import List from "./List.jsx";
 import Subheading from "./Subheading.jsx";
+import Title from "./Title.jsx";
 
 /**
  * Entry: the React component responsible for displaying tab content on the webpage. The content itself comes from a seperate file.
@@ -30,15 +31,8 @@ function Entry({ children, tab }) {
     data = content[myTabs.Hello.name];
   }
 
-  let wholeBody = null,
-    title = null;
-
-  if (Object.hasOwn(data, "title")) {
-    title = <div id="title">{data.title}</div>;
-  } else {
-    title = null;
-  }
-
+  let wholeBody = null;
+  let title = Title(data);
   let sections = Sections(data);
   let htmls = Htmls(data);
   let videos = Videos(data);
