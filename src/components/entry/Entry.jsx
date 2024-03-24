@@ -1,10 +1,10 @@
-import content from "../data/constants/content.js";
-import "../css/Entry.css";
-import { tabs } from "../data/constants/tabs.js";
+import content from "../../data/constants/content.js";
+import "../../css/Entry.css";
+import { tabs } from "../../data/constants/tabs.js";
 import { Fragment } from "react";
-import { projects } from "../data/constants/project_tabs.js";
-import myTabs from "../data/constants/tab_class.js";
-import myProjects from "../data/constants/projects_tabs_class.js";
+import { projects } from "../../data/constants/project_tabs.js";
+import myTabs from "../../data/constants/tab_class.js";
+import myProjects from "../../data/constants/projects_tabs_class.js";
 import Sections from "./Sections.jsx";
 import Htmls from "./Htmls.jsx";
 import Videos from "./Videos.jsx";
