@@ -145,7 +145,7 @@ function Entry({ children, tab }) {
   }
 
   //console.log("tab = Coursera?: " + (tab === Tab.Coursera.name));
-  if (tab === tabs.Hello) {
+  if (tab === myTabs.Hello.name) {
     wholeBody = (
       <Fragment>
         {subheading}
@@ -155,7 +155,7 @@ function Entry({ children, tab }) {
         {body}
       </Fragment>
     );
-  } else if (tab === projects.AndroidKotlin) {
+  } else if (tab === myTabs.Kotlin.name) {
     wholeBody = (
       <Fragment>
         {subheading}
