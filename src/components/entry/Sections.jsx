@@ -9,7 +9,7 @@ export default function Sections(data) {
       console.log(sec[0]);
       let item = (
         <Fragment>
-          <h4 className="section_title">{sec[0]}</h4>
+          <div className="section_title">{sec[0]}</div>
         </Fragment>
       );
       if (sections != null) {
