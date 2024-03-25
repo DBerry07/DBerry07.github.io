@@ -10,24 +10,16 @@ import * as PROJECTS from "./screens_projects.js";
 const pageContent = {};
 
 pageContent[myTabs.Hello.name] = SCREENS.Hello;
-
 pageContent[myTabs.Education.name] = SCREENS.Education;
-
 pageContent[myTabs.History.name] = SCREENS.History;
-
 pageContent[myTabs.About.name] = SCREENS.About;
 
-pageContent[myTabs.React.name] = PROJECTS.React;
-
 pageContent[myTabs.Java.name] = PROJECTS.Java;
-
 pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
-
 pageContent[myTabs.iOS.name] = PROJECTS.iOS;
-
 pageContent[myTabs.ReactNative.name] = PROJECTS.ReactNative;
-
 pageContent[myTabs.Flutter.name] = PROJECTS.Flutter;
+pageContent[myTabs.React.name] = PROJECTS.React;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 

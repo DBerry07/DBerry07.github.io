@@ -25,10 +25,10 @@ export default class Tabs {
     this.Back,
     this.Kotlin,
     this.Java,
-    this.React,
     this.ReactNative,
     this.iOS,
     this.Flutter,
+    this.React,
   ];
 
   constructor(name, text) {
