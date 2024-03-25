@@ -5,3 +5,12 @@
     font-weight: 600;
     text-decoration: underline;
   }
+
+  .section-body {
+    text-align: start;
+    padding-left: 2vw;
+  }
+
+  .section {
+    text-align: start;
+  }

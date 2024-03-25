@@ -20,6 +20,7 @@ export const Filler = {
 
 export const Education = {
   title: "My Education",
+  subheading: "",
   //body: await getText(locations.EducationBody), // "await" here is very important! Page won't work without it!
   sections: [
     await getText(locations.Edu01),

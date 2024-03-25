@@ -20,6 +20,6 @@ export default class MyProjects {
     this.text = text;
   }
   toString() {
-    return `MyProjects.${this.name}`;
+    return `${this.name}`;
   }
 }

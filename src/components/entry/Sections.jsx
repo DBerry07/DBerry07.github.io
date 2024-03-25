@@ -6,39 +6,53 @@ export default function Sections(data) {
 
   if (Object.hasOwn(data, "sections")) {
     data.sections.map((sec, index) => {
-      console.log(sec);
-      console.log(sec[0]);
-      let item = (
+      // console.log(sec);
+      // console.log(sec[0]);
+      let title = (
         <Fragment>
           <div className="section_title">{sec[0]}</div>
         </Fragment>
       );
-      if (sections != null) {
-        sections = (
-          <Fragment>
-            {sections}
-            {item}
-          </Fragment>
-        );
-      } else {
-        sections = item;
-      }
-      // console.log(sections);
+      var secbody;
       sec.map((line, ind) => {
-        if (ind != 0) {
-          let thing = (
+        var linebreak;
+        if (ind > 1) {
+          linebreak = (
             <Fragment>
-              <p>{line}</p>
+              <br></br>
             </Fragment>
           );
-          sections = (
+        }
+        if (ind != 0) {
+          secbody = (
             <Fragment>
-              {sections}
-              {thing}
+              {secbody}
+              {linebreak}
+              <span className="line-span">{line}</span>
             </Fragment>
           );
         }
       });
+      secbody = (
+        <Fragment>
+          <div class="section-body">{secbody}</div>
+        </Fragment>
+      );
+      let single = (
+        <Fragment>
+          <div className="section">
+            {title}
+            {secbody}
+          </div>
+          <br></br>
+        </Fragment>
+      );
+      sections = (
+        <Fragment>
+          {sections}
+          {single}
+        </Fragment>
+      );
     });
     sections = <div id="entry-body">{sections}</div>;
   } else {
