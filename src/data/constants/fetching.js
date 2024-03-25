@@ -6,6 +6,8 @@ export async function getText(fileURL) {
       throw new Error(`Error fetching file: ${response.status}`);
     }
 
+    console.log(fileURL);
+
     const text = await response.text();
     const lines = text.split("\n"); // Split by newline character
     solution = lines;
