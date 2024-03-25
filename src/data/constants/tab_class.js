@@ -10,7 +10,7 @@ export default class Tabs {
   static React = new Tabs("React", "Website");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
-  static DartFlutter = new Tabs("DartFlutter", "Flutter");
+  static Flutter = new Tabs("Flutter", "Flutter");
   static Java = new Tabs("Java", "Android: Java");
 
   static AboutList = [
@@ -28,7 +28,7 @@ export default class Tabs {
     this.React,
     this.ReactNative,
     this.iOS,
-    this.DartFlutter,
+    this.Flutter,
   ];
 
   constructor(name, text) {

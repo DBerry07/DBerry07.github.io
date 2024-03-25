@@ -25,6 +25,10 @@ pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
 
 pageContent[myTabs.iOS.name] = PROJECTS.iOS;
 
+pageContent[myTabs.ReactNative.name] = PROJECTS.ReactNative;
+
+pageContent[myTabs.Flutter.name] = PROJECTS.Flutter;
+
 // pageContent[projects.Spring] = PROJECTS.Spring;
 
 // pageContent[projects.Angular] = PROJECTS.Angular;

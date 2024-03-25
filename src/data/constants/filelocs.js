@@ -20,7 +20,8 @@ export const locations = {
 
   CouseraBody: urlStart + folders + project + "courserabody.txt",
   CouseraList: urlStart + folders + project + "courseralist.txt",
-  ReactBody: urlStart + folders + "reactbody.txt",
+  ReactBody: urlStart + folders + project + "reactbody.txt",
   AndroidKotlinBody: urlStart + folders + project + "androidkotlinbody.txt",
   ReactNativeBody: urlStart + folders + project + "reactnativebody.txt",
+  FlutterText: urlStart + folders + project + "flutter.txt",
 };

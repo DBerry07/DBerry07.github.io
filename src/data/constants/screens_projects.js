@@ -10,8 +10,8 @@ export const React = {
 };
 
 export const Kotlin = {
-  title: "Native Android App (Kotlin)",
-  subheading: "Vanderbilt Specialization Capstone",
+  title: "Vanderbilt Specialization Capstone ",
+  subheading: "Native Android App (Kotlin)",
   htmls: [[LINKS.coursera, "[GitFront Repo]"]],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
   activityList: await getText(locations.CouseraList),
@@ -40,6 +40,12 @@ export const iOS = {
     "of my iOS app",
     "here",
   ],
+};
+
+export const Flutter = {
+  title: "Flutter App (Dart)",
+  htmls: [[LINKS.blank, "[Hello, World!"]],
+  body: await getText(locations.FlutterText),
 };
 
 export const Spring = {
