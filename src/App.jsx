@@ -15,22 +15,22 @@ function App() {
 
   function showPanel() {
     if (panel === panels.Projects) {
-      //console.log("Switching to: PROJECTS");
+      // console.log("Switching to: PROJECTS");
       return <ButtonMenu panel={panels.Projects} onSelect={handleSelect} />;
     } else if (panel === panels.About) {
-      //console.log("Switching to: ABOUTS");
+      // console.log("Switching to: ABOUTS");
       return <ButtonMenu panel={panels.About} onSelect={handleSelect} />;
     }
   }
 
   function handleSelect(value) {
-    console.log(value);
+    // console.log(value);
     setTab(value.name);
     if (value.name === myTabs.Back.name) {
-      console.log("BACK button pressed");
+      // console.log("BACK button pressed");
       switchPanel(panels.About);
     } else if (value.name === myTabs.Projects.name) {
-      console.log("PROJECTS button pressed");
+      // console.log("PROJECTS button pressed");
       switchPanel(panels.Projects);
     }
   }
