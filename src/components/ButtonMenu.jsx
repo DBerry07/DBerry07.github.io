@@ -1,8 +1,5 @@
-import * as content from "../data/constants/content.js";
-import { tabs } from "../data/constants/tabs.js";
 import "../css/ButtonMenu.css";
-import myTabs from "../data/constants/tab_class.js";
-import myProjects from "../data/constants/projects_tabs_class.js";
+import myTabs from "../data/constants/buttons.js";
 import { Fragment } from "react";
 import { panels } from "../data/constants/panels.js";
 import "../css/buttons.css";

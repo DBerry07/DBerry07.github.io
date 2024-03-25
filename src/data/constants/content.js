@@ -1,7 +1,4 @@
-import myTabs from "./tab_class.js";
-import myProjects from "./projects_tabs_class.js";
-import { tabs } from "./tabs.js";
-import { projects } from "./project_tabs.js";
+import myTabs from "./buttons.js";
 import * as SCREENS from "./screens.js";
 import * as PROJECTS from "./screens_projects.js";
 
