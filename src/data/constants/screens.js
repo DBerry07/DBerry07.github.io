@@ -39,6 +39,11 @@ export const History = {
   ],
 };
 
+export const About = {
+  title: "About Me",
+  body: await getText(locations.About),
+};
+
 function filler(times) {
   let i = 0;
   let body = [];

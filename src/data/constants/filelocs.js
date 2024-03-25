@@ -19,4 +19,6 @@ export const locations = {
   His01: urlStart + folders + "history01.txt",
   His02: urlStart + folders + "history02.txt",
   His03: urlStart + folders + "history03.txt",
+
+  About: urlStart + folders + "aboutbody.txt",
 };

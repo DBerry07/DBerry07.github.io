@@ -15,6 +15,8 @@ pageContent[myTabs.Education.name] = SCREENS.Education;
 
 pageContent[myTabs.History.name] = SCREENS.History;
 
+pageContent[myTabs.About.name] = SCREENS.About;
+
 pageContent[myTabs.React.name] = PROJECTS.React;
 
 pageContent[myTabs.Java.name] = PROJECTS.Java;
