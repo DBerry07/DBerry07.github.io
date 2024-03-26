@@ -21,7 +21,6 @@ function ButtonMenu({ panel, onSelect }) {
 
   return (
     <Fragment>
-      <div id="blank"></div>
       <menu id="button-menu">
         {buttons.map((item, index) => (
           <span key={index} id={item}>
