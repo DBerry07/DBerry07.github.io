@@ -1,10 +1,10 @@
-
 .menu_button {
     width: 145px;
     padding: 1vh;
     font-size: 16pt;
     font-weight: 350;
     text-align: start;
+    font-family: cursive;
 }
 
 menu {
@@ -19,6 +19,7 @@ menu {
     width: max-content;
     padding: 0px;
     margin-right: 1vw;
+    padding-right: 1vw;
     max-height: 90vh;
     border-right: 1px black solid;
 }

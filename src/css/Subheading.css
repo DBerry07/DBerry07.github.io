@@ -1,8 +1,7 @@
-
 #subheading {
-    /* font-weight: 300; */
-    font-size:  var(--fsize);
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    /* font-weight: bold; */
-  }
+  /* font-weight: 300; */
+  font-size: var(--fsize);
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  /* font-weight: bold; */
+}

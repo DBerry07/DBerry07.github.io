@@ -1,16 +1,15 @@
-
 .section_title {
-    text-align: start;
-    font-size: 16pt;
-    font-weight: 600;
-    text-decoration: underline;
-  }
+  text-align: start;
+  font-size: 16pt;
+  font-weight: 600;
+  text-decoration: underline;
+}
 
-  .section-body {
-    text-align: start;
-    padding-left: 2vw;
-  }
+.section-body {
+  text-align: start;
+  padding-left: 2vw;
+}
 
-  .section {
-    text-align: start;
-  }
+.section {
+  text-align: start;
+}

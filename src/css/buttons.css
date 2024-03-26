@@ -1,11 +1,11 @@
-
-menu{button{
-    background-color: whitesmoke;
-}
+menu {
+    button {
+        background-color: whitesmoke;
+    }
 }
 
 button#Projects {
-    background-color:cornsilk;
+    background-color: cornsilk;
     font-style: italic;
 }
 

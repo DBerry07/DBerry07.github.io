@@ -6,7 +6,7 @@
   /* padding: 2rem; */
   padding: 0px;
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*
@@ -16,10 +16,7 @@
   castle rock: #858477
   #4F4E46
 */
-body {
-  background-color: #FEFFFA;
-  color: #4F4E46;
-}
+
 
 .logo {
   height: 6em;
@@ -27,9 +24,11 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -38,6 +37,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -60,7 +60,7 @@ body {
 main {
   overflow-y: hidden;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     'name heading heading heading heading heading'
     'menu main main main main main'
     'menu main main main main main';

@@ -1,62 +1,67 @@
 @media (pointer: coarse) {
 
-    #content-box { 
-      width: 99% !important;
-      border: none !important;
-    }
-    #entry-body {
-      padding-left: 2vw;
-      padding-right: 2vw;
-    }
-    #video-section {
-      justify-content: center;
-      align-content: center;
-      width: 98vw;
-      padding: 0px !important;
-    }
-    footer {
-      padding-right: 2vw;
-    }
-    .entry-video {
-      padding: 1vh !important;
-      max-height: 70vh !important;
-      max-width: 60vw !important;
-    }
-    main {
-      display: block;
-      max-height: 94vh;
-    }
-  
-    menu {
-      flex-direction: row !important;
-      justify-content: unset !important;
-      border-bottom: 1px solid black;
-      margin: 0 !important;
-      overflow-y: hidden !important;
-      overflow-x: auto !important;
-      width: 100% !important;
-      height: max-content;
-      max-height: 10vh;
-      white-space: nowrap;
-      padding: 0px;
-      margin-bottom: 1vh !important;
-    }
-  
-    menu span {
-      display: inline !important;
-    }
-  
-    button {
-      padding: 2vh !important;
-    }
-
-    #headbar {
-      border-top: 1px solid black;
-    }
-
-    .menu_button {
-      text-align: center !important;
-      padding: 2% !important;
-    }
-    
+  #content-box {
+    width: 99% !important;
+    border: none !important;
   }
+
+  #entry-body {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #video-section {
+    justify-content: center;
+    align-content: center;
+    width: 98vw;
+    padding: 0px !important;
+  }
+
+  footer {
+    padding-right: 2vw;
+  }
+
+  .entry-video {
+    padding: 1vh !important;
+    max-height: 70vh !important;
+    max-width: 60vw !important;
+  }
+
+  main {
+    display: block;
+    max-height: 94vh;
+  }
+
+  menu {
+    flex-direction: row !important;
+    justify-content: unset !important;
+    border-bottom: 1px solid black;
+    margin: 0 !important;
+    overflow-y: hidden !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    height: max-content;
+    max-height: 10vh;
+    white-space: nowrap;
+    padding: 0px;
+    margin-bottom: 1vh !important;
+  }
+
+  menu span {
+    display: inline !important;
+  }
+
+  button {
+    padding: 2vh !important;
+  }
+
+  #headbar {
+    border-top: 1px solid black;
+  }
+
+  .menu_button {
+    text-align: center !important;
+    padding: 2% !important;
+  }
+
+}
