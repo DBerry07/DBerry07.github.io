@@ -9,6 +9,18 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*
+  milk white: #FEFCFF
+  #FEFFFA
+
+  castle rock: #858477
+  #4F4E46
+*/
+body {
+  background-color: #FEFFFA;
+  color: #4F4E46;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
