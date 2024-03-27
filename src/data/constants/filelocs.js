@@ -27,9 +27,11 @@ export const locations = {
   FlutterText: urlStart + folders + project + "flutter.txt",
 
   PicGithub: urlStart + assets + "logo-github.png",
+  PicGithubTxt: urlStart + assets + "logo-github-txt.png",
   PicLinkedin: urlStart + assets + "logo-linkedin.png",
   PicGitfront: urlStart + assets + "logo-gitfront.png",
   PicSendmail: urlStart + assets + "icon-sendmail.png",
   PicAndroid: urlStart + assets + "logo-android.png",
-  PicYoutube: urlStart + assets + "logo-youtube.png",
+  PicYoutube: urlStart + assets + "logo-youtube-txt.png",
+  PicCoursera: urlStart + assets + "logo-coursera-txt.png",
 };
