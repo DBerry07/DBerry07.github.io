@@ -18,7 +18,7 @@ export const Kotlin = {
   ],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
   activityList: await getText(locations.CouseraList),
-  videos: ["../../src/assets/coursera_video.mp4"],
+  // videos: ["../../src/assets/coursera_video.mp4"],
 };
 
 export const Java = {
