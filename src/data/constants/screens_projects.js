@@ -5,14 +5,14 @@ import { getText } from "./fetching.js";
 export const React = {
   title: "React Project",
   subheading: "It's this webpage!",
-  htmls: [[LINKS.webpage, "[GitHub Repo]"]],
+  htmls: [[LINKS.webpage, locations.PicGithub]],
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
 
 export const Kotlin = {
   title: "Vanderbilt Specialization Capstone ",
   subheading: "Native Android App (Kotlin)",
-  htmls: [[LINKS.coursera, "[GitFront Repo]"]],
+  htmls: [[LINKS.coursera, locations.PicGitfront]],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
   activityList: await getText(locations.CouseraList),
   videos: ["../../src/assets/coursera_video.mp4"],

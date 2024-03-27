@@ -1,6 +1,7 @@
 const urlStart = "http://localhost:5173/";
 // const urlStart = "http://dberry07.github.com/";
 
+const assets = "src/assets/";
 const folders = "src/data/texts/";
 const project = "projects/";
 
@@ -24,4 +25,8 @@ export const locations = {
   AndroidKotlinBody: urlStart + folders + project + "residental.txt",
   ReactNativeBody: urlStart + folders + project + "rnative.txt",
   FlutterText: urlStart + folders + project + "flutter.txt",
+
+  PicGithub: urlStart + assets + "logo-github.png",
+  PicLinkedin: urlStart + assets + "logo-linkedin.png",
+  PicGitfront: urlStart + assets + "logo-gitfront.png",
 };
