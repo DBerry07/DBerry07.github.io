@@ -17,6 +17,9 @@ export default function NamePanel() {
         <a href={LINKS.github} target="_blank" className="job-link">
           <img src={locations.PicGithub} width={size} height={size} />
         </a>
+        <a href="mailto:david.wj.berry@gmail.com" className="job-link">
+          <img src={locations.PicSendmail} width={size} height={size} />
+        </a>
       </div>
     </div>
   );
