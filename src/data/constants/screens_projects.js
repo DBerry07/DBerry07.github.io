@@ -3,7 +3,7 @@ import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 
 export const React = {
-  title: "React Project",
+  title: "This Website",
   subheading: "It's this webpage!",
   htmls: [[LINKS.webpage, locations.PicGithub]],
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
@@ -24,18 +24,21 @@ export const Kotlin = {
 
 export const Java = {
   title: "Native Android App (Java)",
+  subheading: "Native Android App (Java)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!
 };
 
 export const ReactNative = {
   title: "React Native App",
+  subheading: "React Native App",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.ReactNativeBody), // "await" here is very important! Page won't work without it!
 };
 
 export const iOS = {
   title: "Native iOS App",
+  subheading: "Native iOS App (Swift)",
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description",
@@ -48,6 +51,7 @@ export const iOS = {
 
 export const Flutter = {
   title: "Flutter App (Dart)",
+  subheading: "Flutter App (Dart)",
   htmls: [[LINKS.blank, "[Hello, World!"]],
   body: await getText(locations.FlutterText),
 };
