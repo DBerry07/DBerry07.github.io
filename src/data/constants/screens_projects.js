@@ -3,8 +3,8 @@ import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 
 export const React = {
-  title: "This Website",
-  subheading: "It's this webpage!",
+  title: "This Webpage",
+  subheading: "React-based Webpage",
   htmls: [[LINKS.webpage, locations.PicGithub]],
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
