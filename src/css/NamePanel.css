@@ -1,11 +1,21 @@
 #namepanel {
+    padding-top: 1vh;
+}
+
+#name {
     grid-area: name;
     align-self: center;
     font-size: 16pt;
     border-bottom: 1px black solid;
     font-family: cursive;
+    margin-bottom: 1vh;
 }
 
 #middle-initals {
     font-style: italic;
+}
+
+.job-link {
+    padding-left: 1vw;
+    padding-right: 1vw;
 }

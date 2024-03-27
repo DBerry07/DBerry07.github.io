@@ -4,10 +4,6 @@ import { getText } from "./fetching.js";
 
 export const Hello = {
   title: "Hello, there!",
-  htmls: [
-    [LINKS.linkedin, locations.PicLinkedin],
-    [LINKS.github, locations.PicGithub],
-  ],
   subheading: "Click on the buttons to navigate!",
   body: await getText(locations.HelloBody), // "await" here is very important! Page won't work without it!
 };
