@@ -1,3 +1,5 @@
+import { locations } from "../constants/filelocs.js";
+
 export default class Tabs {
   static Hello = new Tabs("Hello", "Hello, there!");
   static About = new Tabs("About", "About Me");
@@ -6,7 +8,7 @@ export default class Tabs {
   static Projects = new Tabs("Projects", ">> Projects");
 
   static Back = new Tabs("Back", "<< Back");
-  static Kotlin = new Tabs("Kotlin", "Capstone");
+  static Kotlin = new Tabs("Kotlin", "Capstone", locations.PicAndroid);
   static React = new Tabs("React", "Website");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
@@ -31,9 +33,10 @@ export default class Tabs {
     this.React,
   ];
 
-  constructor(name, text) {
+  constructor(name, text, icon = "") {
     this.name = name;
     this.text = text;
+    this.icon = icon;
   }
   toString() {
     return `${this.name}`;

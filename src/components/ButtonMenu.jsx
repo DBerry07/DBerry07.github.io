@@ -30,6 +30,14 @@ function ButtonMenu({ panel, onSelect }) {
               onClick={() => onSelect(item)}
             >
               {item.text}
+              {/* {item.icon != "" && (
+                <img
+                  src={item.icon}
+                  width={17}
+                  height={17}
+                  className="button-icon"
+                />
+              )} */}
             </button>
           </span>
         ))}
