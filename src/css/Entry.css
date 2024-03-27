@@ -89,3 +89,8 @@
   float: inline-start;
   justify-content: center;
 }
+
+.link-img {
+  max-width: 35px;
+  max-height: 35px;
+}

@@ -14,7 +14,7 @@ export const Kotlin = {
   subheading: "Native Android App (Kotlin)",
   htmls: [
     [LINKS.coursera, locations.PicGitfront],
-    [LINKS.coursera_video, "[YouTube Video]"],
+    [LINKS.coursera_video, locations.PicYoutube],
     [LINKS.coursera_cert, "[Certificate]"],
   ],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
