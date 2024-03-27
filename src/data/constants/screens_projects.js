@@ -12,7 +12,10 @@ export const React = {
 export const Kotlin = {
   title: "Vanderbilt Specialization Capstone ",
   subheading: "Native Android App (Kotlin)",
-  htmls: [[LINKS.coursera, locations.PicGitfront]],
+  htmls: [
+    [LINKS.coursera, locations.PicGitfront],
+    [LINKS.coursera_video, "[YouTube Video]"],
+  ],
   body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
   activityList: await getText(locations.CouseraList),
   videos: ["../../src/assets/coursera_video.mp4"],
