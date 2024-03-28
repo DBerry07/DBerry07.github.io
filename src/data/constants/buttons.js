@@ -20,11 +20,11 @@ export default class Tabs {
     this.About,
     this.Education,
     this.History,
-    this.Projects,
+    // this.Projects,
   ];
 
   static ProjectList = [
-    this.Back,
+    // this.Back,
     this.Kotlin,
     this.Java,
     this.ReactNative,
