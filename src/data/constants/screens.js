@@ -4,7 +4,7 @@ import { getText } from "./fetching.js";
 
 export const Hello = {
   title: "Hello, there!",
-  subheading: "Click on the buttons to navigate!",
+  subheading: ["Click on the buttons to navigate!"],
   body: await getText(locations.HelloBody), // "await" here is very important! Page won't work without it!
 };
 
@@ -16,7 +16,7 @@ export const Filler = {
 
 export const Education = {
   title: "My Education",
-  subheading: "",
+  subheading: [""],
   //body: await getText(locations.EducationBody), // "await" here is very important! Page won't work without it!
   sections: [
     await getText(locations.Edu01),
@@ -27,7 +27,7 @@ export const Education = {
 
 export const History = {
   title: "Work History",
-  subheading: "",
+  subheading: [""],
   sections: [
     await getText(locations.His01),
     await getText(locations.His03),

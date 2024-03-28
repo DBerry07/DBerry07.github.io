@@ -4,14 +4,14 @@ import { getText } from "./fetching.js";
 
 export const React = {
   title: "This Webpage",
-  subheading: "React-based Webpage",
+  subheading: ["React-based Webpage", "Personal Project"],
   htmls: [[LINKS.webpage, locations.PicGithubTxt]],
   body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
 };
 
 export const Kotlin = {
   title: "Vanderbilt Specialization Capstone ",
-  subheading: "Native Android App (Kotlin)",
+  subheading: ["Native Android App (Kotlin)", "Personal Project"],
   htmls: [
     [LINKS.coursera, locations.PicGithubTxt],
     [LINKS.coursera_video, locations.PicYoutube],
@@ -24,21 +24,21 @@ export const Kotlin = {
 
 export const Java = {
   title: "Native Android App (Java)",
-  subheading: "Native Android App (Java)",
+  subheading: ["Native Android App (Java)", "Personal Project"],
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!
 };
 
 export const ReactNative = {
   title: "React Native App",
-  subheading: "React Native App",
+  subheading: ["React Native App", "Personal Project"],
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: await getText(locations.ReactNativeBody), // "await" here is very important! Page won't work without it!
 };
 
 export const iOS = {
   title: "Native iOS App",
-  subheading: "Native iOS App (Swift)",
+  subheading: ["Native iOS App (Swift)", "Personal Project"],
   htmls: [[LINKS.blank, "[Hello, World!]"]],
   body: [
     "Put description",
@@ -51,7 +51,7 @@ export const iOS = {
 
 export const Flutter = {
   title: "Flutter App (Dart)",
-  subheading: "Flutter App (Dart)",
+  subheading: ["Flutter App (Dart)", "Personal Project"],
   htmls: [[LINKS.blank, "[Hello, World!"]],
   body: await getText(locations.FlutterText),
 };
