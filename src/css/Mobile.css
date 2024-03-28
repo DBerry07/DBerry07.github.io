@@ -1,8 +1,14 @@
-@media (pointer: coarse) {
+@media only screen and (max-width: 800px) {
 
   #content-box {
     width: 99% !important;
     border: none !important;
+  }
+
+  #title {
+    display: flexbox;
+    align-items: center;
+    text-align: center;
   }
 
   #entry-body {
@@ -57,12 +63,17 @@
   }
 
   #headbar {
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
+    display: block;
   }
 
   .menu_button {
     text-align: center !important;
     padding: 2% !important;
+  }
+
+  .link-img {
+    max-width: 20vw !important;
   }
 
 }

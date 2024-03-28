@@ -15,7 +15,7 @@ function App() {
   const [open, switchOpen] = useState(false);
 
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 1000; // Set your desired breakpoint
+  const breakpoint = 800; // Set your desired breakpoint
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
