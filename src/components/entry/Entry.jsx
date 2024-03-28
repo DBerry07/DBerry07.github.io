@@ -15,7 +15,7 @@ import Title from "./Title.jsx";
  * @param {Object} tab An object containing data on which tab the user selected.
  * @returns The React component in question.
  */
-function Entry({ children, tab }) {
+function Entry({ children, tab, handleDrawerOpen }) {
   //console.log("In ENTRY");
   //console.log(content);
 
@@ -29,7 +29,7 @@ function Entry({ children, tab }) {
   }
 
   let wholeBody = null;
-  let title = Title(data);
+  let title = Title(data, handleDrawerOpen);
   let sections = Sections(data);
   let htmls = Htmls(data);
   let videos = Videos(data);

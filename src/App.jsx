@@ -7,14 +7,15 @@ import Footer from "./components/Footer.jsx";
 import myTabs from "./data/constants/buttons.js";
 import { panels } from "./data/constants/panels.js";
 import NamePanel from "./components/NamePanel.jsx";
+import Drawer from "@mui/material/Drawer";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
   const [panel, switchPanel] = useState(panels.About);
-  var oldPanel = panel;
+  const [open, switchOpen] = useState(false);
 
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 800; // Set your desired breakpoint
+  const breakpoint = 1000; // Set your desired breakpoint
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -46,6 +47,10 @@ function App() {
     }
   }
 
+  function handleDrawer() {
+    switchOpen(!open);
+  }
+
   if (width > breakpoint) {
     return (
       <Fragment>
@@ -61,7 +66,10 @@ function App() {
     return (
       <Fragment>
         <main className="App">
-          <Entry tab={tab} />
+          <Drawer open={open} onClose={() => handleDrawer()}>
+            {showPanel()}
+          </Drawer>
+          <Entry tab={tab} handleDrawerOpen={handleDrawer} />
         </main>
         <Footer />
       </Fragment>
