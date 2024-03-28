@@ -35,7 +35,7 @@ export default function Sections(data) {
       });
       secbody = (
         <Fragment>
-          <div class="section-body">{secbody}</div>
+          <div className="section-body">{secbody}</div>
         </Fragment>
       );
       let single = (

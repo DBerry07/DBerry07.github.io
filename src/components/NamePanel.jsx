@@ -12,13 +12,13 @@ export default function NamePanel() {
       </div>
       <div>
         <a href={LINKS.linkedin} target="_blank" className="job-link">
-          <img src={locations.PicLinkedin} class="job-img" />
+          <img src={locations.PicLinkedin} className="job-img" />
         </a>
         <a href={LINKS.github} target="_blank" className="job-link">
-          <img src={locations.PicGithub} class="job-img" />
+          <img src={locations.PicGithub} className="job-img" />
         </a>
         <a href="mailto:david.wj.berry@gmail.com" className="job-link">
-          <img src={locations.PicSendmail} class="job-img" />
+          <img src={locations.PicSendmail} className="job-img" />
         </a>
       </div>
     </div>
