@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+import { useEffect, useState, Fragment } from "react";
 import "./css/App.css";
 import "./css/Mobile.css";
 import Entry from "./components/entry/Entry.jsx";
@@ -12,6 +12,17 @@ function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
   const [panel, switchPanel] = useState(panels.About);
   var oldPanel = panel;
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 800; // Set your desired breakpoint
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   function showPanel() {
     if (panel === panels.Projects) {
@@ -35,16 +46,27 @@ function App() {
     }
   }
 
-  return (
-    <Fragment>
-      <main className="App">
-        <NamePanel />
-        {showPanel()}
-        <Entry tab={tab} />
-      </main>
-      <Footer />
-    </Fragment>
-  );
+  if (width > breakpoint) {
+    return (
+      <Fragment>
+        <main className="App">
+          <NamePanel />
+          {showPanel()}
+          <Entry tab={tab} />
+        </main>
+        <Footer />
+      </Fragment>
+    );
+  } else {
+    return (
+      <Fragment>
+        <main className="App">
+          <Entry tab={tab} />
+        </main>
+        <Footer />
+      </Fragment>
+    );
+  }
 }
 
 export default App;
