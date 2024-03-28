@@ -7,9 +7,12 @@ import Footer from "./components/Footer.jsx";
 import myTabs from "./data/constants/buttons.js";
 import { panels } from "./data/constants/panels.js";
 import NamePanel from "./components/NamePanel.jsx";
+import Button from "@mui/material/Button";
+import Drawer from "@mui/material/Drawer";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
+  const [open, setOpen] = useState(false);
   const [panel, switchPanel] = useState(panels.About);
   var oldPanel = panel;
 
@@ -35,11 +38,21 @@ function App() {
     }
   }
 
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+
+  const DrawerList = showPanel();
+
   return (
     <Fragment>
       <main className="App">
+        <Button onClick={toggleDrawer(true)}>Open drawer</Button>
+        <Drawer open={open} onClose={toggleDrawer(false)}>
+          {DrawerList}
+        </Drawer>
         <NamePanel />
-        {showPanel()}
+        {/* {showPanel()} */}
         <Entry tab={tab} />
       </main>
       <Footer />
