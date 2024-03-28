@@ -36,6 +36,7 @@
   overflow-y: visible;
   overflow-x: hidden;
   margin: 0 auto;
+  padding-top: 1vh;
   font-size: var(--bsize);
 }
 
@@ -57,8 +58,8 @@
   display: flex;
   justify-content: center;
   min-height: 5vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 #entry-body {
