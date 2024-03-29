@@ -3,12 +3,25 @@
   #content-box {
     width: 99% !important;
     border: none !important;
+    font-size: 2.5vw;
   }
 
   #title {
-    display: flexbox;
     align-items: center;
     text-align: center;
+    font-size: 5vw;
+  }
+
+  #subheading {
+    font-size: 3.5vw !important;
+  }
+
+  #subsubheading {
+    font-size: 3.2vw !important;
+  }
+
+  #button-menu {
+    border: unset;
   }
 
   #entry-body {
