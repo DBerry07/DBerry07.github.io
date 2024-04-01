@@ -1,12 +1,18 @@
-export default function Section({ lines }) {
-  let title = <div className="section_title">{lines[0]}</div>;
+export default function Section({ lines, ...props }) {
+  let title = (
+    <div className="section_title" {...props}>
+      {lines[0]}
+    </div>
+  );
   let sectionBody;
-  lines.map((line, ind) => {
-    if (ind != 0) {
+  lines.map((line, index) => {
+    if (index != 0) {
       sectionBody = (
         <>
           {sectionBody}
-          <p className="line-span">{line}</p>
+          <p className="line-span" key={index}>
+            {line}
+          </p>
         </>
       );
     }
