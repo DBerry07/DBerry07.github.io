@@ -13,3 +13,7 @@
 .section {
   text-align: start;
 }
+
+.line-span {
+  text-indent: 3.5%;
+}

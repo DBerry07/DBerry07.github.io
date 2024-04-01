@@ -17,9 +17,11 @@ function Entry(props) {
       <div id="content-box">
         {props.subheading}
         {props.htmls}
-        {props.body}
-        {props.sections}
-        {props.list}
+        <div id="entry-body">
+          {props.body}
+          {props.sections}
+          {props.list}
+        </div>
       </div>
     </>
   );

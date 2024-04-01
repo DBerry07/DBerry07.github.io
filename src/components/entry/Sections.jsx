@@ -1,44 +1,20 @@
 import { Fragment } from "react";
 import "../../css/Sections.css";
+import Section from "../Section";
 
 export default function Sections({ sections }) {
-  let totalSections = null;
+  let allSections = null;
   if (sections != null) {
     sections.map((sec, index) => {
-      let title = <div className="section_title">{sec[0]}</div>;
-      let secbody;
-      sec.map((line, ind) => {
-        var linebreak;
-        if (ind > 1) {
-          linebreak = <br></br>;
-        }
-        if (ind != 0) {
-          secbody = (
-            <>
-              {secbody}
-              {linebreak}
-              <span className="line-span">{line}</span>
-            </>
-          );
-        }
-      });
-      secbody = <div className="section-body">{secbody}</div>;
-      let single = (
+      let section = <Section lines={sec} />;
+      allSections = (
         <>
-          <div className="section">
-            {title}
-            {secbody}
-          </div>
+          {allSections}
           <br></br>
-        </>
-      );
-      totalSections = (
-        <>
-          {totalSections}
-          {single}
+          {section}
         </>
       );
     });
-    return <div id="entry-body">{totalSections}</div>;
+    return <>{allSections}</>;
   }
 }
