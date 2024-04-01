@@ -52,6 +52,7 @@ function App() {
   return (
     <Fragment>
       <main className="App">
+        <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
         <Entry
           title={<Title title={content.title} />}
