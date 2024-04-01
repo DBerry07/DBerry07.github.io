@@ -15,6 +15,7 @@ export default class Tabs {
   static Flutter = new Tabs("Flutter", "Flutter");
   static Java = new Tabs("Java", "Android: Java");
   static Maui = new Tabs("Maui", ".Net Maui");
+  static AngularIonic = new Tabs("AngularIonic", "Ionic");
 
   static AboutList = [
     this.Hello,
@@ -33,6 +34,7 @@ export default class Tabs {
     this.Flutter,
     this.React,
     this.Maui,
+    this.AngularIonic,
   ];
 
   constructor(name, text, icon = "") {

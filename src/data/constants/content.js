@@ -18,6 +18,7 @@ pageContent[myTabs.ReactNative.name] = PROJECTS.ReactNative;
 pageContent[myTabs.Flutter.name] = PROJECTS.Flutter;
 pageContent[myTabs.React.name] = PROJECTS.React;
 pageContent[myTabs.Maui.name] = PROJECTS.Maui;
+pageContent[myTabs.AngularIonic] = PROJECTS.AngularIonic;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 

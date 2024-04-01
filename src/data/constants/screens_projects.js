@@ -5,16 +5,16 @@ import TabContent from "./TabContent.js";
 
 export const React = new TabContent(
   "This Webpage", //title
-  ["React-based Webpage", "Personal Project"], //subheading
-  await getText(locations.ReactBody), //body
+  ["Built using React (JSX)", "Personal Project"], //subheading
+  await getText(locations.ReactBody), //body --> "await" here is very important! Page won't work without it!
   null, //sections
   [[LINKS.webpage, locations.PicGithubTxt]] //htmls
 );
 
 export const Kotlin = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
-  ["Native Android App (Kotlin)", "Personal Project"], //subheading
-  await getText(locations.CouseraBody), //body
+  ["Built using Kotlin", "Personal Project"], //subheading
+  await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
   null, //sections
   [
     [LINKS.coursera, locations.PicGithubTxt],
@@ -26,36 +26,26 @@ export const Kotlin = new TabContent(
 
 export const Java = new TabContent(
   "Native Android App (Java)", //title
-  ["Native Android App (Java)", "Personal Project"], //subheading
-  await getText(locations.AndroidKotlinBody), //body
-  // "await" here is very important! Page won't work without it!
-  null, //sections
-  [[LINKS.blank, "[Hello, World!]"]] //htmls
+  ["Built using Java", "Personal Project"], //subheading
+  await getText(locations.AndroidKotlinBody) //body --> "await" here is very important! Page won't work without it!
 );
 
 export const ReactNative = new TabContent(
   "React Native App", //title
-  ["React Native App", "Personal Project"], //subheading
-  await getText(locations.ReactNativeBody), //body
-  // "await" here is very important! Page won't work without it!
-  null, //sections
-  [[LINKS.blank, "[Hello, World!]"]] //htmls
+  ["Built using React (JSX)", "Personal Project"], //subheading
+  await getText(locations.ReactNativeBody) //body --> "await" here is very important! Page won't work without it!
 );
 
 export const iOS = new TabContent(
   "Native iOS App", //title
-  ["Native iOS App (Swift)", "Personal Project"], //subheading
-  ["Put description", "and videos", "and screenshots", "of my iOS app", "here"], //body
-  null, //sections
-  [[LINKS.blank, "[Hello, World!]"]] //htmls
+  ["Built using Swift", "Personal Project"], //subheading
+  ["Put description", "and videos", "and screenshots", "of my iOS app", "here"] //body --> "await" here is very important! Page won't work without it!
 );
 
 export const Flutter = new TabContent(
-  "Flutter App (Dart)", //title
-  ["Flutter App (Dart)", "Personal Project"], //subheading
-  await getText(locations.FlutterText), //body
-  null, //sections
-  [[LINKS.blank, "[Hello, World!"]] //htmls
+  "Flutter App", //title
+  ["Built using Dart", "Personal Project"], //subheading
+  await getText(locations.FlutterText) //body --> "await" here is very important! Page won't work without it!
 );
 
 // export const Spring = new TabContent(
@@ -66,17 +56,17 @@ export const Flutter = new TabContent(
 //     "screenshots, and videos,",
 //     "of my Spring Boot (or maybe just Spring) project",
 //     "HERE",
-//   ] //body
+//   ] //body --> "await" here is very important! Page won't work without it!
 // );
 
 export const AngularIonic = new TabContent(
-  "Angular Project", //title
-  null, //subheading
-  ["TO BE DONE"] //body
+  "Ionic Project", //title
+  ["Built using Angular (Javascript)", "Personal Project"], //subheading
+  ["TO BE DONE"] //body --> "await" here is very important! Page won't work without it!
 );
 
 export const Maui = new TabContent(
   "dotNet Maui Project", //title
-  null, //subheading
-  ["To be learned and done"] //body
+  ["Built using C#", "Personal Project"], //subheading
+  ["To be learned and done"] //body --> "await" here is very important! Page won't work without it!
 );
