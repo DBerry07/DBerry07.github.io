@@ -1,16 +1,11 @@
-export default function List(data) {
-  var list = null;
-
-  if (Object.hasOwn(data, "activityList")) {
-    list = (
+export default function List({ list }) {
+  if (list != null) {
+    return (
       <ul>
-        {data.activityList.map((item, index) => (
+        {list.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
     );
-  } else {
-    list = null;
   }
-  return list;
 }

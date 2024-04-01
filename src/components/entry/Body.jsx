@@ -1,15 +1,11 @@
-export default function Body(data) {
-  var body = null;
-  if (Object.hasOwn(data, "body")) {
-    body = (
+export default function Body({ body }) {
+  if (body != null) {
+    return (
       <div id="entry-body">
-        {data.body.map((item, index) => (
+        {body.map((item, index) => (
           <p key={index}>{item}</p>
         ))}
       </div>
     );
-  } else {
-    body = null;
   }
-  return body;
 }

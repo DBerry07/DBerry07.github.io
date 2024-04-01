@@ -1,72 +1,76 @@
 import { LINKS } from "./links.js";
 import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
+import TabContent from "./TabContent.js";
 
-export const React = {
-  title: "This Webpage",
-  subheading: ["React-based Webpage", "Personal Project"],
-  htmls: [[LINKS.webpage, locations.PicGithubTxt]],
-  body: await getText(locations.ReactBody), // "await" here is very important! Page won't work without it!
-};
+export const React = new TabContent(
+  "This Webpage", //title
+  ["React-based Webpage", "Personal Project"], //subheading
+  await getText(locations.ReactBody), //body
+  null, //sections
+  [[LINKS.webpage, locations.PicGithubTxt]] //htmls
+);
 
-export const Kotlin = {
-  title: "Vanderbilt Specialization Capstone ",
-  subheading: ["Native Android App (Kotlin)", "Personal Project"],
-  htmls: [
+export const Kotlin = new TabContent(
+  "Vanderbilt Specialization Capstone ", //title
+  ["Native Android App (Kotlin)", "Personal Project"], //subheading
+  await getText(locations.CouseraBody), //body
+  null, //sections
+  [
     [LINKS.coursera, locations.PicGithubTxt],
     [LINKS.coursera_video, locations.PicYoutube],
     [LINKS.coursera_cert, locations.PicCoursera],
-  ],
-  body: await getText(locations.CouseraBody), // "await" here is very important! Page won't work without it!
-  activityList: await getText(locations.CouseraList),
-  // videos: ["../../src/assets/coursera_video.mp4"],
-};
+  ], //htmls
+  await getText(locations.CouseraList) //list
+);
 
-export const Java = {
-  title: "Native Android App (Java)",
-  subheading: ["Native Android App (Java)", "Personal Project"],
-  htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: await getText(locations.AndroidKotlinBody), // "await" here is very important! Page won't work without it!
-};
+export const Java = new TabContent(
+  "Native Android App (Java)", //title
+  ["Native Android App (Java)", "Personal Project"], //subheading
+  await getText(locations.AndroidKotlinBody), //body
+  // "await" here is very important! Page won't work without it!
+  null, //sections
+  [[LINKS.blank, "[Hello, World!]"]] //htmls
+);
 
-export const ReactNative = {
-  title: "React Native App",
-  subheading: ["React Native App", "Personal Project"],
-  htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: await getText(locations.ReactNativeBody), // "await" here is very important! Page won't work without it!
-};
+export const ReactNative = new TabContent(
+  "React Native App", //title
+  ["React Native App", "Personal Project"], //subheading
+  await getText(locations.ReactNativeBody), //body
+  // "await" here is very important! Page won't work without it!
+  null, //sections
+  [[LINKS.blank, "[Hello, World!]"]] //htmls
+);
 
-export const iOS = {
-  title: "Native iOS App",
-  subheading: ["Native iOS App (Swift)", "Personal Project"],
-  htmls: [[LINKS.blank, "[Hello, World!]"]],
-  body: [
-    "Put description",
-    "and videos",
-    "and screenshots",
-    "of my iOS app",
-    "here",
-  ],
-};
+export const iOS = new TabContent(
+  "Native iOS App", //title
+  ["Native iOS App (Swift)", "Personal Project"], //subheading
+  ["Put description", "and videos", "and screenshots", "of my iOS app", "here"], //body
+  null, //sections
+  [[LINKS.blank, "[Hello, World!]"]] //htmls
+);
 
-export const Flutter = {
-  title: "Flutter App (Dart)",
-  subheading: ["Flutter App (Dart)", "Personal Project"],
-  htmls: [[LINKS.blank, "[Hello, World!"]],
-  body: await getText(locations.FlutterText),
-};
+export const Flutter = new TabContent(
+  "Flutter App (Dart)", //title
+  ["Flutter App (Dart)", "Personal Project"], //subheading
+  await getText(locations.FlutterText), //body
+  null, //sections
+  [[LINKS.blank, "[Hello, World!"]] //htmls
+);
 
-export const Spring = {
-  title: "Spring Boot project",
-  body: [
+export const Spring = new TabContent(
+  "Spring Boot Project", //title
+  null, //subheading
+  [
     "Put description,",
     "screenshots, and videos,",
     "of my Spring Boot (or maybe just Spring) project",
     "HERE",
-  ],
-};
+  ] //body
+);
 
-export const Angular = {
-  title: "Angular Project",
-  body: ["TO BE DONE"],
-};
+export const Angular = new TabContent(
+  "Angular Project", //title
+  null, //subheading
+  ["TO BE DONE"] //body
+);
