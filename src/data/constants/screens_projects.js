@@ -58,19 +58,25 @@ export const Flutter = new TabContent(
   [[LINKS.blank, "[Hello, World!"]] //htmls
 );
 
-export const Spring = new TabContent(
-  "Spring Boot Project", //title
-  null, //subheading
-  [
-    "Put description,",
-    "screenshots, and videos,",
-    "of my Spring Boot (or maybe just Spring) project",
-    "HERE",
-  ] //body
-);
+// export const Spring = new TabContent(
+//   "Spring Boot Project", //title
+//   null, //subheading
+//   [
+//     "Put description,",
+//     "screenshots, and videos,",
+//     "of my Spring Boot (or maybe just Spring) project",
+//     "HERE",
+//   ] //body
+// );
 
-export const Angular = new TabContent(
+export const AngularIonic = new TabContent(
   "Angular Project", //title
   null, //subheading
   ["TO BE DONE"] //body
+);
+
+export const Maui = new TabContent(
+  "dotNet Maui Project", //title
+  null, //subheading
+  ["To be learned and done"] //body
 );
