@@ -19,8 +19,8 @@ function Entry(props) {
         {props.htmls}
         <div id="entry-body">
           {props.body}
-          {props.sections}
           {props.list}
+          {props.sections}
         </div>
       </div>
     </>
