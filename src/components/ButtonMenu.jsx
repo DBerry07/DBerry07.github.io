@@ -25,10 +25,9 @@ function ButtonMenu({ panel, onSelect }) {
         {buttons.map((item, index) => (
           <span key={index} id={item}>
             <button
-              className="menu_button"
               id={item}
               onClick={() => onSelect(item)}
-            >
+            ><span>
               {item.text}
               {/* {item.icon != "" && (
                 <img
@@ -38,6 +37,7 @@ function ButtonMenu({ panel, onSelect }) {
                   className="button-icon"
                 />
               )} */}
+              </span>
             </button>
           </span>
         ))}

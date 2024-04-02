@@ -1,15 +1,43 @@
 menu {
     button {
-        background-color: whitesmoke;
+        /* background-color: whitesmoke; */
+        background-color: #FEFFFA;
+        border: none;
+        font-size: 18pt;
+        /* text-decoration: underline; */
+        font-weight: bold;
+        width: 170px;
+        /* padding: 1vh; */
+        /* font-size: 16pt; */
+        /* font-size: 110%; */
+        font-weight: 350;
+        text-align: start;
+        font-family: 'Charmonman';
+        margin: 1vh;
+
+        span {
+            height: min-content;
+            width: 100%;
+            display: flex;
+            border-bottom: #FEFFFA solid 2px;
+        }
+    }
+    button:hover{
+        span {
+            height: min-content;
+            width: 100%;
+            border-bottom: solid black 2px;
+            display: flex;
+        }
     }
 }
 
 button#Projects {
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     font-style: italic;
 }
 
 button#Back {
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     font-style: italic;
 }
