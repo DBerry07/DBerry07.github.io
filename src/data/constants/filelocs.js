@@ -23,10 +23,20 @@ export const locations = {
   CouseraList: urlStart + folders + project + "capstone-list.txt",
   CourseraDisc: urlStart + folders + project + "capstone-disclaimer.txt",
   CourseraGitfront: urlStart + folders + project + "capstone-gitfront.txt",
+  CourseraLearnings: urlStart + folders + project + "capstone-learnings.txt",
+
+  IOSLearnings: urlStart + folders + project + "ios-learnings.txt",
+
   ReactBody: urlStart + folders + project + "react.txt",
+  ReactLearnings: urlStart + folders + project + "react-learnings.txt",
+
   AndroidKotlinBody: urlStart + folders + project + "residental.txt",
+
   ReactNativeBody: urlStart + folders + project + "rnative.txt",
+  ReactNativeLearnings: urlStart + folders + project + "reactnative-learnings.txt",
+
   FlutterText: urlStart + folders + project + "flutter.txt",
+  FlutterLearnings: urlStart + folders + project + "flutter-learnings.txt",
 
   PicGithub: urlStart + assets + "logo-github.png",
   PicGithubTxt: urlStart + assets + "logo-github-txt.png",
