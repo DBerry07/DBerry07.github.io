@@ -15,7 +15,7 @@ export const Kotlin = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
   ["Built using Kotlin", "Personal Project"], //subheading
   await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.CourseraDisc)], //sections
+  [await getText(locations.CourseraGitfront), await getText(locations.CourseraDisc)], //sections
   [
     [LINKS.coursera, locations.PicGithubTxt],
     [LINKS.coursera_video, locations.PicYoutube],

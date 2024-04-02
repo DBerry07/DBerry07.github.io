@@ -1,0 +1,3 @@
+Why is this on GitFront?
+When this project was public on GitHub, a number of people downloaded it and submitted it as their own work for the Vanderbilt Android Specialization Capstone course.
+Not wanting others to claim my work as theirs so as to get course credit, I decided to make the repository private on GitHub and host the repo on GitFront.

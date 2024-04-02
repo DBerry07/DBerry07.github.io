@@ -22,6 +22,7 @@ export const locations = {
   CouseraBody: urlStart + folders + project + "capstone.txt",
   CouseraList: urlStart + folders + project + "capstone-list.txt",
   CourseraDisc: urlStart + folders + project + "capstone-disclaimer.txt",
+  CourseraGitfront: urlStart + folders + project + "capstone-gitfront.txt",
   ReactBody: urlStart + folders + project + "react.txt",
   AndroidKotlinBody: urlStart + folders + project + "residental.txt",
   ReactNativeBody: urlStart + folders + project + "rnative.txt",
