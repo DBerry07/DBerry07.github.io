@@ -1,9 +1,9 @@
 import { locations } from "../constants/filelocs.js";
 
 export default class Tabs {
-  static Hello = new Tabs("Hello", "Hello, there!");
-  static About = new Tabs("About", "About Me");
-  static Education = new Tabs("Education", "My Education");
+  static Hello = new Tabs("Hello", "Hello!");
+  static About = new Tabs("About", "About");
+  static Education = new Tabs("Education", "Education");
   static History = new Tabs("History", "Work History");
   static Projects = new Tabs("Projects", ">> Projects");
 
