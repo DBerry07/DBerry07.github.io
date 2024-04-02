@@ -1,8 +1,11 @@
-const urlStart = "http://localhost:5173/";
+// const urlStart = "http://localhost:5173/";
 // const urlStart = "http://dberry07.github.com/";
+const urlStart = "./";
 
-const assets = "src/assets/";
-const folders = "src/data/texts/";
+// const assets = "src/assets/";
+const assets = "assets/"
+// const folders = "src/data/texts/";
+const folders = "texts/"
 const project = "projects/";
 
 export const locations = {
