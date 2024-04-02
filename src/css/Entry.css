@@ -35,7 +35,7 @@
   overflow-y: visible;
   overflow-x: hidden;
   margin: 0 auto;
-  padding-top: 1vh;
+  /* padding-top: 1vh; */
   font-size: var(--bsize);
 }
 

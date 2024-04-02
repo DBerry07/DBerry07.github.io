@@ -21,6 +21,7 @@ function Entry(props) {
           {props.body}
           {props.list}
           {props.sections}
+          <br></br>
         </div>
       </div>
     </>
