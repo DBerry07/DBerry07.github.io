@@ -26,3 +26,14 @@
     max-height: 25px;
     filter: sepia()
 }
+
+.job-img:hover {
+    max-height: 35px;
+    max-width: 35px;
+    vertical-align: top;
+}
+
+#personal-links-bar {
+    display: flex;
+    justify-content: space-evenly;
+}

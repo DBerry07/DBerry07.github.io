@@ -10,7 +10,7 @@ export default function NamePanel() {
       <div id="name">
         David <span id="middle-initals">WJ</span> Berry
       </div>
-      <div>
+      <div id="personal-links-bar">
         <a href={LINKS.linkedin} target="_blank" className="job-link">
           <img src={locations.PicLinkedin} className="job-img" />
         </a>
