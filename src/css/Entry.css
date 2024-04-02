@@ -1,6 +1,6 @@
 :root {
   --fsize: 17pt;
-  --hsize: 24pt;
+  --hsize: 36pt;
   --bsize: 16pt;
 }
 
@@ -11,11 +11,10 @@
 #headbar {
   grid-area: heading;
   font-size: var(--hsize);
-  font-weight: 600;
   padding-top: 2vh;
   /* padding-bottom: 1vh; */
-  font-family: cursive;
-  font-size: 32pt;
+  font-family: "Charmonman";
+  font-weight: bold;
   /* text-decoration: underline; */
   /* font-weight: bold; */
 }
