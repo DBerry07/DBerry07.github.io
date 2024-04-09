@@ -19,30 +19,43 @@
 
 .entry-animate-enter {
   #headbar {
-    opacity: 0;
+    transform: translateY(-100%);
+    /* opacity: 0; */
   }
   #content-box {
     #subheading {
+      /* transform: translateY(100%); */
+      opacity: 0;
+    }
+    #link-bar {
       opacity: 0;
     }
     #entry-body {
-      opacity: 0;
+      transform: translateY(100%);
+      /* opacity: 0; */
     }
   }
 }
 
 .entry-animate-enter-active {
   #headbar {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0%);
     transition: var(--time-short);
   }
   #content-box {
     #subheading {
       opacity: 1;
+      /* transform: translateY(0%); */
+      transition: var(--time-long);
+    }
+    #link-bar {
+      opacity: 1;
       transition: var(--time-long);
     }
     #entry-body {
-      opacity: 1;
+      /* opacity: 1; */
+      transform: translateY(0%);
       transition: var(--time-long);
     }
   }
@@ -50,44 +63,63 @@
 
 .entry-animate-done {
   #headbar {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0%);
   }
   #content-box {
     #subheading {
       opacity: 1;
+      /* transform: translateY(0%); */
+    }
+    #link-bar {
+      opacity: 1;
     }
     #entry-body {
-      opacity: 1;
+      /* opacity: 1; */
+      transform: translateY(0%);
     }
   }
 }
 
 .entry-animate-exit {
   #headbar {
-    opacity: 0;
+    /* opacity: 0; */
+    transform: translateY(-100%);
   }
   #content-box {
     #subheading {
       opacity: 0;
+      /* transform: translateY(100%); */
+    }
+    #link-bar {
+      opacity: 0;
     }
     #entry-body {
-      opacity: 0;
+      /* opacity: 0; */
+      transform: translateY(100%);
     }
   }
 }
 
 .entry-animate-exit-active {
   #headbar {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0%);
     transition: var(--time-short);
   }
   #content-box {
     #subheading {
       opacity: 1;
+      /* transform: translateY(0%); */
+      transition: var(--time-long);
+    }
+    #link-bar {
+      opacity: 1;
       transition: var(--time-long);
     }
     #entry-body {
-      opacity: 1;
+      /* opacity: 1; */
+      transform: translateY(0%);
       transition: var(--time-long);
     }
   }
@@ -95,14 +127,20 @@
 
 .entry-animate-exit-done {
   #headbar {
-    opacity: 1;
+    /* opacity: 1; */
+    transform: translateY(0%);
   }
   #content-box {
     #subheading {
       opacity: 1;
+      /* transform: translateY(0%); */
+    }
+    #link-bar {
+      opacity: 1;
     }
     #entry-body {
-      opacity: 1;
+      /* opacity: 1; */
+      transform: translateY(0%);
     }
   }
 }
