@@ -20,7 +20,7 @@ import List from "./components/entry/List.jsx";
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
   const [panel, setPanel] = useState(panels.About);
-  const [isEnter, setIsEnter] = useState(true);
+  const [isEnter, setIsEnter] = useState(false);
   const content = pageContent[tab];
   // const [open, switchOpen] = useState(false);
 
@@ -44,8 +44,7 @@ function App() {
     } else {
       setTab(value);
     }
-    setIsEnter((prevState) => !prevState);
-    // setIsEnter(true);
+    setIsEnter((prevState) => !prevState)
   }
 
   // function handleDrawer() {
@@ -58,7 +57,7 @@ function App() {
       <main className="App">
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
-        <CSSTransition in={isEnter} timeout={2000} classNames="entry-animate">
+        <CSSTransition in={isEnter} timeout={5000} classNames="entry-animate">
           <Entry
             title={<Title title={content.title} />}
             body={<Body body={content.body} />}
