@@ -4,6 +4,43 @@
   --bsize: 16pt;
 }
 
+#entry {
+  grid-area: entry;
+  display: grid;
+  grid-template-areas: 
+  'heading'
+  'main'
+  'main'
+  'main'
+  ;
+}
+
+.entry-animate-enter {
+  opacity: 0;
+}
+
+.entry-animate-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+
+.entry-animate-enter-done {
+  opacity: 1;
+}
+
+.entry-animate-exit {
+  opacity: 0;
+}
+
+.entry-animate-exit-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+
+.entry-animate-exit-done {
+  opacity: 1;
+}
+
 .hidden {
   display: none;
 }

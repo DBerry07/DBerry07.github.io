@@ -12,7 +12,7 @@ import Title from "./Title.jsx";
 
 function Entry(props) {
   return (
-    <>
+    <div id="entry">
       <div id="headbar">{props.title}</div>
       <div id="content-box">
         {props.subheading}
@@ -24,7 +24,7 @@ function Entry(props) {
           <br></br>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

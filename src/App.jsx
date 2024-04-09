@@ -1,4 +1,5 @@
 import { useEffect, useState, Fragment } from "react";
+import {CSSTransition} from "react-transition-group";
 import "./css/App.css";
 import "./css/Mobile.css";
 import pageContent from "./data/constants/content.js";
@@ -19,6 +20,7 @@ import List from "./components/entry/List.jsx";
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
   const [panel, setPanel] = useState(panels.About);
+  const [isEnter, setIsEnter] = useState(true);
   const content = pageContent[tab];
   // const [open, switchOpen] = useState(false);
 
@@ -42,6 +44,8 @@ function App() {
     } else {
       setTab(value);
     }
+    setIsEnter((prevState) => !prevState);
+    // setIsEnter(true);
   }
 
   // function handleDrawer() {
@@ -54,14 +58,16 @@ function App() {
       <main className="App">
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
-        <Entry
-          title={<Title title={content.title} />}
-          body={<Body body={content.body} />}
-          htmls={<Htmls htmls={content.htmls} />}
-          subheading={<Subheading subheading={content.subheading} />}
-          sections={<Sections sections={content.sections} />}
-          list={<List list={content.list} />}
-        />
+        <CSSTransition in={isEnter} timeout={2000} classNames="entry-animate">
+          <Entry
+            title={<Title title={content.title} />}
+            body={<Body body={content.body} />}
+            htmls={<Htmls htmls={content.htmls} />}
+            subheading={<Subheading subheading={content.subheading} />}
+            sections={<Sections sections={content.sections} />}
+            list={<List list={content.list} />}
+          />
+        </CSSTransition>
       </main>
       <Footer />
     </Fragment>

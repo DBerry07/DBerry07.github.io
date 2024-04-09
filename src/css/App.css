@@ -66,9 +66,9 @@ main {
   overflow-y: hidden;
   display: grid;
   grid-template-areas:
-    'name heading heading heading heading heading'
-    'menu main main main main main'
-    'menu main main main main main';
+    'name entry entry entry entry entry'
+    'menu entry entry entry entry entry'
+    'menu entry entry entry entry entry';
   gap: 5px;
   overflow-x: hidden;
   overflow-y: hidden;
