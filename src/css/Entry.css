@@ -112,4 +112,16 @@
   padding-left: 1vw;
   padding-right: 1vw;
   filter: sepia();
+
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.4s;
+}
+
+.link-img:hover {
+  margin: 0px;
+  max-width: 150px;
+  max-height: 90px;
 }
