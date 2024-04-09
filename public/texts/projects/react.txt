@@ -1,2 +1,3 @@
 This webpage (hosted on GitHub Pages) is created with React, set up and tested using Vite.
 JSX, Components, State, and Hooks were all used to make the user interface and its interactability - as is the norm for React applications.
+This webpage also uses CSS transitions and the React Transition Group library.
