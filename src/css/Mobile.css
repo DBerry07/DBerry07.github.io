@@ -1,5 +1,8 @@
 @media only screen and (max-width: 800px) {
 
+  #root {
+    max-height: 95vh;
+  }
 
   #entry {
     grid-template-areas: 
