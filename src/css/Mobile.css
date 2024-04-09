@@ -1,34 +1,45 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
   #root {
-    max-height: 95vh;
+    max-height: 97vh;
   }
 
   #entry {
-    grid-template-areas: 
-    'heading'
-    'main'
-    'main';
+    display: block !important;
+  }
+
+  #name {
+    font-size: 2vh !important;
   }
 
   #content-box {
     width: 99% !important;
     border: none !important;
-    font-size: 2.5vw;
+    font-size: 2vh !important;
   }
 
-  #title {
+  #headbar {
     align-items: center;
     text-align: center;
-    font-size: 5vw;
+  }
+  #title {
+    font-size: 3vh !important;
   }
 
   #subheading {
-    font-size: 3.5vw !important;
+    font-size: 2.5vh !important;
   }
 
   #subsubheading {
-    font-size: 3.2vw !important;
+    font-size: 2vh !important;
+  }
+
+  .section_title {
+    font-size: 2.5vh !important;
+  }
+
+  footer {
+    font-size: 2vh !important;
   }
 
   #button-menu {
