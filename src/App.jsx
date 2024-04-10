@@ -21,7 +21,7 @@ import List from "./components/entry/List.jsx";
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
   const [panel, setPanel] = useState(panels.About);
-  const [isEnter, setIsEnter] = useState(false);
+  const [isEnter, setIsEnter] = useState(true);
   const content = pageContent[tab];
   // const [open, switchOpen] = useState(false);
 
@@ -38,6 +38,12 @@ function App() {
 
   function handleSelect(value) {
     // console.log("> tab selected: " + value);
+    setIsEnter((prevState) => !prevState)
+
+    // setTimeout(changePanel, 2000);
+  }
+
+  function changePanel(value) {
     if (value === myTabs.Projects) {
       setPanel(panels.Projects);
     } else if (value === myTabs.Back) {
@@ -58,7 +64,7 @@ function App() {
       <main className="App">
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
-        <CSSTransition in={isEnter} timeout={5000} classNames="entry-animate">
+        <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
           <Entry
             title={<Title title={content.title} />}
             body={<Body body={content.body} />}

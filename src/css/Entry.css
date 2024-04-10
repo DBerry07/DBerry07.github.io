@@ -2,8 +2,8 @@
   --fsize: 16pt;
   --hsize: 32pt;
   --bsize: 17pt;
-  --time-short: 0.8s;
-  --time-long: 1.1s;
+  --time-short: 0.5s;
+  --time-long: 0.8s;
 }
 
 #entry {
