@@ -47,8 +47,10 @@ function App() {
   function changePanel(value) {
     if (value === myTabs.Projects) {
       setPanel(panels.Projects);
+      setTab(myTabs.Kotlin.name);
     } else if (value === myTabs.Back) {
       setPanel(panels.About);
+      setTab(myTabs.Hello.name);
     } else {
       setTab(value);
     }
