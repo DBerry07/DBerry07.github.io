@@ -40,7 +40,7 @@ function App() {
     // console.log("> tab selected: " + value);
     setIsEnter((prevState) => !prevState)
 
-    // setTimeout(changePanel, 2000);
+    setTimeout(() => changePanel(value), 700);
   }
 
   function changePanel(value) {
