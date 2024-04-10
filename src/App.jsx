@@ -3,6 +3,7 @@ import {CSSTransition} from "react-transition-group";
 import "./css/App.css";
 import "./css/Mobile.css";
 import "./css/animations-entry.css";
+import "./css/constants.css";
 import pageContent from "./data/constants/content.js";
 import Entry from "./components/entry/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
@@ -40,7 +41,7 @@ function App() {
     // console.log("> tab selected: " + value);
     setIsEnter((prevState) => !prevState)
 
-    setTimeout(() => changePanel(value), 700);
+    setTimeout(() => changePanel(value), 750);
   }
 
   function changePanel(value) {

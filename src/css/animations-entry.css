@@ -1,7 +1,7 @@
 .entry-animate-enter {
     #headbar {
       transform: translateY(-100%);
-      /* opacity: 0; */
+      opacity: 0;
     }
     #content-box {
       #subheading {
@@ -13,14 +13,14 @@
       }
       #entry-body {
         transform: translateY(100%);
-        /* opacity: 0; */
+        opacity: 0;
       }
     }
   }
   
   .entry-animate-enter-active {
     #headbar {
-      /* opacity: 1; */
+      opacity: 1;
       transform: translateY(0%);
       transition: var(--time-short);
     }
@@ -35,7 +35,7 @@
         transition: var(--time-long);
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 1;
         transform: translateY(0%);
         transition: var(--time-long);
       }
@@ -44,7 +44,7 @@
   
   .entry-animate-done {
     #headbar {
-      /* opacity: 1; */
+      opacity: 1;
       transform: translateY(0%);
     }
     #content-box {
@@ -56,7 +56,7 @@
         opacity: 1;
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 1;
         transform: translateY(0%);
       }
     }
@@ -64,7 +64,7 @@
   
   .entry-animate-exit {
     #headbar {
-      /* opacity: 0; */
+      opacity: 1;
       transform: translateY(0%);
     }
     #content-box {
@@ -76,7 +76,7 @@
         opacity: 1;
       }
       #entry-body {
-        /* opacity: 0; */
+        opacity: 1;
         transform: translateY(0%);
       }
     }
@@ -84,7 +84,7 @@
   
   .entry-animate-exit-active {
     #headbar {
-      /* opacity: 1; */
+      opacity: 0;
       transform: translateY(-100%);
       transition: var(--time-short);
     }
@@ -99,7 +99,7 @@
         transition: var(--time-long);
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 0;
         transform: translateY(100%);
         transition: var(--time-long);
       }
@@ -108,7 +108,7 @@
   
   .entry-animate-exit-done {
     #headbar {
-      /* opacity: 1; */
+      opacity: 0;
       transform: translateY(-100%);
     }
     #content-box {
@@ -120,7 +120,7 @@
         opacity: 0;
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 0;
         transform: translateY(100%);
       }
     }
@@ -129,7 +129,7 @@
   .entry-animate-appear{
     #headbar {
       transform: translateY(-100%);
-      /* opacity: 0; */
+      opacity: 0;
     }
     #content-box {
       #subheading {
@@ -141,14 +141,14 @@
       }
       #entry-body {
         transform: translateY(100%);
-        /* opacity: 0; */
+        opacity: 0;
       }
     }
   }
 
   .entry-animate-appear-active{
     #headbar {
-      /* opacity: 1; */
+      opacity: 1;
       transform: translateY(0%);
       transition: var(--time-short);
     }
@@ -163,7 +163,7 @@
         transition: var(--time-long);
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 1;
         transform: translateY(0%);
         transition: var(--time-long);
       }
@@ -172,7 +172,7 @@
 
   .entry-animate-appear-done{
     #headbar {
-      /* opacity: 1; */
+      opacity: 1;
       transform: translateY(0%);
     }
     #content-box {
@@ -184,7 +184,7 @@
         opacity: 1;
       }
       #entry-body {
-        /* opacity: 1; */
+        opacity: 1;
         transform: translateY(0%);
       }
     }

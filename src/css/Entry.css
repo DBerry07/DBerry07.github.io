@@ -1,11 +1,3 @@
-:root {
-  --fsize: 16pt;
-  --hsize: 32pt;
-  --bsize: 17pt;
-  --time-short: 0.5s;
-  --time-long: 0.8s;
-}
-
 #entry {
   grid-area: entry;
   display: grid;
