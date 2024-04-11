@@ -8,7 +8,9 @@ export const React = new TabContent(
   ["Built using React (JSX)", "Personal Project"], //subheading
   await getText(locations.ReactBody), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.ReactLearnings), ], //sections
-  [[LINKS.webpage, locations.PicGithubTxt]] //htmls
+  [[LINKS.webpage, locations.PicGithubTxt]], //htmls
+  null, //list,
+  ["React framework", "JSX", "Javascript", "Vite", "Visual Studio Code"], //techs
 );
 
 export const Capstone = new TabContent(
@@ -21,13 +23,18 @@ export const Capstone = new TabContent(
     [LINKS.coursera_video, locations.PicYoutube],
     [LINKS.coursera_cert, locations.PicCoursera],
   ], //htmls
-  await getText(locations.CouseraList) //list
+  await getText(locations.CouseraList), //list
+  ["Android Studio", "Kotlin", "Android Jetpack", "XML UI Design", "Volley"], //techs
 );
 
 export const Kotlin = new TabContent(
   "Residental Manager", //title
   ["Built using Kotlin", "Personal Project"], //subheading
   await getText(locations.AndroidKotlinBody), //body
+  null, //sections
+  null, //htmls
+  null, //list
+  ["Android Studio", "Kotlin", "Jetpack Compose", "Android Jetpack"], //techs
 )
 
 export const Java = new TabContent(
