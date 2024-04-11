@@ -8,7 +8,7 @@ export default class Tabs {
   static Projects = new Tabs("Projects", ">> Projects");
 
   static Back = new Tabs("Back", "<< Back");
-  static Kotlin = new Tabs("Kotlin", "Capstone", locations.PicAndroid);
+  static Kotlin = new Tabs("Kotlin", "Android", locations.PicAndroid);
   static React = new Tabs("React", "Webpage");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");

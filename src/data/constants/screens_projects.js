@@ -11,7 +11,7 @@ export const React = new TabContent(
   [[LINKS.webpage, locations.PicGithubTxt]] //htmls
 );
 
-export const Kotlin = new TabContent(
+export const Capstone = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
   ["Built using Kotlin", "Personal Project"], //subheading
   await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
@@ -23,6 +23,12 @@ export const Kotlin = new TabContent(
   ], //htmls
   await getText(locations.CouseraList) //list
 );
+
+export const Kotlin = new TabContent(
+  "Residental Manager", //title
+  ["Built using Kotlin", "Personal Project"], //subheading
+  await getText(locations.AndroidKotlinBody), //body
+)
 
 export const Java = new TabContent(
   "Native Android App (Java)", //title
