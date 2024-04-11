@@ -29,12 +29,12 @@ export const Capstone = new TabContent(
 
 export const Kotlin = new TabContent(
   "Residental Manager", //title
-  ["Built using Kotlin", "Personal Project"], //subheading
+  ["Native Android App", "Personal Project"], //subheading
   await getText(locations.AndroidKotlinBody), //body
   null, //sections
   null, //htmls
   null, //list
-  ["Android Studio", "Kotlin", "Jetpack Compose", "Android Jetpack"], //techs
+  ["Android Studio", "Kotlin", "Jetpack Compose", "Android Jetpack"],//techs
 )
 
 export const Java = new TabContent(

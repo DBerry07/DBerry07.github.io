@@ -18,6 +18,7 @@ function Entry(props) {
         {props.subheading}
         {props.htmls}
         <div id="entry-body">
+          {props.techs}
           {props.body}
           {props.list}
           {props.sections}

@@ -18,6 +18,7 @@ import Subheading from "./components/entry/Subheading.jsx";
 import Sections from "./components/entry/Sections.jsx";
 import Htmls from "./components/entry/Htmls.jsx";
 import List from "./components/entry/List.jsx";
+import Techs from "./components/entry/Techs.jsx";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
@@ -70,6 +71,7 @@ function App() {
         <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
           <Entry
             title={<Title title={content.title} />}
+            techs={<Techs techs={content.techs} />}
             body={<Body body={content.body} />}
             htmls={<Htmls htmls={content.htmls} />}
             subheading={<Subheading subheading={content.subheading} />}

@@ -6,7 +6,7 @@ export default class TabContent {
     sections = null,
     htmls = null,
     list = null,
-    tech = null
+    techs = null
   ) {
     this.title = title;
     this.subheading = subheading;
@@ -14,6 +14,6 @@ export default class TabContent {
     this.sections = sections;
     this.htmls = htmls;
     this.list = list;
-    this.tech = tech;
+    this.techs = techs;
   }
 }
