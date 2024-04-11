@@ -5,7 +5,7 @@ menu {
         border: none;
         font-size: 18pt;
         /* text-decoration: underline; */
-        font-weight: bold;
+        /* font-weight: bold; */
         width: 170px;
         /* padding: 1vh; */
         /* font-size: 16pt; */
@@ -13,24 +13,62 @@ menu {
         text-align: start;
         font-family: 'Charmonman';
         margin: 1vh;
-
-        span {
-            height: min-content;
-            width: 100%;
-            display: flex;
-            border-bottom: #FEFFFA solid 2px;
-            transition: border-bottom 1s;
-        }
+        
+        border-top: #FEFFFA solid 1px;
+        border-bottom: #FEFFFA solid 1px;
+        transition: 1s;
     }
-    button:hover{
-        span {
-            height: min-content;
-            width: 100%;
-            border-bottom: solid black 2px;
-            display: flex;
-        }
+
+    /** About button hover actions **/
+    #Hello-button:hover{
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+    #Education-button:hover{
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+    #History-button:hover{
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+
+    /** Project buttons **/
+    #Kotlin-button {
+        color: red;
+    }
+    #iOS-button {
+        color: red;
+    }
+    #Flutter-button {
+        color: red;
+    }
+    #ReactNative-button {
+        color: red;
+    }
+
+    /** Project button hover actions **/
+    #Kotlin-button:hover {
+        height: min-content;
+        border-top: solid red 1px;
+    }
+    #iOS-button:hover {
+        height: min-content;
+        border-top: solid red 1px;
+    }
+    #Flutter-button:hover {
+        height: min-content;
+        border-top: solid red 1px;
+    }
+    #ReactNative-button:hover {
+        height: min-content;
+        border-top: solid red 1px;
     }
 }
+
+
+
+
 
 button#Projects {
     /* background-color: cornsilk; */
@@ -41,3 +79,25 @@ button#Back {
     /* background-color: cornsilk; */
     font-style: italic;
 }
+
+.button-divider {
+    display: none;
+}
+
+#History-divider {
+    display:block;
+    height: 2vh;
+}
+
+#Hello-button {
+    text-align: end;
+}
+
+#Education-button {
+    text-align: end;
+}
+
+#History-button {
+    text-align: end;
+}
+

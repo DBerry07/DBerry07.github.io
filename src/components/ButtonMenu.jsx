@@ -23,11 +23,12 @@ function ButtonMenu({ panel, onSelect }) {
     <Fragment>
       <menu id="button-menu">
         {buttons.map((item, index) => (
-          <span key={index} id={item}>
+          <span key={index} id={item+"-span"}>
             <button
-              id={item}
+              id={item+"-button"}
               onClick={() => onSelect(item)}
-            ><span>
+            >
+              {/* <span> */}
               {item.text}
               {/* {item.icon != "" && (
                 <img
@@ -37,8 +38,9 @@ function ButtonMenu({ panel, onSelect }) {
                   className="button-icon"
                 />
               )} */}
-              </span>
+              {/* </span> */}
             </button>
+            <div className="button-divider" id={item + "-divider"}></div>
           </span>
         ))}
       </menu>

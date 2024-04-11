@@ -19,11 +19,22 @@ export default class Tabs {
 
   static AboutList = [
     this.Hello,
-    this.About,
     this.Education,
     this.History,
-    this.Projects,
-  ];
+    this.Kotlin,
+    this.iOS,
+    this.Flutter,
+    this.ReactNative,
+  ]
+
+
+  // static AboutList = [
+  //   this.Hello,
+  //   this.About,
+  //   this.Education,
+  //   this.History,
+  //   this.Projects,
+  // ];
 
   static ProjectList = [
     this.Back,
