@@ -9,10 +9,10 @@ menu {
     overflow-x: hidden;
     width: max-content;
     padding: 0px;
-    margin-right: 1vw;
-    padding-right: 1vw;
+    /* margin-right: 1vw; */
+    /* padding-right: 1vw; */
     max-height: 90vh;
-    border-right: 1px black solid;
+    /* border-right: 1px black solid; */
 }
 
 #blank {
