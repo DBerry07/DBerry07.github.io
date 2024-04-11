@@ -16,21 +16,21 @@ menu {
         
         border-top: #FEFFFA solid 1px;
         border-bottom: #FEFFFA solid 1px;
-        transition: 1s;
+        transition: 500ms;
     }
 
     /** About button hover actions **/
     #Hello-button:hover{
         height: min-content;
-        border-bottom: solid black 1px;
+        border-bottom: solid red 1px;
     }
     #Education-button:hover{
         height: min-content;
-        border-bottom: solid black 1px;
+        border-bottom: solid red 1px;
     }
     #History-button:hover{
         height: min-content;
-        border-bottom: solid black 1px;
+        border-bottom: solid red 1px;
     }
 
     /** Project buttons **/
@@ -50,19 +50,19 @@ menu {
     /** Project button hover actions **/
     #Kotlin-button:hover {
         height: min-content;
-        border-top: solid red 1px;
+        border-bottom: solid black 1px;
     }
     #iOS-button:hover {
         height: min-content;
-        border-top: solid red 1px;
+        border-bottom: solid black 1px;
     }
     #Flutter-button:hover {
         height: min-content;
-        border-top: solid red 1px;
+        border-bottom: solid black 1px;
     }
     #ReactNative-button:hover {
         height: min-content;
-        border-top: solid red 1px;
+        border-bottom: solid black 1px;
     }
 }
 
