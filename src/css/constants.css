@@ -2,6 +2,6 @@
     --fsize: 16pt;
     --hsize: 32pt;
     --bsize: 17pt;
-    --time-short: 450ms;
-    --time-long: 750ms;
+    --time-short: 250ms;
+    --time-long: 500ms;
   }
