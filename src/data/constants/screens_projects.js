@@ -65,7 +65,7 @@ export const iOS = new TabContent(
 );
 
 export const Flutter = new TabContent(
-  "Flutter App", //title
+  "Pet Food Log", //title
   ["Personal Project"], //subheading
   await getText(locations.FlutterText), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.FlutterLearnings), ], //sections
