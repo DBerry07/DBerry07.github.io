@@ -5,17 +5,17 @@ import TabContent from "./TabContent.js";
 
 export const React = new TabContent(
   "This Webpage", //title
-  ["Built using React (JSX)", "Personal Project"], //subheading
+  ["Personal Project"], //subheading
   await getText(locations.ReactBody), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.ReactLearnings), ], //sections
   [[LINKS.webpage, locations.PicGithubTxt]], //htmls
   null, //list,
-  ["React framework", "JSX", "Javascript", "Vite", "Visual Studio Code"], //techs
+  ["Javascript", "JSX", "React", "Vite", "Visual Studio Code",], //techs
 );
 
 export const Capstone = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
-  ["Built using Kotlin", "Personal Project"], //subheading
+  ["Personal Project"], //subheading
   await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.CourseraLearnings), await getText(locations.CourseraGitfront), await getText(locations.CourseraDisc)], //sections
   [
@@ -24,7 +24,7 @@ export const Capstone = new TabContent(
     [LINKS.coursera_cert, locations.PicCoursera],
   ], //htmls
   await getText(locations.CouseraList), //list
-  ["Android Studio", "Kotlin", "Android Jetpack", "XML UI Design", "Volley"], //techs
+  ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio",], //techs
 );
 
 export const Kotlin = new TabContent(
@@ -34,34 +34,44 @@ export const Kotlin = new TabContent(
   null, //sections
   null, //htmls
   null, //list
-  ["Android Studio", "Kotlin", "Jetpack Compose", "Android Jetpack"],//techs
+  ["Kotlin", "Jetpack Compose", "Android Jetpack", "Android Studio", ],//techs
 )
 
 export const Java = new TabContent(
   "Native Android App (Java)", //title
-  ["Built using Java", "Personal Project"], //subheading
-  await getText(locations.AndroidKotlinBody) //body --> "await" here is very important! Page won't work without it!
+  ["Native Android App", "Personal Project"], //subheading
+  await getText(locations.AndroidKotlinBody), //body --> "await" here is very important! Page won't work without it!
+  null, //sections
+  null, //htmls
+  null, //list
+  ["Java", "Android Studio",], //techs
 );
 
 export const ReactNative = new TabContent(
   "React Native App", //title
-  ["Built using React (JSX)", "Personal Project"], //subheading
+  ["Personal Project"], //subheading
   await getText(locations.ReactNativeBody), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.ReactNativeLearnings), ],
+  [await getText(locations.ReactNativeLearnings), ], //sections
 );
 
 export const iOS = new TabContent(
   "Native iOS App", //title
-  ["Built using Swift", "Personal Project"], //subheading
+  ["Personal Project"], //subheading
   ["Put description", "and videos", "and screenshots", "of my iOS app", "here"], //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.IOSLearnings), ],
+  [await getText(locations.IOSLearnings), ], //sections
+  null, //htmls
+  null, //list
+  ["Swift", "Xcode", "MacOS",], //techs
 );
 
 export const Flutter = new TabContent(
   "Flutter App", //title
-  ["Built using Dart", "Personal Project"], //subheading
+  ["Personal Project"], //subheading
   await getText(locations.FlutterText), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.FlutterLearnings), ], //sections
+  null, //htmls
+  null, //list
+  ["Dart", "Flutter", "Android Studio",], //techs
 );
 
 // export const Spring = new TabContent(
@@ -77,12 +87,20 @@ export const Flutter = new TabContent(
 
 export const AngularIonic = new TabContent(
   "Ionic Project", //title
-  ["Built using Angular (Javascript)", "Personal Project"], //subheading
-  ["TO BE DONE"] //body --> "await" here is very important! Page won't work without it!
+  ["Personal Project"], //subheading
+  ["TO BE DONE"], //body --> "await" here is very important! Page won't work without it!
+  null, //sections
+  null, //htmls
+  null, //list
+  ["Javascript", "Angular", "Ionic",], //techs
 );
 
 export const Maui = new TabContent(
   "dotNet Maui Project", //title
-  ["Built using C#", "Personal Project"], //subheading
-  ["To be learned and done"] //body --> "await" here is very important! Page won't work without it!
+  ["Personal Project"], //subheading
+  ["To be learned and done"], //body --> "await" here is very important! Page won't work without it!
+  null, //sections
+  null, //htmls
+  null, //list
+  ["C# (C-sharp)", ".NET Maui", "Visual Studio 2022", ], //techs
 );
