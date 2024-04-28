@@ -46,6 +46,9 @@ menu {
     #ReactNative-button {
         color: red;
     }
+    #CaliberDroid-button {
+        color: red;
+    }
 
     /** Project button hover actions **/
     #Kotlin-button:hover {
@@ -64,6 +67,11 @@ menu {
         height: min-content;
         border-bottom: solid black 1px;
     }
+    #CaliberDroid-button:hover {
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+
 }
 
 

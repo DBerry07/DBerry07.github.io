@@ -8,7 +8,7 @@ export default class Tabs {
   static Projects = new Tabs("Projects", ">> Projects");
 
   static Back = new Tabs("Back", "<< Back");
-  static Kotlin = new Tabs("Kotlin", "Android", locations.PicAndroid);
+  static Kotlin = new Tabs("Kotlin", "Android (2)", locations.PicAndroid);
   static React = new Tabs("React", "Webpage");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
@@ -16,11 +16,13 @@ export default class Tabs {
   static Java = new Tabs("Java", "Android: Java");
   static Maui = new Tabs("Maui", ".Net Maui");
   static AngularIonic = new Tabs("AngularIonic", "Ionic");
+  static CaliberDroid = new Tabs("CaliberDroid", "Android (1)");
 
   static AboutList = [
     this.Hello,
     this.Education,
     this.History,
+    this.CaliberDroid,
     this.Kotlin,
     this.iOS,
     this.Flutter,

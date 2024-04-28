@@ -104,3 +104,13 @@ export const Maui = new TabContent(
   null, //list
   ["C# (C-sharp)", ".NET Maui", "Visual Studio 2022", ], //techs
 );
+
+export const CaliberDroid = new TabContent(
+  "CaliberDroid", //title
+  ["Professional Project"],
+  ["fill in"],
+  null,
+  null,
+  null,
+  null,
+)
