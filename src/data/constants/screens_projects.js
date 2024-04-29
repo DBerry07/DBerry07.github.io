@@ -107,10 +107,10 @@ export const Maui = new TabContent(
 
 export const CaliberDroid = new TabContent(
   "CaliberDroid", //title
-  ["Professional Project"],
+  ["Native Android App","Professional Project"],
   ["fill in"], //body
   null, //sections
   [[LINKS.caliber, locations.PicGithubTxt]], //htmls
   null,
-  null,
+  ["Kotlin", "Activity UI Framework", "Retrofit", "Android Studio", "Postman"],
 )
