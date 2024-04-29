@@ -32,7 +32,7 @@ export const Kotlin = new TabContent(
   ["Native Android App", "Personal Project"], //subheading
   await getText(locations.AndroidKotlinBody), //body
   null, //sections
-  null, //htmls
+  [[LINKS.residental, locations.PicGithubTxt]], //htmls
   null, //list
   ["Kotlin", "Jetpack Compose", "Android Jetpack", "Android Studio", ],//techs
 )
@@ -69,7 +69,7 @@ export const Flutter = new TabContent(
   ["Personal Project"], //subheading
   await getText(locations.FlutterText), //body --> "await" here is very important! Page won't work without it!
   [await getText(locations.FlutterLearnings), ], //sections
-  null, //htmls
+  [[LINKS.flutter, locations.PicGithubTxt]], //htmls
   null, //list
   ["Dart", "Flutter", "Android Studio",], //techs
 );
@@ -108,9 +108,9 @@ export const Maui = new TabContent(
 export const CaliberDroid = new TabContent(
   "CaliberDroid", //title
   ["Professional Project"],
-  ["fill in"],
-  null,
-  null,
+  ["fill in"], //body
+  null, //sections
+  [[LINKS.caliber, locations.PicGithubTxt]], //htmls
   null,
   null,
 )
