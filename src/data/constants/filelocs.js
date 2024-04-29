@@ -41,6 +41,8 @@ export const locations = {
   FlutterText: urlStart + folders + project + "flutter.txt",
   FlutterLearnings: urlStart + folders + project + "flutter-learnings.txt",
 
+  CaliberText: urlStart + folders + project + "caliber.txt",
+
   PicGithub: urlStart + assets + "logo-github.png",
   PicGithubTxt: urlStart + assets + "logo-github-txt.png",
   PicLinkedin: urlStart + assets + "logo-linkedin.png",
