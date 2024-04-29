@@ -112,5 +112,5 @@ export const CaliberDroid = new TabContent(
   null, //sections
   [[LINKS.caliber, locations.PicGithubTxt]], //htmls
   null,
-  ["Kotlin", "Activity UI Framework", "Retrofit", "Android Studio", "Postman"],
+  ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"],
 )
