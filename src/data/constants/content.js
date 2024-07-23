@@ -11,7 +11,7 @@ pageContent[myTabs.Education.name] = SCREENS.Education;
 pageContent[myTabs.History.name] = SCREENS.History;
 pageContent[myTabs.About.name] = SCREENS.About;
 
-pageContent[myTabs.TodoList] = PROJECTS.TodoList;
+pageContent[myTabs.TodoList.name] = PROJECTS.TodoList;
 pageContent[myTabs.Java.name] = PROJECTS.Java;
 pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
 pageContent[myTabs.iOS.name] = PROJECTS.iOS;
