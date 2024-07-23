@@ -49,6 +49,9 @@ menu {
     #CaliberDroid-button {
         color: red;
     }
+    #TodoList-button {
+        color: red;
+    }
 
     /** Project button hover actions **/
     #Kotlin-button:hover {
@@ -68,6 +71,10 @@ menu {
         border-bottom: solid black 1px;
     }
     #CaliberDroid-button:hover {
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+    #TodoList-button:hover {
         height: min-content;
         border-bottom: solid black 1px;
     }
