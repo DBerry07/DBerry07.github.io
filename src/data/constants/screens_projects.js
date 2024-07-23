@@ -29,11 +29,11 @@ export const Capstone = new TabContent(
 
 export const TodoList = new TabContent(
   "Simple Todo List", //title
-  ["Peronsal Project"], //subheading
+  ["Personal Project"], //subheading
   await getText(locations.TodoListBody), //body
   [], //sections
   [], //htmls
-  null, //list
+  await getText(locations.TodoListList), //list
   [], //techs
 )
 

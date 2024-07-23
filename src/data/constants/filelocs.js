@@ -44,6 +44,7 @@ export const locations = {
   CaliberText: urlStart + folders + project + "caliber.txt",
 
   TodoListBody: urlStart + folders + project + "todolistbody.txt",
+  TodoListList: urlStart + folders + project + "todolistlist.txt",
 
   PicGithub: urlStart + assets + "logo-github.png",
   PicGithubTxt: urlStart + assets + "logo-github-txt.png",
