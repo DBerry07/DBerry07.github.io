@@ -1,0 +1,3 @@
+Why isn't this app on the Play Store?
+This app isn't on the Google Play Store because it really doesn't do very much and a number of features - like the ImageDownloadService and Broadcasts - are vestigal to the main purpose of the app (which is note-taking).
+It is intented as more of a showcase of Android development knowledge than as a practical or useful application.
