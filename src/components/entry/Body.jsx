@@ -1,4 +1,4 @@
-import "../../css/Body.css";
+import "./body.css";
 
 export default function Body({ body }) {
   if (body != null) {

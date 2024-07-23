@@ -1,4 +1,4 @@
-import "../css/Footer.css";
+import "./footer.css";
 
 function Footer() {
   return (

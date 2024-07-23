@@ -1,4 +1,4 @@
-import "../css/ButtonMenu.css";
+import "./button-menu.css";
 import myTabs from "../data/constants/buttons.js";
 import { Fragment } from "react";
 import { panels } from "../data/constants/panels.js";

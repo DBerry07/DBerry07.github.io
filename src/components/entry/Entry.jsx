@@ -1,5 +1,5 @@
 import content from "../../data/constants/content.js";
-import "../../css/Entry.css";
+import "./entry.css";
 import { Fragment } from "react";
 import myTabs from "../../data/constants/buttons.js";
 import Sections from "./Sections.jsx";
