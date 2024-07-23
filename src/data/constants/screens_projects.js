@@ -34,7 +34,7 @@ export const TodoList = new TabContent(
   [], //sections
   [], //htmls
   await getText(locations.TodoListList), //list
-  [], //techs
+  ["Kotlin", "Firebase Firestore", "Jetpack Compose", "Android Studio"], //techs
 )
 
 export const Kotlin = new TabContent(

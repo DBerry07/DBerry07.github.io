@@ -1,4 +1,4 @@
-A Simple Todo List
+<Click on the webpage link to view my project webpage that features screenshots and videos of the app!>
 SimpleTodoList is a native Android application coded in Kotlin with Firebase Firestore integration.
 It allows the user to create a task, edit a task, delete a task, and mark a task as completed. These tasks appear in a list on the main page. The app also features a "priority" labeling, allowing the user to label a task in one of four priorities - Normal, Low, Medium, and High.
 Depending on whether the user has marked a task as "completed", the task appears in either the "Uncompleted" list or "Completed" list.
