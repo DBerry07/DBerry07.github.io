@@ -1,3 +1,5 @@
+import "./list.css";
+
 export default function List({ list }) {
   if (list != null) {
     return (
