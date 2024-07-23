@@ -27,6 +27,16 @@ export const Capstone = new TabContent(
   ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio",], //techs
 );
 
+export const TodoList = new TabContent(
+  "Simple Todo List", //title
+  ["Peronsal Project"], //subheading
+  await getText(locations.TodoListBody), //body
+  [], //sections
+  [], //htmls
+  null, //list
+  [], //techs
+)
+
 export const Kotlin = new TabContent(
   "Residental Manager", //title
   ["Native Android App", "Personal Project"], //subheading
