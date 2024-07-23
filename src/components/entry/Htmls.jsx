@@ -1,3 +1,5 @@
+import "./htmls.css"
+
 export default function Htmls({ htmls }) {
   if (htmls != null) {
     return (
