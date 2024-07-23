@@ -32,7 +32,10 @@ export const TodoList = new TabContent(
   ["Personal Project"], //subheading
   await getText(locations.TodoListBody), //body
   [], //sections
-  [], //htmls
+  [
+    [LINKS.todolist, locations.PicGithubTxt],
+    [LINKS.todolist_page, locations.PicGithub],
+  ], //htmls
   await getText(locations.TodoListList), //list
   ["Kotlin", "Firebase Firestore", "Jetpack Compose", "Android Studio"], //techs
 )

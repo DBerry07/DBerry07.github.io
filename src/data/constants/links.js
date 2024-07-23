@@ -11,4 +11,7 @@ export const LINKS = {
   caliber: "https://github.com/DBerry07/Revature_CaliberDroid",
   flutter: "https://github.com/DBerry07/PetFoodTracker",
   residental: "https://github.com/DBerry07/ResidentalManager_Android",
+
+  todolist: "https://github.com/DBerry07/SimpleToDoList",
+  todolist_page: "https://dberry07.github.io/SimpleToDoList/",
 };
