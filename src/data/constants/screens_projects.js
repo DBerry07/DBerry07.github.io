@@ -2,6 +2,7 @@ import { LINKS } from "./links.js";
 import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 import TabContent from "./TabContent.js";
+import MyList from "../myList.js";
 
 export const React = new TabContent(
   "This Webpage", //title
@@ -34,9 +35,9 @@ export const TodoList = new TabContent(
   [], //sections
   [
     [LINKS.todolist, locations.PicGithubTxt],
-    [LINKS.todolist_page, locations.PicGithub],
+    [LINKS.todolist_page, locations.PicWebpage],
   ], //htmls
-  await getText(locations.TodoListList), //list
+  new MyList("Future Plans", await getText(locations.TodoListList)), //list
   ["Kotlin", "Firebase Firestore", "Jetpack Compose", "Android Studio"], //techs
 )
 
