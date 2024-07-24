@@ -1,22 +1,15 @@
 import "./list.css";
+import MyList from "../../data/myList";
 
-export default function List({ list }) {
-  if (list != null) {
-
-    var title;
-    if (list.at(0).at(0) != '-') {
-      title = list.at(0);
-      list = list.slice(1, list.length - 1);
-    } else {
-      title = ""
-    }
-
+export default function List(props) {
+  console.log("checking list...")
+  if (props.list != null) {
+    console.log("list != null");
     return (
-      
       <ul>
-        {title}
-        {list.map((item, index) => (
-          <li key={index}>{item}</li>
+        <div className="list-item-title">{props.list.title}</div>
+        {props.list.list.map((item, index) => (
+          <li className="list-item" key={index}>{item}</li>
         ))}
       </ul>
     );
