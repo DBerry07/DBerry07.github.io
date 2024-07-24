@@ -54,4 +54,5 @@ export const locations = {
   PicAndroid: urlStart + assets + "logo-android.png",
   PicYoutube: urlStart + assets + "logo-youtube-txt.png",
   PicCoursera: urlStart + assets + "logo-coursera-txt.png",
+  PicWebpage: urlStart + assets + "icons8-http-64.png",
 };
