@@ -9,7 +9,7 @@ export default class Tabs {
 
   static Back = new Tabs("Back", "<< Back");
   static Kotlin = new Tabs("Kotlin", "Android (2)", locations.PicAndroid);
-  static TodoList = new Tabs("TodoList", "TodoList", locations.PicAndroid);
+  static TodoList = new Tabs("TodoList", "TodoList", locations.PicAndroid, "red");
   static React = new Tabs("React", "Webpage");
   static ReactNative = new Tabs("ReactNative", "React Native");
   static iOS = new Tabs("iOS", "iOS");
@@ -17,8 +17,8 @@ export default class Tabs {
   static Java = new Tabs("Java", "Android: Java");
   static Maui = new Tabs("Maui", ".Net Maui");
   static AngularIonic = new Tabs("AngularIonic", "Ionic");
-  static CaliberDroid = new Tabs("CaliberDroid", "Caliber", locations.PicAndroid);
-  static Capstone = new Tabs("Capstone", "Capstone", locations.PicAndroid);
+  static CaliberDroid = new Tabs("CaliberDroid", "Caliber", locations.PicAndroid, "red");
+  static Capstone = new Tabs("Capstone", "Capstone", locations.PicAndroid, "red");
 
   static AboutList = [
     this.Hello,
@@ -54,10 +54,11 @@ export default class Tabs {
     this.AngularIonic,
   ];
 
-  constructor(name, text, icon = "") {
+  constructor(name, text, icon = "", colour="black") {
     this.name = name;
     this.text = text;
     this.icon = icon;
+    this.colour = colour;
   }
   toString() {
     return `${this.name}`;
