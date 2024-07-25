@@ -27,6 +27,7 @@ export const locations = {
   CourseraDisc: urlStart + folders + project + "capstone-disclaimer.txt",
   CourseraGitfront: urlStart + folders + project + "capstone-gitfront.txt",
   CourseraLearnings: urlStart + folders + project + "capstone-learnings.txt",
+  CourseraTechs: urlStart + folders + project + "capstone-techs.txt",
 
   IOSLearnings: urlStart + folders + project + "ios-learnings.txt",
 
@@ -42,6 +43,10 @@ export const locations = {
   FlutterLearnings: urlStart + folders + project + "flutter-learnings.txt",
 
   CaliberText: urlStart + folders + project + "caliber.txt",
+  CaliberRoles: urlStart + folders + project + "caliber-roles.txt",
+  CaliberTechs: urlStart + folders + project + "caliber-techs.txt",
+  CaliberQC: urlStart + folders + project + "caliber-qc.txt",
+  CaliberTrainers: urlStart + folders + project + "caliber-trainers.txt",
 
   TodoListBody: urlStart + folders + project + "todolistbody.txt",
   TodoListList: urlStart + folders + project + "todolistlist.txt",

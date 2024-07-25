@@ -42,35 +42,47 @@ export const Cappy = new TabContent(
 );
 
 export const Capstone = [
-  Title({title:"Vanderbilt Specialization Capstone"}),
-  EntryBox({items:[
-    Subheading({subheading: ["Educational Project"]}),
-    Htmls({
-      htmls:[
-        [LINKS.coursera, locations.PicGithubTxt],
-        [LINKS.coursera_video, locations.PicYoutube],
-        [LINKS.coursera_cert, locations.PicCoursera],
-      ]
-    }),
-    EntryBody({
-      items: [
-        Techs({techs:[
-          "Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio"
-        ]}),
-        Body({body:await getText(locations.CouseraBody)}),
-        SubSection({title:"Learnings",items:await getText(locations.CourseraLearnings)}),
-        SubSection({title:"Why is this on Gitfront?",items:await getText(locations.CourseraGitfront)}),
-        SubSection({title:"Why isn't this on the Play Store?",items:await getText(locations.CourseraDisc)})
-      ]
-    })
-  ]})
-]
+  Title({ title: "Vanderbilt Specialization Capstone" }),
+  EntryBox({
+    items: [
+      Subheading({ subheading: ["Educational Project", "Native Android"] }),
+      Htmls({
+        htmls: [
+          [LINKS.coursera, locations.PicGithubTxt],
+          [LINKS.coursera_video, locations.PicYoutube],
+          [LINKS.coursera_cert, locations.PicCoursera],
+        ],
+      }),
+      EntryBody({
+        items: [
+          Body({ body: await getText(locations.CouseraBody) }),
+          SubSection({
+            title: "Learnings",
+            items: await getText(locations.CourseraLearnings),
+          }),
+          SubSection({
+            title: "Why is this on Gitfront?",
+            items: await getText(locations.CourseraGitfront),
+          }),
+          SubSection({
+            title: "Why isn't this on the Play Store?",
+            items: await getText(locations.CourseraDisc),
+          }),
+          List({
+            title: "Technologies Used",
+            list: await getText(locations.CapstoneTechs),
+          }),
+        ],
+      }),
+    ],
+  }),
+];
 
 export const TodoList = [
   Title({ title: "Simple ToDo List" }),
   EntryBox({
     items: [
-      Subheading({ subheading: ["Personal Project"] }),
+      Subheading({ subheading: ["Personal Project", "Native Android"] }),
       Htmls({
         htmls: [
           [LINKS.todolist, locations.PicGithubTxt],
@@ -185,3 +197,33 @@ export const CaliberDroid = new TabContent(
   null,
   ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"]
 );
+
+export const Caliber = [
+  Title({ title: "CaliberDroid"}),
+  EntryBox({items:[
+    Subheading({subheading: ["Professional Project", "Native Android"]}),
+  Htmls({ htmls: [
+    [LINKS.caliber, locations.PicGithubTxt]
+  ]}),
+  EntryBody({items:[
+    Body({body: await getText(locations.CaliberText)}),
+    List({
+      title: "QC Manager abilities",
+      list: await getText(locations.CaliberQC),
+    }),
+    List({
+      title: "Trainer abilities",
+      list: await getText(locations.CaliberTrainers),
+    }),
+    List({
+      title: "My Roles & Responsibilities",
+      list: await getText(locations.CaliberRoles)}),
+      List({
+        title: "Technologies Used",
+        list: await getText(locations.CaliberTechs),
+      }),
+    ]}),
+    
+  ]})
+  
+]

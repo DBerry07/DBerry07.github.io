@@ -19,7 +19,7 @@ import Sections from "./components/entry/Sections.jsx";
 import Htmls from "./components/entry/Htmls.jsx";
 import List from "./components/entry/List.jsx";
 import Techs from "./components/entry/Techs.jsx";
-import { Capstone } from "./data/constants/screens_projects.js";
+import { Caliber, Capstone } from "./data/constants/screens_projects.js";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
@@ -70,7 +70,7 @@ function App() {
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
         <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
-          <Entry content={content} />
+          <Entry content={Caliber} />
           {/* <Entry
             title={<Title title={content.title} />}
             techs={<Techs techs={content.techs} />}

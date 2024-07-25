@@ -1,0 +1,10 @@
+Android SDK
+Volley
+Android Studio and Eclipse IDE
+Views XML UI Design
+Android Unit Tests and UI Tests
+Android Design Patterns
+Android Operating System Architecture
+Kotlin
+Postman
+Retrofit
