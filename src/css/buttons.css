@@ -32,6 +32,7 @@ menu {
         height: min-content;
         border-bottom: solid red 1px;
     }
+    
 
     /** Project buttons **/
     #Kotlin-button {
@@ -50,6 +51,9 @@ menu {
         color: red;
     }
     #TodoList-button {
+        color: red;
+    }
+    #Capstone-button {
         color: red;
     }
 
@@ -75,6 +79,10 @@ menu {
         border-bottom: solid black 1px;
     }
     #TodoList-button:hover {
+        height: min-content;
+        border-bottom: solid black 1px;
+    }
+    #Capstone-button:hover{
         height: min-content;
         border-bottom: solid black 1px;
     }

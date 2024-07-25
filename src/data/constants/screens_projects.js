@@ -56,6 +56,10 @@ export const Capstone = [
       EntryBody({
         items: [
           Body({ body: await getText(locations.CouseraBody) }),
+          List({
+            title: "Technologies Used",
+            list: await getText(locations.CourseraTechs),
+          }),
           SubSection({
             title: "Learnings",
             items: await getText(locations.CourseraLearnings),
@@ -67,10 +71,6 @@ export const Capstone = [
           SubSection({
             title: "Why isn't this on the Play Store?",
             items: await getText(locations.CourseraDisc),
-          }),
-          List({
-            title: "Technologies Used",
-            list: await getText(locations.CourseraTechs),
           }),
         ],
       }),
