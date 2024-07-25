@@ -1,2 +1,1 @@
-Learnings
 "Android App Development Specialization" (5 courses) on Coursera: https://www.coursera.org/specializations/android-app-development

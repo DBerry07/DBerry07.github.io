@@ -11,6 +11,7 @@ import Body from "../../components/entry/Body.jsx";
 import EntryBody from "../../components/entry/EntryBody.jsx";
 import Htmls from "../../components/entry/Htmls.jsx";
 import List from "../../components/entry/List.jsx";
+import SubSection from "../../components/entry/SubSection.jsx";
 
 export const React = new TabContent(
   "This Webpage", //title
@@ -22,7 +23,7 @@ export const React = new TabContent(
   ["Javascript", "JSX", "React", "Vite", "Visual Studio Code"] //techs
 );
 
-export const Capstone = new TabContent(
+export const Cappy = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
   ["Personal Project"], //subheading
   await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
@@ -39,6 +40,31 @@ export const Capstone = new TabContent(
   await getText(locations.CouseraList), //list
   ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio"] //techs
 );
+
+export const Capstone = [
+  Title({title:"Vanderbilt Specialization Capstone"}),
+  EntryBox({items:[
+    Subheading({subheading: ["Educational Project"]}),
+    Htmls({
+      htmls:[
+        [LINKS.coursera, locations.PicGithubTxt],
+        [LINKS.coursera_video, locations.PicYoutube],
+        [LINKS.coursera_cert, locations.PicCoursera],
+      ]
+    }),
+    EntryBody({
+      items: [
+        Techs({techs:[
+          "Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio"
+        ]}),
+        Body({body:await getText(locations.CouseraBody)}),
+        SubSection({title:"Learnings",items:await getText(locations.CourseraLearnings)}),
+        SubSection({title:"Why is this on Gitfront?",items:await getText(locations.CourseraGitfront)}),
+        SubSection({title:"Why isn't this on the Play Store?",items:await getText(locations.CourseraDisc)})
+      ]
+    })
+  ]})
+]
 
 export const TodoList = [
   Title({ title: "Simple ToDo List" }),

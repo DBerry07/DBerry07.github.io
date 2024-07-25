@@ -19,7 +19,7 @@ import Sections from "./components/entry/Sections.jsx";
 import Htmls from "./components/entry/Htmls.jsx";
 import List from "./components/entry/List.jsx";
 import Techs from "./components/entry/Techs.jsx";
-import { ListTodo } from "./data/constants/screens_projects.js";
+import { Capstone } from "./data/constants/screens_projects.js";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
@@ -70,8 +70,16 @@ function App() {
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
         <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
-          <Entry items={ListTodo}
-          />
+          <Entry content={content} />
+          {/* <Entry
+            title={<Title title={content.title} />}
+            techs={<Techs techs={content.techs} />}
+            body={<Body body={content.body} />}
+            htmls={<Htmls htmls={content.htmls} />}
+            subheading={<Subheading subheading={content.subheading} />}
+            sections={<Sections sections={content.sections} />}
+            list={<List list={content.list} />}
+          /> */}
         </CSSTransition>
       </main>
       <Footer />

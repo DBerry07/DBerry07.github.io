@@ -29,7 +29,7 @@ function Entry(props) {
   // );
   return (
     <div id="entry">
-      { props.items.map((item, index) =>
+      { props.content.map((item, index) =>
       item
     ) }
     </div>
