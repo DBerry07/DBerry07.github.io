@@ -19,7 +19,8 @@
   }
   
   .link-img:hover {
-    margin: 0px;
+    scale: 125%;
+    /* margin: 0px;
     max-width: 150px;
-    max-height: 90px;
+    max-height: 90px; */
   }
