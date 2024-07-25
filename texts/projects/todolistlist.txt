@@ -1,4 +1,3 @@
-FUTURE PLANS:
 Allow user-created lists, besides just the "Completed" and "Uncompleted" lists.
 Allow the user to add alarms and reminders to tasks.
 Allow users to login based on personal username and password, to show only tasks created by them.

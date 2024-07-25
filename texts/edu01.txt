@@ -1,3 +1,2 @@
-Florida Atlantic University
 I graduated from FAU in May of 2019 with a Bachelor of Science in Computer Science with a cumulative GPA of 3.6.
 At FAU, I formed much of the foundation of my programming knowledge. I took courses on operating system design, algorithm design, discrete mathmatics, as well as a little on artificial intelligence and machine learning.

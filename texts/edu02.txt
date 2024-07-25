@@ -1,2 +1,1 @@
-Revature, LLC.
 With Revature in 2020, I took (and passed) an eleven week bootcamp in Java and Android app development, taught first by an expert in Java and then by a longtime Android developer.

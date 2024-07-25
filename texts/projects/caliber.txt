@@ -1,12 +1,5 @@
-
-CaliberDroid is an android native mobile app designed that allows QC manager to conduct quality audit on batches and allows trainers to assess batches time to time. App also enables QC managers to add and modify trainers, locations and training categories. QC Managers • Conduct Quality Audit on batches • Add or modify trainers, locations and training category information Trainers • Assess batches and provide feedback on individual associates progress at various stages
-
-Roles / Responsibilities
-Validated all project APIs using the Postman application, to ensure all APIs worked as expected before API implementation began.
-Created Trainee Activities and Fragments and implemented Trainee Activity and Fragment logic using Kotlin, the Android SDK and Android Studio.
-Created Trainee-related layouts so that the Trainee Activities and Fragments had a GUI, written in XML. Integrated Trainee APIs to ensure correct and real-time data was being displayed to the user, written in Kotlin and using the Volley framework.
-Implemented MVVM architecture with respect to the Trainee management section to ensure best programming practices were being followed.
-Wrote and implemented "Add Trainee to Batch" functionality using Kotlin in Android Studio. Wrote and implemented "Edit Trainee's details" functionality using Kotlin in Android Studio. Wrote and implemented "Delete Trainee from Batch" functionality using Kotlin in Android Studio.
-
-Environment / Technologies
-Android SDK, Volley, Android Studio and Eclipse IDE, Android Unit Tests and UI Tests, Android Design Patterns, Android Operating System Architecture, Kotlin
+CaliberDroid is a native Android mobile app designed for keeping track of the progress of classes of students (refered to as "batches of associates") enrolled in Revature's training program. There are two separate log-ins, QC ("Quality Control") Managers and Trainers. Each batch has a trainer assigned to it that teaches the students. QC managers rate (or "audit") the progress of each associate in a given batch.
+There are multiple locations corresponding to the different locations of Revature's various training programs. A trainer only has access to information and locations that they are directly responsible for; these permissions are controlled by the QC managers.
+When grading an associate, a QC manager can assign one of several ratings (good, poor, excellent, etc.) as well as put notes relevant to that particular associate. Trainers can also write notes related to the progress of each associate.
+As a project involving six people, I was responsible for developing only a part of the program (my responsiblities are listed below). Each day we would have a "stand-up" to discuss our progress on the development of the app as well as any problems or challenges we have encountered. Likewise, we held regular meetings on the design of the app - both as it was programmitcally designed and aestectically designed.
+Unfortunately, the app needs access to a database that is no longer maintained in order to work. As such, only the code is viewable - I have no videos or images of the app running.
