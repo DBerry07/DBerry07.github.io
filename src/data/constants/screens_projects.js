@@ -3,43 +3,74 @@ import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 import TabContent from "./TabContent.js";
 import MyList from "../myList.js";
+import Title from "../../components/entry/Title.jsx";
+import Subheading from "../../components/entry/Subheading.jsx";
+import EntryBox from "../../components/entry/EntryBox.jsx";
+import Techs from "../../components/entry/Techs.jsx";
+import Body from "../../components/entry/Body.jsx";
+import EntryBody from "../../components/entry/EntryBody.jsx";
+import Htmls from "../../components/entry/Htmls.jsx";
+import List from "../../components/entry/List.jsx";
 
 export const React = new TabContent(
   "This Webpage", //title
   ["Personal Project"], //subheading
   await getText(locations.ReactBody), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.ReactLearnings), ], //sections
+  [await getText(locations.ReactLearnings)], //sections
   [[LINKS.webpage, locations.PicGithubTxt]], //htmls
   null, //list,
-  ["Javascript", "JSX", "React", "Vite", "Visual Studio Code",], //techs
+  ["Javascript", "JSX", "React", "Vite", "Visual Studio Code"] //techs
 );
 
 export const Capstone = new TabContent(
   "Vanderbilt Specialization Capstone ", //title
   ["Personal Project"], //subheading
   await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.CourseraLearnings), await getText(locations.CourseraGitfront), await getText(locations.CourseraDisc)], //sections
+  [
+    await getText(locations.CourseraLearnings),
+    await getText(locations.CourseraGitfront),
+    await getText(locations.CourseraDisc),
+  ], //sections
   [
     [LINKS.coursera, locations.PicGithubTxt],
     [LINKS.coursera_video, locations.PicYoutube],
     [LINKS.coursera_cert, locations.PicCoursera],
   ], //htmls
   await getText(locations.CouseraList), //list
-  ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio",], //techs
+  ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio"] //techs
 );
 
-export const TodoList = new TabContent(
-  "Simple Todo List", //title
-  ["Personal Project"], //subheading
-  await getText(locations.TodoListBody), //body
-  [], //sections
-  [
-    [LINKS.todolist, locations.PicGithubTxt],
-    [LINKS.todolist_page, locations.PicWebpage],
-  ], //htmls
-  new MyList("Future Plans", await getText(locations.TodoListList)), //list
-  ["Kotlin", "Firebase Firestore", "Jetpack Compose", "Android Studio"], //techs
-)
+export const TodoList = [
+  Title({ title: "Simple ToDo List" }),
+  EntryBox({
+    items: [
+      Subheading({ subheading: ["Personal Project"] }),
+      Htmls({
+        htmls: [
+          [LINKS.todolist, locations.PicGithubTxt],
+          [LINKS.todolist_page, locations.PicWebpage],
+        ],
+      }),
+      EntryBody({
+        items: [
+          Techs({
+            techs: [
+              "Kotlin",
+              "Firebase Firestore",
+              "Jetpack Compose",
+              "Android Studio",
+            ],
+          }),
+          Body({ body: await getText(locations.TodoListBody) }),
+          List({
+            title: "Future Plans",
+            list: await getText(locations.TodoListList),
+          }),
+        ],
+      }),
+    ],
+  }),
+];
 
 export const Kotlin = new TabContent(
   "Residental Manager", //title
@@ -48,8 +79,8 @@ export const Kotlin = new TabContent(
   null, //sections
   [[LINKS.residental, locations.PicGithubTxt]], //htmls
   null, //list
-  ["Kotlin", "Jetpack Compose", "Android Jetpack", "Android Studio", ],//techs
-)
+  ["Kotlin", "Jetpack Compose", "Android Jetpack", "Android Studio"] //techs
+);
 
 export const Java = new TabContent(
   "Native Android App (Java)", //title
@@ -58,34 +89,34 @@ export const Java = new TabContent(
   null, //sections
   null, //htmls
   null, //list
-  ["Java", "Android Studio",], //techs
+  ["Java", "Android Studio"] //techs
 );
 
 export const ReactNative = new TabContent(
   "React Native App", //title
   ["Personal Project"], //subheading
   await getText(locations.ReactNativeBody), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.ReactNativeLearnings), ], //sections
+  [await getText(locations.ReactNativeLearnings)] //sections
 );
 
 export const iOS = new TabContent(
   "Native iOS App", //title
   ["Personal Project"], //subheading
   ["Put description", "and videos", "and screenshots", "of my iOS app", "here"], //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.IOSLearnings), ], //sections
+  [await getText(locations.IOSLearnings)], //sections
   null, //htmls
   null, //list
-  ["Swift", "Xcode", "MacOS",], //techs
+  ["Swift", "Xcode", "MacOS"] //techs
 );
 
 export const Flutter = new TabContent(
   "Pet Food Log", //title
   ["Personal Project"], //subheading
   await getText(locations.FlutterText), //body --> "await" here is very important! Page won't work without it!
-  [await getText(locations.FlutterLearnings), ], //sections
+  [await getText(locations.FlutterLearnings)], //sections
   [[LINKS.flutter, locations.PicGithubTxt]], //htmls
   null, //list
-  ["Dart", "Flutter", "Android Studio",], //techs
+  ["Dart", "Flutter", "Android Studio"] //techs
 );
 
 // export const Spring = new TabContent(
@@ -106,7 +137,7 @@ export const AngularIonic = new TabContent(
   null, //sections
   null, //htmls
   null, //list
-  ["Javascript", "Angular", "Ionic",], //techs
+  ["Javascript", "Angular", "Ionic"] //techs
 );
 
 export const Maui = new TabContent(
@@ -116,15 +147,15 @@ export const Maui = new TabContent(
   null, //sections
   null, //htmls
   null, //list
-  ["C# (C-sharp)", ".NET Maui", "Visual Studio 2022", ], //techs
+  ["C# (C-sharp)", ".NET Maui", "Visual Studio 2022"] //techs
 );
 
 export const CaliberDroid = new TabContent(
   "CaliberDroid", //title
-  ["Native Android App","Professional Project"],
+  ["Native Android App", "Professional Project"],
   await getText(locations.CaliberText), //body
   null, //sections
   [[LINKS.caliber, locations.PicGithubTxt]], //htmls
   null,
-  ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"],
-)
+  ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"]
+);

@@ -5,7 +5,7 @@ export default class MyList {
         list = []
     ) { 
         this.title = title,
-        this.list = list;
+        this.items = list;
     }
 
 

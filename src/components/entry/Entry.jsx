@@ -11,22 +11,29 @@ import Subheading from "./Subheading.jsx";
 import Title from "./Title.jsx";
 
 function Entry(props) {
+  // return (
+  //   <div id="entry">
+  //     <div id="headbar">{props.title}</div>
+  //     <div id="content-box">
+  //       {props.subheading}
+  //       {props.htmls}
+  //       <div id="entry-body">
+  //         {props.techs}
+  //         {props.body}
+  //         {props.list}
+  //         {props.sections}
+  //         <br></br>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
   return (
     <div id="entry">
-      <div id="headbar">{props.title}</div>
-      <div id="content-box">
-        {props.subheading}
-        {props.htmls}
-        <div id="entry-body">
-          {props.techs}
-          {props.body}
-          {props.list}
-          {props.sections}
-          <br></br>
-        </div>
-      </div>
+      { props.items.map((item, index) =>
+      item
+    ) }
     </div>
-  );
+  )
 }
 
 export default Entry;

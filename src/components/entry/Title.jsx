@@ -2,6 +2,10 @@ import "./title.css";
 
 export default function Title(props) {
   if (props.title != null) {
-    return <span id="title">{props.title}</span>;
+    return <div id="headbar">
+    <span id="title">
+      {props.title}
+      </span>
+      </div>;
   }
 }
