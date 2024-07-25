@@ -13,12 +13,7 @@ import MyButton from "./MyButton.jsx";
  */
 function ButtonMenu({ panel, onSelect }) {
   // console.log("panel selected = " + panel);
-  var buttons = undefined;
-  if (panel === panels.About) {
-    buttons = myTabs.AboutList;
-  } else if (panel === panels.Projects) {
-    buttons = myTabs.ProjectList;
-  }
+  var buttons = myTabs.MyButtons
 
   return (
     <Fragment>

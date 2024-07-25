@@ -20,7 +20,7 @@ export default class Tabs {
   static CaliberDroid = new Tabs("CaliberDroid", "Caliber", locations.PicAndroid, "red");
   static Capstone = new Tabs("Capstone", "Capstone", locations.PicAndroid, "red");
 
-  static AboutList = [
+  static MyButtons = [
     this.Hello,
     this.Education,
     this.History,
