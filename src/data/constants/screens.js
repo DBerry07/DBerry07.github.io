@@ -7,6 +7,7 @@ import Subheading from "../../components/entry/Subheading.jsx";
 import EntryBox from "../../components/entry/EntryBox.jsx";
 import EntryBody from "../../components/entry/EntryBody.jsx";
 import Body from "../../components/entry/Body.jsx";
+import SubSection from "../../components/entry/SubSection.jsx";
 
 export const Hello = [
   Title({title:"Hello, there!"}),
@@ -30,7 +31,27 @@ export const Helloo = new TabContent(
 //   body: filler(50),
 // };
 
-export const Education = new TabContent(
+export const Education = [
+  Title({title: "My Education"}),
+  EntryBox({items:[
+    EntryBody({items:[
+      SubSection({
+        title: "Florida Atlantic University",
+        items: await getText(locations.Edu01),
+      }),
+      SubSection({
+        title: "Revature, LLC.",
+        items: await getText(locations.Edu02),
+      }),
+      SubSection({
+        title: "Broward College",
+        items: await getText(locations.Edu03),
+      }),
+    ]})
+  ]})
+]
+
+export const EDU = new TabContent(
   "My Education", //title
   null, //subheading
   null, //body
