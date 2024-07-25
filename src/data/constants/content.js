@@ -1,3 +1,10 @@
+
+import { Education } from "../screens/about_education.js";
+import { Hello } from "../screens/about_hello.js";
+import { History } from "../screens/about_history.js";
+import { CaliberDroid } from "../screens/project_caliber.js";
+import { Capstone } from "../screens/project_capstone.js";
+import { TodoList } from "../screens/project_todolist.js";
 import myTabs from "./buttons.js";
 import * as SCREENS from "./screens.js";
 import * as PROJECTS from "./screens_projects.js";
@@ -6,12 +13,12 @@ import * as PROJECTS from "./screens_projects.js";
 
 const pageContent = {};
 
-pageContent[myTabs.Hello.name] = SCREENS.Hello;
-pageContent[myTabs.Education.name] = SCREENS.Education;
-pageContent[myTabs.History.name] = SCREENS.History;
+pageContent[myTabs.Hello.name] = Hello;
+pageContent[myTabs.Education.name] = Education;
+pageContent[myTabs.History.name] = History;
 pageContent[myTabs.About.name] = SCREENS.About;
 
-pageContent[myTabs.TodoList.name] = PROJECTS.TodoList;
+pageContent[myTabs.TodoList.name] = TodoList;
 pageContent[myTabs.Java.name] = PROJECTS.Java;
 pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
 pageContent[myTabs.iOS.name] = PROJECTS.iOS;
@@ -20,8 +27,8 @@ pageContent[myTabs.Flutter.name] = PROJECTS.Flutter;
 pageContent[myTabs.React.name] = PROJECTS.React;
 pageContent[myTabs.Maui.name] = PROJECTS.Maui;
 pageContent[myTabs.AngularIonic] = PROJECTS.AngularIonic;
-pageContent[myTabs.CaliberDroid] = PROJECTS.CaliberDroid;
-pageContent[myTabs.Capstone] = PROJECTS.Capstone;
+pageContent[myTabs.CaliberDroid] = CaliberDroid;
+pageContent[myTabs.Capstone] = Capstone;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 
