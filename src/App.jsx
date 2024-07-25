@@ -19,7 +19,6 @@ import Sections from "./components/entry/Sections.jsx";
 import Htmls from "./components/entry/Htmls.jsx";
 import List from "./components/entry/List.jsx";
 import Techs from "./components/entry/Techs.jsx";
-import { Caliber, Capstone } from "./data/constants/screens_projects.js";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
