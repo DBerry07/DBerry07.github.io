@@ -23,61 +23,6 @@ export const React = new TabContent(
   ["Javascript", "JSX", "React", "Vite", "Visual Studio Code"] //techs
 );
 
-export const Cappy = new TabContent(
-  "Vanderbilt Specialization Capstone ", //title
-  ["Personal Project"], //subheading
-  await getText(locations.CouseraBody), //body --> "await" here is very important! Page won't work without it!
-  [
-    await getText(locations.CourseraLearnings),
-    await getText(locations.CourseraGitfront),
-    await getText(locations.CourseraDisc),
-  ], //sections
-  [
-    [LINKS.coursera, locations.PicGithubTxt],
-    [LINKS.coursera_video, locations.PicYoutube],
-    [LINKS.coursera_cert, locations.PicCoursera],
-  ], //htmls
-  await getText(locations.CouseraList), //list
-  ["Kotlin", "Android Jetpack", "XML UI Design", "Volley", "Android Studio"] //techs
-);
-
-export const Capstone = [
-  Title({ title: "Vanderbilt Specialization Capstone" }),
-  EntryBox({
-    items: [
-      Subheading({ subheading: ["Educational Project", "Native Android"] }),
-      Htmls({
-        htmls: [
-          [LINKS.coursera, locations.PicGithubTxt],
-          [LINKS.coursera_video, locations.PicYoutube],
-          [LINKS.coursera_cert, locations.PicCoursera],
-        ],
-      }),
-      EntryBody({
-        items: [
-          Body({ body: await getText(locations.CouseraBody) }),
-          List({
-            title: "Technologies Used",
-            list: await getText(locations.CourseraTechs),
-          }),
-          SubSection({
-            title: "Learnings",
-            items: await getText(locations.CourseraLearnings),
-          }),
-          SubSection({
-            title: "Why is this on Gitfront?",
-            items: await getText(locations.CourseraGitfront),
-          }),
-          SubSection({
-            title: "Why isn't this on the Play Store?",
-            items: await getText(locations.CourseraDisc),
-          }),
-        ],
-      }),
-    ],
-  }),
-];
-
 export const Kotlin = new TabContent(
   "Residental Manager", //title
   ["Native Android App", "Personal Project"], //subheading
@@ -165,33 +110,3 @@ export const Caliber = new TabContent(
   null,
   ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"]
 );
-
-export const CaliberDroid = [
-  Title({ title: "CaliberDroid"}),
-  EntryBox({items:[
-    Subheading({subheading: ["Professional Project", "Native Android"]}),
-  Htmls({ htmls: [
-    [LINKS.caliber, locations.PicGithubTxt]
-  ]}),
-  EntryBody({items:[
-    Body({body: await getText(locations.CaliberText)}),
-    List({
-      title: "QC Manager abilities",
-      list: await getText(locations.CaliberQC),
-    }),
-    List({
-      title: "Trainer abilities",
-      list: await getText(locations.CaliberTrainers),
-    }),
-    List({
-      title: "My Roles & Responsibilities",
-      list: await getText(locations.CaliberRoles)}),
-      List({
-        title: "Technologies Used",
-        list: await getText(locations.CaliberTechs),
-      }),
-    ]}),
-    
-  ]})
-  
-]

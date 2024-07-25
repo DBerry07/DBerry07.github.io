@@ -9,16 +9,6 @@ import EntryBody from "../../components/entry/EntryBody.jsx";
 import Body from "../../components/entry/Body.jsx";
 import SubSection from "../../components/entry/SubSection.jsx";
 
-export const Hello = [
-  Title({title:"Hello, there!"}),
-  EntryBox({items:[
-    Subheading({subheading: ["Click on the buttons to navigate!"]}),
-    EntryBody({items:[
-      Body({body: await getText(locations.HelloBody),}),
-  ]}),
-]}),
-]
-
 export const Helloo = new TabContent(
   "Hello, there!", //title
   ["Click on the buttons to navigate!"], //subheading
@@ -32,24 +22,28 @@ export const Helloo = new TabContent(
 // };
 
 export const Education = [
-  Title({title: "My Education"}),
-  EntryBox({items:[
-    EntryBody({items:[
-      SubSection({
-        title: "Florida Atlantic University",
-        items: await getText(locations.Edu01),
+  Title({ title: "My Education" }),
+  EntryBox({
+    items: [
+      EntryBody({
+        items: [
+          SubSection({
+            title: "Florida Atlantic University",
+            items: await getText(locations.Edu01),
+          }),
+          SubSection({
+            title: "Revature, LLC.",
+            items: await getText(locations.Edu02),
+          }),
+          SubSection({
+            title: "Broward College",
+            items: await getText(locations.Edu03),
+          }),
+        ],
       }),
-      SubSection({
-        title: "Revature, LLC.",
-        items: await getText(locations.Edu02),
-      }),
-      SubSection({
-        title: "Broward College",
-        items: await getText(locations.Edu03),
-      }),
-    ]})
-  ]})
-]
+    ],
+  }),
+];
 
 export const EDU = new TabContent(
   "My Education", //title
@@ -63,24 +57,28 @@ export const EDU = new TabContent(
 );
 
 export const History = [
-  Title({title: "Work History"}),
-  EntryBox({items: [
-    EntryBody({items: [
-      SubSection({
-        title: "Bank of America (May 2021 - May 2022, Contract)",
-        items: await getText(locations.His01),
+  Title({ title: "Work History" }),
+  EntryBox({
+    items: [
+      EntryBody({
+        items: [
+          SubSection({
+            title: "Bank of America (May 2021 - May 2022, Contract)",
+            items: await getText(locations.His01),
+          }),
+          SubSection({
+            title: "Career Break (June 2022 - Present)",
+            items: await getText(locations.His03),
+          }),
+          SubSection({
+            title: "Revature, LLC. (Jan 2020 - Sept 2020, Contract)",
+            items: await getText(locations.His02),
+          }),
+        ],
       }),
-      SubSection({
-        title: "Career Break (June 2022 - Present)",
-        items: await getText(locations.His03),
-      }),
-      SubSection({
-        title: "Revature, LLC. (Jan 2020 - Sept 2020, Contract)",
-        items: await getText(locations.His02),
-      }),
-    ]}),
-  ]}),
-]
+    ],
+  }),
+];
 
 export const HIS = new TabContent(
   "Work History", //title

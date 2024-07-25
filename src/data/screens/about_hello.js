@@ -10,13 +10,13 @@ import Body from "../../components/entry/Body.jsx";
 import SubSection from "../../components/entry/SubSection.jsx";
 
 export const Hello = [
-    Title({ title: "Hello, there!" }),
-    EntryBox({
-      items: [
-        Subheading({ subheading: ["Click on the buttons to navigate!"] }),
-        EntryBody({
-          items: [Body({ body: await getText(locations.HelloBody) })],
-        }),
-      ],
-    }),
-  ];
+  Title({ title: "Hello, there!" }),
+  EntryBox({
+    items: [
+      Subheading({ subheading: ["Click on the buttons to navigate!"] }),
+      EntryBody({
+        items: [Body({ body: await getText(locations.HelloBody) })],
+      }),
+    ],
+  }),
+];
