@@ -62,7 +62,27 @@ export const EDU = new TabContent(
   ] //sections
 );
 
-export const History = new TabContent(
+export const History = [
+  Title({title: "Work History"}),
+  EntryBox({items: [
+    EntryBody({items: [
+      SubSection({
+        title: "Bank of America (May 2021 - May 2022, Contract)",
+        items: await getText(locations.His01),
+      }),
+      SubSection({
+        title: "Career Break (June 2022 - Present)",
+        items: await getText(locations.His03),
+      }),
+      SubSection({
+        title: "Revature, LLC. (Jan 2020 - Sept 2020, Contract)",
+        items: await getText(locations.His02),
+      }),
+    ]}),
+  ]}),
+]
+
+export const HIS = new TabContent(
   "Work History", //title
   null, //subheading
   null, //body

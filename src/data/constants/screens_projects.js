@@ -70,7 +70,7 @@ export const Capstone = [
           }),
           List({
             title: "Technologies Used",
-            list: await getText(locations.CapstoneTechs),
+            list: await getText(locations.CourseraTechs),
           }),
         ],
       }),

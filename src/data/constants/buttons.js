@@ -18,6 +18,7 @@ export default class Tabs {
   static Maui = new Tabs("Maui", ".Net Maui");
   static AngularIonic = new Tabs("AngularIonic", "Ionic");
   static CaliberDroid = new Tabs("CaliberDroid", "CaliberDroid");
+  static Capstone = new Tabs("Capstone", "Capstone");
 
   static AboutList = [
     this.Hello,
@@ -25,6 +26,7 @@ export default class Tabs {
     this.History,
     this.CaliberDroid,
     this.TodoList,
+    this.Capstone,
     // this.Kotlin,
     // this.iOS,
     // this.Flutter,
