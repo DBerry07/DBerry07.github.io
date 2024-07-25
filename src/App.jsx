@@ -70,7 +70,7 @@ function App() {
         <NamePanel />
         <ButtonMenu panel={panel} onSelect={handleSelect} />
         <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
-          <Entry content={Caliber} />
+          <Entry content={content} />
           {/* <Entry
             title={<Title title={content.title} />}
             techs={<Techs techs={content.techs} />}

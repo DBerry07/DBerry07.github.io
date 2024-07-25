@@ -2,8 +2,23 @@ import { LINKS } from "./links.js";
 import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 import TabContent from "./TabContent.js";
+import Title from "../../components/entry/Title.jsx";
+import Subheading from "../../components/entry/Subheading.jsx";
+import EntryBox from "../../components/entry/EntryBox.jsx";
+import EntryBody from "../../components/entry/EntryBody.jsx";
+import Body from "../../components/entry/Body.jsx";
 
-export const Hello = new TabContent(
+export const Hello = [
+  Title({title:"Hello, there!"}),
+  EntryBox({items:[
+    Subheading({subheading: ["Click on the buttons to navigate!"]}),
+    EntryBody({items:[
+      Body({body: await getText(locations.HelloBody),}),
+  ]}),
+]}),
+]
+
+export const Helloo = new TabContent(
   "Hello, there!", //title
   ["Click on the buttons to navigate!"], //subheading
   await getText(locations.HelloBody) // "await" here is very important! Page won't work without it!

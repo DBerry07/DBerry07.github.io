@@ -188,7 +188,7 @@ export const Maui = new TabContent(
   ["C# (C-sharp)", ".NET Maui", "Visual Studio 2022"] //techs
 );
 
-export const CaliberDroid = new TabContent(
+export const Caliber = new TabContent(
   "CaliberDroid", //title
   ["Native Android App", "Professional Project"],
   await getText(locations.CaliberText), //body
@@ -198,7 +198,7 @@ export const CaliberDroid = new TabContent(
   ["Kotlin", "Views UI Framework", "Retrofit", "Android Studio", "Postman"]
 );
 
-export const Caliber = [
+export const CaliberDroid = [
   Title({ title: "CaliberDroid"}),
   EntryBox({items:[
     Subheading({subheading: ["Professional Project", "Native Android"]}),
