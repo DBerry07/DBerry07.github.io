@@ -18,3 +18,7 @@ menu {
 #blank {
     grid-area: blank;
 }
+
+.button-icon {
+    align-items: end;
+}

@@ -3,6 +3,7 @@ import myTabs from "../data/constants/buttons.js";
 import { Fragment } from "react";
 import { panels } from "../data/constants/panels.js";
 import "../css/buttons.css";
+import MyButton from "./MyButton.jsx";
 
 /**
  * ButtonMenu contains the buttons that a user will use to navigate the webpage - nominally for changing the displayed tab contents.
@@ -23,25 +24,7 @@ function ButtonMenu({ panel, onSelect }) {
     <Fragment>
       <menu id="button-menu">
         {buttons.map((item, index) => (
-          <span key={index} id={item+"-span"}>
-            <button
-              id={item+"-button"}
-              onClick={() => onSelect(item)}
-            >
-              {/* <span> */}
-              {item.text}
-              {/* {item.icon != "" && (
-                <img
-                  src={item.icon}
-                  width={17}
-                  height={17}
-                  className="button-icon"
-                />
-              )} */}
-              {/* </span> */}
-            </button>
-            <div className="button-divider" id={item + "-divider"}></div>
-          </span>
+          <MyButton item={item} key={index} onSelect={onSelect}/>
         ))}
       </menu>
     </Fragment>

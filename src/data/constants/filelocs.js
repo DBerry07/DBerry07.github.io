@@ -56,7 +56,7 @@ export const locations = {
   PicLinkedin: urlStart + assets + "logo-linkedin.png",
   PicGitfront: urlStart + assets + "logo-gitfront.png",
   PicSendmail: urlStart + assets + "icon-sendmail.png",
-  PicAndroid: urlStart + assets + "logo-android.png",
+  PicAndroid: urlStart + assets + "icons8-android-50.png",
   PicYoutube: urlStart + assets + "logo-youtube-txt.png",
   PicCoursera: urlStart + assets + "logo-coursera-txt.png",
   PicWebpage: urlStart + assets + "icons8-http-64.png",
