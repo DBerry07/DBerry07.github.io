@@ -78,38 +78,6 @@ export const Capstone = [
   }),
 ];
 
-export const TodoList = [
-  Title({ title: "Simple ToDo List" }),
-  EntryBox({
-    items: [
-      Subheading({ subheading: ["Personal Project", "Native Android"] }),
-      Htmls({
-        htmls: [
-          [LINKS.todolist, locations.PicGithubTxt],
-          [LINKS.todolist_page, locations.PicWebpage],
-        ],
-      }),
-      EntryBody({
-        items: [
-          Techs({
-            techs: [
-              "Kotlin",
-              "Firebase Firestore",
-              "Jetpack Compose",
-              "Android Studio",
-            ],
-          }),
-          Body({ body: await getText(locations.TodoListBody) }),
-          List({
-            title: "Future Plans",
-            list: await getText(locations.TodoListList),
-          }),
-        ],
-      }),
-    ],
-  }),
-];
-
 export const Kotlin = new TabContent(
   "Residental Manager", //title
   ["Native Android App", "Personal Project"], //subheading
