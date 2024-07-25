@@ -26,15 +26,20 @@ export const TodoList = [
       }),
       EntryBody({
         items: [
-          Techs({
-            techs: [
+          Body({ body: await getText(locations.TodoListBody) }),
+          List({
+            title: "Technologies Used",
+            list: [
               "Kotlin",
               "Firebase Firestore",
               "Jetpack Compose",
+              "MVVM Design Pattern",
               "Android Studio",
+              "Android Design Patterns",
+              "Android Operating System Architecture",
+              "Android SDK",
             ],
           }),
-          Body({ body: await getText(locations.TodoListBody) }),
           List({
             title: "Future Plans",
             list: await getText(locations.TodoListList),
