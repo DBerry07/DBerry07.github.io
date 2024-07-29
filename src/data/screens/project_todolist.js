@@ -21,7 +21,7 @@ export const TodoList = [
       Htmls({
         htmls: [
           [LINKS.todolist, locations.PicGithubTxt],
-          [LINKS.todolist_page, locations.PicWebpage],
+          // [LINKS.todolist_page, locations.PicWebpage],
         ],
       }),
       EntryBody({
