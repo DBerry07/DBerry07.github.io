@@ -1,10 +1,10 @@
 :root {
     --fsize: 16pt;
     --hsize: 5vh;
-    --bsize: 2.5vh;
-    --shsize: 3vh;
-    --buttonsize: 2.7vh;
-    
+    --bsize: 3vh;
+    --shsize: 4vh;
+    --buttonsize: 3vh;
+
     --time-short: 250ms;
     --time-long: 400ms;
 
