@@ -3,7 +3,7 @@ menu {
         /* background-color: whitesmoke; */
         background-color: #FEFFFA;
         border: none;
-        font-size: 18pt;
+        font-size: var(--buttonsize);
         /* text-decoration: underline; */
         font-weight: bold;
         width: 170px;

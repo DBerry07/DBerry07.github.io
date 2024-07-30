@@ -1,7 +1,14 @@
 :root {
     --fsize: 16pt;
-    --hsize: 32pt;
-    --bsize: 17pt;
+    --hsize: 5vh;
+    --bsize: 2.5vh;
+    --shsize: 3vh;
+    --buttonsize: 2.7vh;
     --time-short: 250ms;
     --time-long: 400ms;
+
+    --hsize-mobile: 20pt;
+    --shsize-mobile: 15pt;
+    --bsize-mobile: 15pt;
+    --buttonsize-mobile:15pt;
   }

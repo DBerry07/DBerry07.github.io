@@ -1,0 +1,29 @@
+
+#headbar {
+    grid-area: heading;
+    font-size: var(--hsize);
+    padding-top: 2vh;
+    /* padding-bottom: 1vh; */
+    font-family: "Charmonman";
+    font-weight: bold;
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+    margin-bottom: 2vh;
+  }
+
+#title {
+    font-size: var(--hsize);
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #headbar {
+        align-items: center;
+        text-align: center;
+      }
+
+    #title {
+        font-size: var(--hsize-mobile) !important
+      }
+
+}

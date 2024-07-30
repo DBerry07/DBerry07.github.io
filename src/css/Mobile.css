@@ -15,15 +15,12 @@
   #content-box {
     width: 99% !important;
     border: none !important;
-    font-size: 2vh !important;
+    font-size: var(--bsize-mobile) !important;
   }
 
   #headbar {
     align-items: center;
     text-align: center;
-  }
-  #title {
-    font-size: 3vh !important;
   }
 
   #subheading {
@@ -32,6 +29,10 @@
 
   #subsubheading {
     font-size: 2vh !important;
+  }
+
+  #title {
+    font-size: var(--hsize-mobile);
   }
 
   .section_title {
