@@ -42,7 +42,7 @@ function App() {
   function handleSelect(value) {
     // console.log("> tab selected: " + value);
     setIsEnter((prevState) => !prevState)
-
+    setIsDrawerOpen(false)
     setTimeout(() => changePanel(value), 400);
   }
 
