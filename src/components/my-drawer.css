@@ -14,9 +14,3 @@
   .Drawer__Container--isOpen {
     transform: translate(0);
   }
-
-  @media only screen and (max-width: 1000px) {
-    button{
-      font-size: var(--buttonsize-mobile) !important;
-    }
-  }
