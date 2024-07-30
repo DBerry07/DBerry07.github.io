@@ -1,7 +1,4 @@
 import "./button-menu.css";
-import myTabs from "../data/constants/buttons.js";
-import { Fragment } from "react";
-import { panels } from "../data/constants/panels.js";
 import "../css/buttons.css";
 
 export default function MyButton(props) {
@@ -11,6 +8,12 @@ export default function MyButton(props) {
       props.item != "History"
     ) {
         // console.log(props.colour);
+
+        let icon = null;
+        if (props.item.icon != null) {
+          icon = <img className="button-icon" src={props.item.icon} style={{color: props.colour}} width={25} height={25} />
+        }
+
       return(
         <span key={props.key} id={props.item + "-span"}>
           <button id={props.item + "-button"} className="project-button" style={{color: props.item.colour}} onClick={() => props.onSelect(props.item)}>
@@ -25,7 +28,8 @@ export default function MyButton(props) {
                   />
                 )} */}
             {/* </span> */}
-            <img className="button-icon" src={props.item.icon} style={{color: props.colour}} width={25} height={25} />
+            
+            {icon}
           </button>
         </span>
       )
