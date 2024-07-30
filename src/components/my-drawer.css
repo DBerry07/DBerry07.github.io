@@ -1,0 +1,16 @@
+.Drawer__Container {
+    height: 500px;
+    /* width: 300px; */
+    background-color: #FEFFFA;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-300px);
+    position:absolute;
+    z-index: 9999;
+    border-style: solid;
+    border-left: none;
+    border-color: black;
+    border-radius: 1px;
+  }
+  .Drawer__Container--isOpen {
+    transform: translate(0);
+  }

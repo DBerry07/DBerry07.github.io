@@ -60,4 +60,5 @@ export const locations = {
   PicYoutube: urlStart + assets + "logo-youtube-txt.png",
   PicCoursera: urlStart + assets + "logo-coursera-txt.png",
   PicWebpage: urlStart + assets + "icons8-upgraded-http-version-webpage-for-new-modern-website-96.png",
+  PicMenu: urlStart + assets + "icons8-menu-150.png",
 };

@@ -43,8 +43,8 @@
   }
 
   #button-menu {
-    border: unset;
-    display: none;
+    /* border: unset;
+    display: none; */
   }
 
   #entry-body {
@@ -91,12 +91,12 @@
     margin-bottom: 1vh !important;
   } */
 
-  menu span {
+  /* menu span {
     display: inline !important;
-  }
+  } */
 
   button {
-    padding: 2vh !important;
+    /* padding: 2vh !important; */
   }
 
   #headbar {
@@ -104,10 +104,10 @@
     display: block;
   }
 
-  .menu_button {
+  /* .menu_button {
     text-align: center !important;
     padding: 2% !important;
-  }
+  } */
 
   .link-img {
     max-width: 100 !important;
