@@ -1,4 +1,4 @@
-import { locations } from "../constants/filelocs.js";
+import { locations } from "./filelocs.js";
 
 export default class Tabs {
   static Hello = new Tabs("Hello", "Hello!");
@@ -19,6 +19,7 @@ export default class Tabs {
   static AngularIonic = new Tabs("AngularIonic", "Ionic");
   static CaliberDroid = new Tabs("CaliberDroid", "Caliber", locations.PicAndroid, "red");
   static Capstone = new Tabs("Capstone", "Capstone", locations.PicAndroid, "red");
+  static MoreProjects = new Tabs("MoreProjects", "More", null, "green");
 
   static AboutList = [
     this.Hello,
@@ -27,6 +28,7 @@ export default class Tabs {
     this.CaliberDroid,
     this.TodoList,
     this.Capstone,
+    this.MoreProjects,
     // this.Kotlin,
     // this.iOS,
     // this.Flutter,
