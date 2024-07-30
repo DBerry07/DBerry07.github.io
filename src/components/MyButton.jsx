@@ -10,9 +10,9 @@ export default function MyButton(props) {
         // console.log(props.colour);
 
         let icon = null;
-        if (props.item.icon != null) {
-          icon = <img className="button-icon" src={props.item.icon} style={{color: props.colour}} width={25} height={25} />
-        }
+        // if (props.item.icon != null) {
+        //   icon = <img className="button-icon" src={props.item.icon} style={{color: props.colour}} width={25} height={25} />
+        // }
 
       return(
         <span key={props.key} id={props.item + "-span"}>
