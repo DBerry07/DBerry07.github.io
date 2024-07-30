@@ -1,7 +1,7 @@
 import "./body.css";
 
 export default function Body({ body }) {
-  if (body != null) {
+  if (body != null && body != undefined) {
     return (
       <>
         {body.map((item, index) => (
