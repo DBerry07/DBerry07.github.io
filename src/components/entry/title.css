@@ -15,7 +15,7 @@
     font-size: var(--hsize);
 }
 
-@media only screen and (max-width: 1000px) {
+@media (pointer:none), (pointer:coarse) {
 
     #headbar {
         align-items: center;

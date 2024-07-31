@@ -7,7 +7,7 @@
   font-weight: 500;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (pointer:none), (pointer:coarse) {
   #subheading {
     font-size: var(--shsize-mobile) !important;
   }

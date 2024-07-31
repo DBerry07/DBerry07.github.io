@@ -14,3 +14,11 @@
   .Drawer__Container--isOpen {
     transform: translate(0);
   }
+
+  @media (pointer:none), (pointer:coarse) {
+    .Drawer__Container {
+      width: 200px !important;
+      height: 400px !important;
+      overflow-y: auto;
+    }
+  }

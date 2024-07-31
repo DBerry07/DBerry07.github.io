@@ -13,6 +13,7 @@ import { panels } from "./data/constants/panels.js";
 import NamePanel from "./components/NamePanel.jsx";
 import MyDrawer from "./components/MyDrawer.jsx";
 import NamePanelWithDrawerButton from "./components/NamePanelWithDrawerButton.jsx";
+import { isMobile } from "react-device-detect";
 
 function App() {
   const [tab, setTab] = useState(myTabs.Hello.name);
@@ -27,9 +28,6 @@ function App() {
   }
 
   // const [open, switchOpen] = useState(false);
-
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 1000; // Set your desired breakpoint
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -63,7 +61,7 @@ function App() {
   //   switchOpen(!open);
   // }
 
-  if (width > breakpoint) {
+  if (!isMobile) {
     return (
       <Fragment>
         <main className="App">
@@ -86,7 +84,7 @@ function App() {
       </Fragment>
     );
   }
-  else {
+  else if (isMobile) {
     return (
       <Fragment>
         <main className="App">

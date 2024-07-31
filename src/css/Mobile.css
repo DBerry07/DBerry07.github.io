@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media (pointer:none), (pointer:coarse) {
 
   #root {
     max-height: 97vh;
@@ -30,11 +30,6 @@
 
   footer {
     font-size: 2vh !important;
-  }
-
-  #button-menu {
-    /* border: unset;
-    display: none; */
   }
 
   #entry-body {
@@ -84,10 +79,6 @@
   /* menu span {
     display: inline !important;
   } */
-
-  button {
-    /* padding: 2vh !important; */
-  }
 
   #headbar {
     /* border-top: 1px solid black; */
