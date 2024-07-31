@@ -19,6 +19,11 @@ menu {
         transition: 500ms;
     }
 
+    .about-button {
+        text-align: end;
+        color: black;
+    }
+
     /** About button hover actions **/
     .about-button:hover{
         height: min-content;
@@ -64,14 +69,17 @@ button#Back {
 
 #Hello-button {
     text-align: end;
+    color: black;
 }
 
 #Education-button {
     text-align: end;
+    color: black;
 }
 
 #History-button {
     text-align: end;
+    color: black;
 }
 
 @media only screen and (max-width: 1000px) {
