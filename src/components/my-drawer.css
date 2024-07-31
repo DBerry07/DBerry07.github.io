@@ -18,7 +18,7 @@
   @media (pointer:none), (pointer:coarse) {
     .Drawer__Container {
       width: 200px !important;
-      height: 400px !important;
+      height: fit-content !important;
       overflow-y: auto;
     }
   }

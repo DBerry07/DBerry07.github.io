@@ -2,7 +2,7 @@ menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: fit-content;
     grid-area: menu;
     margin: auto;
     overflow-y: auto;
@@ -21,4 +21,10 @@ menu {
 
 .button-icon {
     align-items: end;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    menu {
+        height: fit-content;
+    }
 }
