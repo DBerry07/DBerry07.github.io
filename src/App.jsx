@@ -92,7 +92,9 @@ function App() {
           <MyDrawer isOpen={isDrawerOpen}>
             <ButtonMenu panel={panel} onSelect={handleSelect} />
           </MyDrawer>
-          <Entry content={content} />
+          <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
+            <Entry content={content} />
+          </CSSTransition>
         </main>
         <Footer />
       </Fragment>
