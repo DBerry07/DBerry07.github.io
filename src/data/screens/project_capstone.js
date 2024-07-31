@@ -14,7 +14,7 @@ import List from "../../components/entry/List.jsx";
 import SubSection from "../../components/entry/SubSection.jsx";
 
 export const Capstone = [
-  Title({ title: "Vanderbilt Specialization Capstone" }),
+  Title({ title: "Specialization Capstone" }),
   EntryBox({
     items: [
       Subheading({ subheading: ["Educational Project", "Native Android"] }),
