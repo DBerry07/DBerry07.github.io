@@ -8,6 +8,7 @@ import EntryBox from "../../components/entry/EntryBox.jsx";
 import EntryBody from "../../components/entry/EntryBody.jsx";
 import Body from "../../components/entry/Body.jsx";
 import SubSection from "../../components/entry/SubSection.jsx";
+import ColourKey from "../../components/ColourKey.jsx";
 
 export const Hello = [
   Title({ title: "Hello, there!" }),
@@ -15,7 +16,10 @@ export const Hello = [
     items: [
       Subheading({ subheading: ["Click on the buttons to navigate!"] }),
       EntryBody({
-        items: [Body({ body: await getText(locations.HelloBody) })],
+        items: [
+          // ColourKey(),
+          Body({ body: await getText(locations.HelloBody) })
+        ],
       }),
     ],
   }),

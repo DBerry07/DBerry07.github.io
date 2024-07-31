@@ -1,0 +1,24 @@
+
+#colour-key-header {
+    
+}
+
+#colour-key-div {
+    align-content: space-between;
+    text-align: center !important;
+    display: flex;
+}
+
+#colour-key-android {
+    color: green;
+    font-family: "Charmonman";
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#colour-key-about {
+    color: black;
+    font-family: "Charmonman";
+    font-weight: bold;
+    font-size: 15pt;
+}
