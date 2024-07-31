@@ -1,8 +1,8 @@
 #root {
   max-width: 95vw;
   /* margin: 0 auto; */
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   /* padding: 2rem; */
   /* padding: 0px; */
   text-align: center;
@@ -12,6 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 /*
