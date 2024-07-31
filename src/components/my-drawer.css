@@ -6,7 +6,7 @@
     transform: translate(-300px);
     position:absolute;
     z-index: 9999;
-    border-style: solid;
+    border-style: double;
     border-left: none;
     border-color: black;
     border-radius: 1px;
