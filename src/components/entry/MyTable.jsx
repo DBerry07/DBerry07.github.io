@@ -24,7 +24,7 @@ const MyTable = ({items})  => {
             <thead>
                 <tr>
                     <th>
-                        Project Name
+                        Project
                     </th>
                     <th>
                         GitHub Link
