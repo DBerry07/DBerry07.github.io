@@ -10,7 +10,7 @@ menu {
         /* padding: 1vh; */
         /* font-size: 16pt; */
         /* font-size: 110%; */
-        text-align: start;
+        /* text-align: start; */
         font-family: 'Charmonman';
         margin: 1vh;
         
@@ -20,7 +20,7 @@ menu {
     }
 
     .about-button {
-        text-align: end;
+        text-align: start;
         color: black;
     }
 
@@ -34,52 +34,15 @@ menu {
     /** Project buttons **/
     .project-button {
         color: red;
-        display: flex;
+        /* display: flex;
         justify-content:space-between;
-        align-items: center;
+        align-items: center; */
+        text-align: end;
     }
     .project-button:hover {
         height: min-content;
         border-bottom: solid black 1px;
     }
-}
-
-
-
-
-
-button#Projects {
-    /* background-color: cornsilk; */
-    font-style: italic;
-}
-
-button#Back {
-    /* background-color: cornsilk; */
-    font-style: italic;
-}
-
-.button-divider {
-    display: none;
-}
-
-#History-divider {
-    display:block;
-    height: 2vh;
-}
-
-#Hello-button {
-    text-align: end;
-    color: black;
-}
-
-#Education-button {
-    text-align: end;
-    color: black;
-}
-
-#History-button {
-    text-align: end;
-    color: black;
 }
 
 @media only screen and (max-width: 1000px) {
