@@ -3,7 +3,7 @@ import Title from "../../components/entry/Title"
 import EntryBody from "../../components/entry/EntryBody"
 import EntryBox from "../../components/entry/EntryBox"
 import Body from "../../components/entry/Body"
-import MyTable from "../../components/MyTable"
+import MyTable from "../../components/entry/MyTable"
 
 import MyTableData from "../my_table_data"
 import { locations } from "../constants/filelocs"
@@ -18,7 +18,7 @@ export const MoreProjects = [
     EntryBox({items:[
             Subheading({subheading: ["Additional projects I have worked on"]}),
             EntryBody({items:[
-                    MyTable({items: [new MyTableData("hello", "world")]})
+                    MyTable({items: [new MyTableData("my project", "hppt.mywebsitelink.c/o/m/")]})
             ]}),
         ]
     })

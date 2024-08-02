@@ -1,0 +1,29 @@
+
+table {
+    padding-top: 40px;
+    width: 100%;
+    align-self: center;
+}
+thead tr th {
+    font-family: "Charmonman";
+    font-weight: bold;
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: fit-content;
+}
+
+tbody tr td {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    table {
+        overflow-x: visible;
+        overflow-y: hidden;
+        white-space: inherit;
+        align-items: center;
+    }
+  }
