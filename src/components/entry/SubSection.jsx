@@ -6,7 +6,7 @@ export default function SubSection(props) {
         <div>
         <div className="list-item-title">{props.title}</div>
         {props.items.map((item, index) =>
-            <p className="body-p">{item}</p>
+            <p className="body-p" key={index}>{item}</p>
             )}
         </div>
     )

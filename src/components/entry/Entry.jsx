@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import "./entry.css";
 
 function Entry(props) {
@@ -5,7 +6,9 @@ function Entry(props) {
   return (
     <div id="entry">
       { props.content.map((item, index) =>
-      item
+      <Fragment key={index}>
+      {item}
+      </Fragment>
     ) }
     </div>
   )

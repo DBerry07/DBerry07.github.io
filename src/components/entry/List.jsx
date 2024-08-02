@@ -2,13 +2,13 @@ import "./list.css";
 import MyList from "../../data/myList";
 
 export default function List(props) {
-  console.log("checking list...")
+  // console.log("checking list...")
 
   var title = props.title
   var myList = props.list
 
   if (props.list != null) {
-    console.log("list != null");
+    // console.log("list != null");
     return (
       <ul>
         <div className="list-item-title">{title}</div>

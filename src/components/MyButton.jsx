@@ -15,7 +15,7 @@ export default function MyButton(props) {
         // }
 
       return(
-        <span key={props.key} id={props.item + "-span"}>
+        <span id={props.item + "-span"}>
           <button id={props.item + "-button"} className="project-button" style={{color: props.item.colour}} onClick={() => props.onSelect(props.item)}>
             {/* <span> */}
             {props.item.text}
@@ -35,7 +35,7 @@ export default function MyButton(props) {
       )
     } else {
       return (
-      <span key={props.key} id={props.item + "-span"}>
+      <span id={props.item + "-span"}>
         <button id={props.item + "-button"} className="about-button" style={{color: props.colour}} onClick={() => props.onSelect(props.item)} >
           {/* <span> */}
           {props.item.text}
