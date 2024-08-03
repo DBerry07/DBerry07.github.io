@@ -18,7 +18,7 @@ export const MoreProjects = [
     EntryBox({items:[
             Subheading({subheading: ["Additional projects I have worked on"]}),
             EntryBody({items:[
-                    MyTable({items: [new MyTableData("my project", "hppt.mywebsitelink.c/o/m/")]})
+                    MyTable({items: [new MyTableData("MaintainX", "https://github.com/DBerry07/Revature_TrainingRoomMaintenanceScheduler")]})
             ]}),
         ]
     })
