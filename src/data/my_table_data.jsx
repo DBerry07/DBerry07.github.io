@@ -5,7 +5,9 @@ class MyTableData {
         link = "no-link"
     ) { 
         this.name = name,
-        this.link = link;
+        this.link = 
+           <a href={link} target="_blank">Project Source Code Link</a> 
+        ;
     }
 }
 
