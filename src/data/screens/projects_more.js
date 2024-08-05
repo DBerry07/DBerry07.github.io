@@ -5,7 +5,7 @@ import EntryBox from "../../components/entry/EntryBox"
 import Body from "../../components/entry/Body"
 import MyTable from "../../components/entry/MyTable"
 
-import MyTableData from "../my_table_data"
+import {MyTableData} from "../my_table_data"
 import { locations } from "../constants/filelocs"
 import { getText } from "../constants/fetching"
 

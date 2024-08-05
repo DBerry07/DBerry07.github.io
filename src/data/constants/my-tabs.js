@@ -20,6 +20,7 @@ export default class Tabs {
   static CaliberDroid = new Tabs("CaliberDroid", "Caliber", locations.PicAndroid, "green");
   static Capstone = new Tabs("Capstone", "Capstone", locations.PicAndroid, "green");
   static MoreProjects = new Tabs("MoreProjects", "More", null, "red");
+  static Certifications = new Tabs("Certifications", "Certs", null, "red")
 
   static AboutList = [
     this.Hello,
@@ -29,6 +30,7 @@ export default class Tabs {
     this.Capstone,
     this.CaliberDroid,
     this.MoreProjects,
+    this.Certifications,
     // this.Kotlin,
     // this.iOS,
     // this.Flutter,

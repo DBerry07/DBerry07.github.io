@@ -2,6 +2,7 @@
 import { Education } from "../screens/about_education.js";
 import { Hello } from "../screens/about_hello.js";
 import { History } from "../screens/about_history.js";
+import Certifications from "../screens/other_certs.js";
 import { CaliberDroid } from "../screens/project_caliber.js";
 import { Capstone } from "../screens/project_capstone.js";
 import { TodoList } from "../screens/project_todolist.js";
@@ -31,6 +32,7 @@ pageContent[myTabs.AngularIonic] = PROJECTS.AngularIonic;
 pageContent[myTabs.CaliberDroid] = CaliberDroid;
 pageContent[myTabs.Capstone] = Capstone;
 pageContent[myTabs.MoreProjects] = MoreProjects;
+pageContent[myTabs.Certifications] = Certifications;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 
