@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import "./entry.css";
+// import "./entry.css";
 
 function Entry(props) {
   

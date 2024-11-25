@@ -1,5 +1,5 @@
 import MyTableData from "../../data/my_table_data";
-import './my-table.css';
+// import './my-table.css';
 
 const MyTable = ({items})  => {
     // items.map((it, index) => {

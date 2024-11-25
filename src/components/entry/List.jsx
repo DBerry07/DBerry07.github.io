@@ -1,4 +1,4 @@
-import "./list.css";
+// import "./list.css";
 import MyList from "../../data/myList";
 
 export default function List(props) {

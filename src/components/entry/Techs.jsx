@@ -1,4 +1,4 @@
-import "./techs.css";
+// import "./techs.css";
 
 export default function Techs({techs}) {
     if (techs != null) {

@@ -1,4 +1,4 @@
-import './my-drawer.css';
+// import './my-drawer.css';
 
 const MyDrawer = (props) => (
     <div className={`Drawer__Container ${props.isOpen && "Drawer__Container--isOpen"}`}>

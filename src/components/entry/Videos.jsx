@@ -1,4 +1,4 @@
-import "./videos.css";
+// import "./videos.css";
 
 export default function Videos(data) {
   var videos = null;

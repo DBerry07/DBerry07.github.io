@@ -1,5 +1,5 @@
-import "./button-menu.css";
-import "../css/buttons.css";
+// import "./button-menu.css";
+// import "../css/buttons.css";
 
 export default function MyButton(props) {
     if (

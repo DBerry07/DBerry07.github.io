@@ -1,4 +1,4 @@
-import "./title.css";
+// import "./title.css";
 
 export default function Title(props) {
   if (props.title != null) {

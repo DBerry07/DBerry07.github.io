@@ -1,4 +1,4 @@
-import "./subheading.css";
+// import "./subheading.css";
 
 export default function Subheading({ subheading }) {
   if (subheading != null) {

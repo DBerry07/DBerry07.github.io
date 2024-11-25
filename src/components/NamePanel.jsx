@@ -1,4 +1,4 @@
-import "./name-panel.css";
+// import "./name-panel.css";
 import { LINKS } from "../data/constants/links.js";
 import { locations } from "../data/constants/filelocs.js";
 

@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import './colour-key.css';
+// import './colour-key.css';
 
 const ColourKey = (props) => (
     <p id="colour-key-div" class="p-body">
