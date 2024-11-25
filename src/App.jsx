@@ -64,7 +64,7 @@ function App() {
   if (!isMobile) {
     return (
       <Fragment>
-        <main className="App">
+        <main className="App grid grid-cols-6 grid-rows-6">
           <NamePanel />
           <ButtonMenu panel={panel} onSelect={handleSelect} />
           <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
