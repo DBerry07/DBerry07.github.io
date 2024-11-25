@@ -1,9 +1,9 @@
 import { useEffect, useState, Fragment } from "react";
 import {CSSTransition} from "react-transition-group";
-import "./css/App.css";
-import "./css/Mobile.css";
-import "./css/animations-entry.css";
-import "./css/constants.css"; 
+// import "./css/App.css";
+// import "./css/Mobile.css";
+// import "./css/animations-entry.css";
+// import "./css/constants.css";
 import pageContent from "./data/constants/content.js";
 import Entry from "./components/entry/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
@@ -64,7 +64,7 @@ function App() {
   if (!isMobile) {
     return (
       <Fragment>
-        <main className="App grid grid-cols-6 grid-rows-6">
+        <main className="App">
           <NamePanel />
           <ButtonMenu panel={panel} onSelect={handleSelect} />
           <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
