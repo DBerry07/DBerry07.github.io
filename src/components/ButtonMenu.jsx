@@ -22,7 +22,7 @@ function ButtonMenu({ panel, onSelect }) {
 
   return (
     <Fragment>
-      <menu id="button-menu" className="row-span-5 grid grid-cols-1 place-items-center h-full w-full">
+      <menu id="button-menu" className="row-span-6 text-2xl grid grid-cols-1 place-items-center h-full w-full">
         {buttons.map((item, index) => (
           <MyButton item={item} key={index} onSelect={onSelect}/>
         ))}

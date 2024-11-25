@@ -65,8 +65,8 @@ function App() {
     return (
       <Fragment>
         <main className="App grid grid-cols-6 grid-rows-6 h-full w-full m-4 place-items-center">
-            <NamePanel />
-            <ButtonMenu panel={panel} onSelect={handleSelect} />
+          <ButtonMenu panel={panel} onSelect={handleSelect} />
+          <NamePanel />
           <CSSTransition in={isEnter} timeout={5000} appear={true} classNames="entry-animate">
             <Entry content={content} />
             {/* <Entry

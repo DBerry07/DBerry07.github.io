@@ -6,7 +6,7 @@ export default function NamePanel() {
   var size = 25;
 
   return (
-    <div id="namepanel" className="col-span-6 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
+    <div id="namepanel" className="col-span-5 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
       <div id="name" className="text-5xl">
         David <span id="middle-initals">WJ</span> Berry
       </div>
