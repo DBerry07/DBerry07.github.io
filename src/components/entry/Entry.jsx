@@ -4,7 +4,7 @@ import { Fragment } from "react";
 function Entry(props) {
   
   return (
-    <div id="entry" className="row-span-6 col-span-5">
+    <div id="entry" className="row-span-6 col-span-5 grid grid-cols-1 grid-rows-7 place-items-center">
       { props.content.map((item, index) =>
       <Fragment key={index}>
       {item}
