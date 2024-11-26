@@ -80,7 +80,7 @@ function App() {
             /> */}
           </CSSTransition>
         </main>
-        <Footer />
+        {/*<Footer />*/}
       </Fragment>
     );
   }
@@ -96,7 +96,7 @@ function App() {
             <Entry content={content} />
           </CSSTransition>
         </main>
-        <Footer />
+        {/*<Footer />*/}
       </Fragment>
     );
   }
