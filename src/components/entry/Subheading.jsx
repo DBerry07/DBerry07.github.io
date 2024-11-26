@@ -13,6 +13,6 @@ export default function Subheading({ subheading }) {
         </>
       );
     });
-    return <div className='text-center'>{total}</div>;
+    return <div className='text-center mt-3'>{total}</div>;
   }
 }
