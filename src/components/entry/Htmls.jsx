@@ -3,11 +3,11 @@
 export default function Htmls({htmls}) {
     if (htmls != null) {
         return (
-                <div id="link-bar" className="w-full  place-items-center">
+                <div id="link-bar" className="w-full mt-2 mb-2 justify-center flex flex-row">
                     {htmls.map((html, index) => (
-                        <span key={index} className="link m-2">
-                          <a href={html[0]} target="_blank" className="w-0">
-                            <img src={html[1]} className="link-img h-6"/>
+                        <span key={index} className="link m-2 ml-4 mr-4">
+                          <a href={html[0]} target="_blank">
+                            <img src={html[1]} className="h-16 sepia"/>
                           </a>
                         </span>
                     ))}
