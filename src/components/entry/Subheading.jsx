@@ -7,7 +7,7 @@ export default function Subheading({ subheading }) {
       total = (
         <>
           {total}
-          <div id="subheading" className="w-full justify-center text-center" key={index}>
+          <div id="subheading" className="w-full text-2xl justify-center text-center font-enriqueta" key={index}>
             {heading}
           </div>
         </>
