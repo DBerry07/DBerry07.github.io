@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        charmonman: ["Charmonman", 'serif'],
+        enriqueta: ['Enriqueta', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
