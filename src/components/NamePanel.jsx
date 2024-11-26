@@ -10,20 +10,20 @@ export default function NamePanel() {
       <div id="name" className="text-5xl font-enriqueta">
         David <span id="middle-initals">WJ</span> Berry
       </div>
-      <div id="personal-links-bar grid grid-cols-3 place-items-center">
+      <div id="personal-links-bar" className="place-items-center flex flex-row">
           <div>
         <a href={LINKS.linkedin} target="_blank" className="job-link">
-          <img src={locations.PicLinkedin} className="job-img h-6" />
+          <img src={locations.PicLinkedin} className="job-img h-10  mr-3 ml-3" />
         </a>
           </div>
           <div>
         <a href={LINKS.github} target="_blank" className="job-link">
-          <img src={locations.PicGithub} className="job-img h-6" />
+          <img src={locations.PicGithub} className="job-img h-10  mr-3 ml-3" />
         </a>
           </div>
           <div>
         <a href="mailto:david.wj.berry@gmail.com" className="job-link">
-          <img src={locations.PicSendmail} className="job-img h-6" />
+          <img src={locations.PicSendmail} className="job-img h-10 mr-3 ml-3" />
         </a>
           </div>
       </div>
