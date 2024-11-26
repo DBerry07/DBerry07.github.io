@@ -11,7 +11,7 @@ const MyTable = ({items})  => {
             <td>
                 {it.name}
             </td>
-            <td>
+            <td className='text-blue-600'>
                 {it.link}
             </td>
         </tr>
@@ -20,7 +20,7 @@ const MyTable = ({items})  => {
 
 
     return (
-        <table>
+        <table className='w-full text-center'>
             <thead>
                 <tr>
                     <th>

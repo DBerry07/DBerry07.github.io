@@ -12,7 +12,7 @@ const MyCertTable = ({items})  => {
             <td>
                 {it.name}
             </td>
-            <td>
+            <td className='text-blue-600'>
                 {it.link}
             </td>
         </tr>
@@ -21,7 +21,7 @@ const MyCertTable = ({items})  => {
 
 
     return (
-        <table>
+        <table className='w-full text-center'>
             <thead>
                 <tr>
                     <th>
