@@ -20,7 +20,7 @@ export const TodoList = [
       Subheading({ subheading: ["Personal Project", "Native Android"] }),
       Htmls({
         htmls: [
-          [LINKS.todolist, locations.PicGithubTxt],
+          [LINKS.todolist, locations.PicGithub],
           // [LINKS.todolist_page, locations.PicWebpage],
         ],
       }),
