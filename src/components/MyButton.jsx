@@ -1,6 +1,3 @@
-// import "./button-menu.css";
-// import "../css/buttons.css";
-
 export default function MyButton(props) {
     if (
       props.item != "Hello" &&
@@ -16,7 +13,7 @@ export default function MyButton(props) {
 
       return(
         <span id={props.item + "-span"}>
-          <button id={props.item + "-button"} className="project-button" style={{color: props.item.colour}} onClick={() => props.onSelect(props.item)}>
+          <button id={props.item + "-button"} className="w-44 h-20 font-enriqueta transition text-green-800 rounded hover:text-white hover:bg-green-800" onClick={() => props.onSelect(props.item)}>
             {/* <span> */}
             {props.item.text}
             {/* {item.icon != "" && (
@@ -36,7 +33,7 @@ export default function MyButton(props) {
     } else {
       return (
       <span id={props.item + "-span"}>
-        <button id={props.item + "-button"} className="about-button" style={{color: props.colour}} onClick={() => props.onSelect(props.item)} >
+        <button id={props.item + "-button"} className="font-enriqueta transition rounded h-20 text-red-900 w-44 hover:bg-red-900 hover:text-white" onClick={() => props.onSelect(props.item)} >
           {/* <span> */}
           {props.item.text}
           {/* {item.icon != "" && (
