@@ -5,7 +5,7 @@ export default function Body({ body }) {
     return (
       <>
         {body.map((item, index) => (
-          <p className="body-p" key={index}>
+          <p className="body-p m-2 text-xl" key={index}>
             {item}
           </p>
         ))}
