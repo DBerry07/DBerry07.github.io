@@ -13,17 +13,17 @@ export default function NamePanel() {
       <div id="personal-links-bar" className="place-items-center flex flex-row">
           <div>
         <a href={LINKS.linkedin} target="_blank" className="job-link">
-          <img src={locations.PicLinkedin} className="job-img h-10  mr-3 ml-3" />
+          <img src={locations.PicLinkedin} className="job-img h-8 mr-3 ml-3" />
         </a>
           </div>
           <div>
         <a href={LINKS.github} target="_blank" className="job-link">
-          <img src={locations.PicGithub} className="job-img h-10  mr-3 ml-3" />
+          <img src={locations.PicGithub} className="job-img h-8 mr-3 ml-3" />
         </a>
           </div>
           <div>
         <a href="mailto:david.wj.berry@gmail.com" className="job-link">
-          <img src={locations.PicSendmail} className="job-img h-10 mr-3 ml-3" />
+          <img src={locations.PicSendmail} className="job-img h-8 mr-3 ml-3" />
         </a>
           </div>
       </div>
