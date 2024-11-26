@@ -7,7 +7,7 @@ export default function NamePanel() {
 
   return (
     <div id="namepanel" className="col-span-5 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
-      <div id="name" className="text-5xl">
+      <div id="name" className="text-5xl font-enriqueta">
         David <span id="middle-initals">WJ</span> Berry
       </div>
       <div id="personal-links-bar grid grid-cols-3 place-items-center">
