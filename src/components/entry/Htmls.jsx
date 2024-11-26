@@ -7,7 +7,7 @@ export default function Htmls({htmls}) {
                     {htmls.map((html, index) => (
                         <span key={index} className="link ml-4 mr-4">
                           <a href={html[0]} target="_blank">
-                            <img src={html[1]} className="h-10 sepia"/>
+                            <img src={html[1]} className="h-10 sepia transition hover:scale-125"/>
                           </a>
                         </span>
                     ))}
