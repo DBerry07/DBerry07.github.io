@@ -18,7 +18,7 @@ export const CaliberDroid = [
   EntryBox({
     items: [
       Subheading({ subheading: ["Professional Project", "Native Android"] }),
-      Htmls({ htmls: [[LINKS.caliber, locations.PicGithubTxt]] }),
+      Htmls({ htmls: [[LINKS.caliber, locations.PicGithub]] }),
       EntryBody({
         items: [
           Body({ body: await getText(locations.CaliberText) }),
