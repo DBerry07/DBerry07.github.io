@@ -1,5 +1,7 @@
 // const urlStart = "http://localhost:5173/";
 // const urlStart = "http://dberry07.github.com/";
+import * as url from "node:url";
+
 const urlStart = "./";
 
 // const assets = "src/assets/";
@@ -57,8 +59,10 @@ export const locations = {
   PicGitfront: urlStart + assets + "logo-gitfront.png",
   PicSendmail: urlStart + assets + "icon-sendmail.png",
   PicAndroid: urlStart + assets + "icons8-android-50.png",
-  PicYoutube: urlStart + assets + "logo-youtube-txt.png",
-  PicCoursera: urlStart + assets + "logo-coursera-txt.png",
+  PicYoutubeTxt: urlStart + assets + "logo-youtube-txt.png",
+  PicYoutube: urlStart + assets + "logo-youtube.png",
+  PicCourseraTxt: urlStart + assets + "logo-coursera-txt.png",
+  PicCoursera: urlStart + assets + "logo-coursera-pic.png",
   PicWebpage: urlStart + assets + "icons8-upgraded-http-version-webpage-for-new-modern-website-96.png",
   PicMenu: urlStart + assets + "icons8-menu-150.png",
 };
