@@ -10,8 +10,8 @@ export default function List(props) {
   if (props.list != null) {
     // console.log("list != null");
     return (
-      <ul>
-        <div className="list-item-title">{title}</div>
+      <ul className='mt-2'>
+        <div className="list-item-title first:text-2xl first:underline first:text-red-700">{title}</div>
         { myList.map((item, index) => (
           <li className="list-item" key={index}>{item}</li>
         ))}
