@@ -20,7 +20,7 @@ export const Capstone = [
       Subheading({ subheading: ["Educational Project", "Native Android"] }),
       Htmls({
         htmls: [
-          [LINKS.coursera, locations.PicGithubTxt],
+          [LINKS.coursera, locations.PicGithub],
           [LINKS.coursera_video, locations.PicYoutube],
           [LINKS.coursera_cert, locations.PicCoursera],
         ],
