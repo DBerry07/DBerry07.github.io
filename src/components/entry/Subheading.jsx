@@ -7,12 +7,12 @@ export default function Subheading({ subheading }) {
       total = (
         <>
           {total}
-          <div id="subheading" className="w-full text-2xl justify-center text-center font-enriqueta" key={index}>
+          <div id="subheading" className="w-full text-2xl font-enriqueta" key={index}>
             {heading}
           </div>
         </>
       );
     });
-    return total;
+    return <div className='text-center'>{total}</div>;
   }
 }
