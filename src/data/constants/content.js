@@ -20,7 +20,7 @@ pageContent[myTabs.Education.name] = Education;
 pageContent[myTabs.History.name] = History;
 pageContent[myTabs.About.name] = SCREENS.About;
 
-pageContent[myTabs.Project01.name] = TodoList;
+pageContent[myTabs.Project01] = TodoList;
 pageContent[myTabs.Project02] = CaliberDroid;
 pageContent[myTabs.Project03] = Capstone;
 pageContent[myTabs.MoreProjects] = MoreProjects;
