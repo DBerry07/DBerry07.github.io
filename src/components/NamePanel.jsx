@@ -2,12 +2,14 @@
 import { LINKS } from "../data/constants/links.js";
 import { locations } from "../data/constants/filelocs.js";
 
-export default function NamePanel() {
+export default function NamePanel({children}) {
   var size = 25;
 
   return (
-    <div id="namepanel" className="row-span-1 lg:col-span-10 lg:row-span-2 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
-      <div id="name" className="text-3xl lg:text-5xl font-enriqueta">
+      <div className='grid grid-cols-8 col-span-10 lg:grid-cols-1 w-full h-full'>
+          {children}
+    <div id="namepanel" className="lg:col-span-10 col-span-6 lg:row-span-2 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
+        <div id="name" className="text-3xl lg:text-5xl font-enriqueta">
         David WJ Berry
       </div>
       <div id="personal-links-bar" className="place-items-center flex flex-row">
@@ -22,5 +24,6 @@ export default function NamePanel() {
         </a>
       </div>
     </div>
+      </div>
   );
 }
