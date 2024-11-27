@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 // import "./sections.css";
-import Section from "../Section";
 
 export default function Sections({ sections }) {
   let allSections = null;
