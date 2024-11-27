@@ -7,8 +7,8 @@ export default function NamePanel() {
 
   return (
     <div id="namepanel" className="row-span-1 lg:col-span-10 lg:row-span-2 grid grid-cols-1 grid-rows-2 h-full w-full place-items-center">
-      <div id="name" className="text-5xl font-enriqueta">
-        David <span id="middle-initals">WJ</span> Berry
+      <div id="name" className="text-3xl lg:text-5xl font-enriqueta">
+        David WJ Berry
       </div>
       <div id="personal-links-bar" className="place-items-center flex flex-row">
         <a href={LINKS.linkedin} target="_blank" className="job-link">
