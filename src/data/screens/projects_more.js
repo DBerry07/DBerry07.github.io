@@ -1,7 +1,7 @@
 import Subheading from "../../components/panel/Subheading"
 import Title from "../../components/panel/Title"
-import EntryBody from "../../components/panel/EntryBody"
-import EntryBox from "../../components/panel/EntryBox"
+import PanelMainContent from "../../components/panel/PanelMainContent.jsx"
+import PanelHolder from "../../components/panel/PanelHolder.jsx"
 import Body from "../../components/panel/Body"
 import MyTable from "../../components/panel/MyTable"
 
@@ -15,9 +15,9 @@ import { getText } from "../constants/fetching"
 
 export const MoreProjects = [
     Title({title: "Additional Projects"}),
-    EntryBox({items:[
+    PanelHolder({items:[
             Subheading({subheading: ["Additional projects I have worked on"]}),
-            EntryBody({items:[
+            PanelMainContent({items:[
                     MyTable({items: [new MyTableData("MaintainX", "https://github.com/DBerry07/Revature_TrainingRoomMaintenanceScheduler")]})
             ]}),
         ]

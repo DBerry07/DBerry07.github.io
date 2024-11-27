@@ -4,8 +4,8 @@ import { getText } from "./fetching.js";
 import TabContent from "./TabContent.js";
 import Title from "../../components/panel/Title.jsx";
 import Subheading from "../../components/panel/Subheading.jsx";
-import EntryBox from "../../components/panel/EntryBox.jsx";
-import EntryBody from "../../components/panel/EntryBody.jsx";
+import PanelHolder from "../../components/panel/PanelHolder.jsx";
+import PanelMainContent from "../../components/panel/PanelMainContent.jsx";
 import Body from "../../components/panel/Body.jsx";
 import SubSection from "../../components/panel/SubSection.jsx";
 
@@ -23,9 +23,9 @@ export const Helloo = new TabContent(
 
 export const Education = [
   Title({ title: "My Education" }),
-  EntryBox({
+  PanelHolder({
     items: [
-      EntryBody({
+      PanelMainContent({
         items: [
           SubSection({
             title: "Florida Atlantic University",
@@ -58,9 +58,9 @@ export const EDU = new TabContent(
 
 export const History = [
   Title({ title: "Work History" }),
-  EntryBox({
+  PanelHolder({
     items: [
-      EntryBody({
+      PanelMainContent({
         items: [
           SubSection({
             title: "Bank of America (May 2021 - May 2022, Contract)",

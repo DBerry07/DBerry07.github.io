@@ -5,17 +5,17 @@ import TabContent from "../constants/TabContent.js";
 import MyList from "../myList.js";
 import Title from "../../components/panel/Title.jsx";
 import Subheading from "../../components/panel/Subheading.jsx";
-import EntryBox from "../../components/panel/EntryBox.jsx";
+import PanelHolder from "../../components/panel/PanelHolder.jsx";
 import Techs from "../../components/panel/Techs.jsx";
 import Body from "../../components/panel/Body.jsx";
-import EntryBody from "../../components/panel/EntryBody.jsx";
+import PanelMainContent from "../../components/panel/PanelMainContent.jsx";
 import LinksBar from "../../components/panel/LinksBar.jsx";
 import List from "../../components/panel/List.jsx";
 import SubSection from "../../components/panel/SubSection.jsx";
 
 export const Capstone = [
   Title({ title: "Specialization Capstone" }),
-  EntryBox({
+  PanelHolder({
     items: [
       Subheading({ subheading: ["Educational Project", "Native Android"] }),
       LinksBar({
@@ -25,7 +25,7 @@ export const Capstone = [
           [LINKS.coursera_cert, locations.PicCoursera],
         ],
       }),
-      EntryBody({
+      PanelMainContent({
         items: [
           Body({ body: await getText(locations.CouseraBody) }),
           List({
