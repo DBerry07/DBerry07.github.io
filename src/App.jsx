@@ -36,7 +36,7 @@ function App() {
                 <ButtonMenu onSelect={handleSelect}/>
             </Drawer>
             <NamePanel>
-                <button onClick={openDrawer}>Open Drawer</button>
+                <button onClick={openDrawer}><img src="/assets/icons8-menu-150.png" className='h-6'/></button>
             </NamePanel>
         </Fragment>)
     }
