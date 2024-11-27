@@ -17,7 +17,7 @@ function App() {
 
     return (
         <Fragment>
-            <main className="App grid lg:grid-cols-12 lg:grid-rows-12 lg:gap-4 h-full w-full m-4">
+            <main className="App grid grid-rows-8 ml-2 mr-2 lg:grid-cols-12 lg:grid-rows-12 lg:gap-4 h-full w-full">
                 <ButtonMenu onSelect={handleSelect}/>
                 <NamePanel/>
                 <Entry content={content}/>
