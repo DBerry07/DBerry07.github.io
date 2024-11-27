@@ -24,7 +24,7 @@ function App() {
             setTab(myTabs.ProjectList[1].name);
         } else if (value === myTabs.Back) {
             setPanel(panels.About);
-            setTab(myTabs.AboutList[0].name);
+            setTab(myTabs.Panels[0].name);
         } else {
             setTab(value);
         }
@@ -33,7 +33,7 @@ function App() {
     return (
         <Fragment>
             <main className="App grid grid-cols-6 grid-rows-6 h-full w-full m-4">
-                <ButtonMenu panel={panel} onSelect={handleSelect}/>
+                <ButtonMenu onSelect={handleSelect}/>
                 <NamePanel/>
                 <Entry content={content}/>
                 <Footer/>

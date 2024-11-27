@@ -20,17 +20,9 @@ pageContent[myTabs.Education.name] = Education;
 pageContent[myTabs.History.name] = History;
 pageContent[myTabs.About.name] = SCREENS.About;
 
-pageContent[myTabs.TodoList.name] = TodoList;
-pageContent[myTabs.Java.name] = PROJECTS.Java;
-pageContent[myTabs.Kotlin.name] = PROJECTS.Kotlin;
-pageContent[myTabs.iOS.name] = PROJECTS.iOS;
-pageContent[myTabs.ReactNative.name] = PROJECTS.ReactNative;
-pageContent[myTabs.Flutter.name] = PROJECTS.Flutter;
-pageContent[myTabs.React.name] = PROJECTS.React;
-pageContent[myTabs.Maui.name] = PROJECTS.Maui;
-pageContent[myTabs.AngularIonic] = PROJECTS.AngularIonic;
-pageContent[myTabs.CaliberDroid] = CaliberDroid;
-pageContent[myTabs.Capstone] = Capstone;
+pageContent[myTabs.Project01.name] = TodoList;
+pageContent[myTabs.Project02] = CaliberDroid;
+pageContent[myTabs.Project03] = Capstone;
 pageContent[myTabs.MoreProjects] = MoreProjects;
 pageContent[myTabs.Certifications] = Certifications;
 
