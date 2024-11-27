@@ -1,6 +1,6 @@
 import {useState, Fragment} from "react";
 import pageContent from "./data/constants/content.js";
-import Entry from "./components/entry/Entry.jsx";
+import Entry from "./components/panel/Entry.jsx";
 import ButtonMenu from "./components/ButtonMenu.jsx";
 import myTabs from "./data/constants/my-tabs.js";
 import NamePanel from "./components/NamePanel.jsx";

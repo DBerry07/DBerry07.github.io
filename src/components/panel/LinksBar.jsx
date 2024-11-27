@@ -1,6 +1,6 @@
 // import "./htmls.css";
 
-export default function Htmls({htmls}) {
+export default function LinksBar({htmls}) {
     if (htmls != null) {
         return (
                 <div id="link-bar" className="w-full h-full  justify-center place-items-center flex flex-row">

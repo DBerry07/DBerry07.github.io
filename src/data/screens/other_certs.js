@@ -1,10 +1,10 @@
 
-import Subheading from "../../components/entry/Subheading"
-import Title from "../../components/entry/Title"
-import EntryBody from "../../components/entry/EntryBody"
-import EntryBox from "../../components/entry/EntryBox"
-import Body from "../../components/entry/Body"
-import MyCertTable from "../../components/entry/MyCertTable"
+import Subheading from "../../components/panel/Subheading"
+import Title from "../../components/panel/Title"
+import EntryBody from "../../components/panel/EntryBody"
+import EntryBox from "../../components/panel/EntryBox"
+import Body from "../../components/panel/Body"
+import MyCertTable from "../../components/panel/MyCertTable"
 import {MyCertTableData} from "../my_table_data"
 
 const Certfications = [

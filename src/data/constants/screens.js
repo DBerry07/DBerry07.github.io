@@ -2,12 +2,12 @@ import { LINKS } from "./links.js";
 import { locations } from "./filelocs.js";
 import { getText } from "./fetching.js";
 import TabContent from "./TabContent.js";
-import Title from "../../components/entry/Title.jsx";
-import Subheading from "../../components/entry/Subheading.jsx";
-import EntryBox from "../../components/entry/EntryBox.jsx";
-import EntryBody from "../../components/entry/EntryBody.jsx";
-import Body from "../../components/entry/Body.jsx";
-import SubSection from "../../components/entry/SubSection.jsx";
+import Title from "../../components/panel/Title.jsx";
+import Subheading from "../../components/panel/Subheading.jsx";
+import EntryBox from "../../components/panel/EntryBox.jsx";
+import EntryBody from "../../components/panel/EntryBody.jsx";
+import Body from "../../components/panel/Body.jsx";
+import SubSection from "../../components/panel/SubSection.jsx";
 
 export const Helloo = new TabContent(
   "Hello, there!", //title
