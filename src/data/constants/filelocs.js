@@ -53,6 +53,8 @@ export const locations = {
   TodoListBody: urlStart + folders + project + "todolistbody.txt",
   TodoListList: urlStart + folders + project + "todolistlist.txt",
 
+  FlutterQuizText: urlStart + folders + project + "flutterquiztext.txt",
+
   PicGithub: urlStart + assets + "logo-github.png",
   PicGithubTxt: urlStart + assets + "logo-github-txt.png",
   PicLinkedin: urlStart + assets + "logo-linkedin.png",

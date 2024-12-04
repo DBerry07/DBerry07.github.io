@@ -10,6 +10,7 @@ export default class Panel {
   static Project03 = new Panel("Capstone", "Capstone");
   static MoreProjects = new Panel("MoreProjects", "More");
   static Certifications = new Panel("Certifications", "Certs")
+  static FlutterQuiz = new Panel("FlutterQuiz", "Quiz");
 
   static Panels = [
     this.Hello,
@@ -18,8 +19,9 @@ export default class Panel {
     this.Project01,
     this.Project03,
     this.Project02,
-    this.MoreProjects,
-    this.Certifications,
+    // this.MoreProjects,
+    // this.Certifications,
+      this.FlutterQuiz,
   ]
 
   constructor(name, text, icon = "", colour="black") {

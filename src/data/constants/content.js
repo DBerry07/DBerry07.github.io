@@ -6,6 +6,7 @@ import Certifications from "../screens/other_certs.js";
 import { CaliberDroid } from "../screens/project_caliber.js";
 import { Capstone } from "../screens/project_capstone.js";
 import { TodoList } from "../screens/project_todolist.js";
+import {FlutterQuiz} from "../screens/project_flutterquiz.js";
 import { MoreProjects } from "../screens/projects_more.js";
 import myTabs from "./my-tabs.js";
 import * as SCREENS from "./screens.js";
@@ -18,13 +19,17 @@ const pageContent = {};
 pageContent[myTabs.Hello.name] = Hello;
 pageContent[myTabs.Education.name] = Education;
 pageContent[myTabs.History.name] = History;
-pageContent[myTabs.About.name] = SCREENS.About;
+// pageContent[myTabs.About.name] = SCREENS.About;
 
 pageContent[myTabs.Project01] = TodoList;
 pageContent[myTabs.Project02] = CaliberDroid;
 pageContent[myTabs.Project03] = Capstone;
+
 pageContent[myTabs.MoreProjects] = MoreProjects;
+
 pageContent[myTabs.Certifications] = Certifications;
+
+pageContent[myTabs.FlutterQuiz] = FlutterQuiz;
 
 // pageContent[projects.Spring] = PROJECTS.Spring;
 
