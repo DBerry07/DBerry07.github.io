@@ -15,7 +15,9 @@ export const FlutterQuiz = [
          items: [
              Subheading({ subheading: ["Personal Project", "Flutter Cross-platform"] }),
              LinksBar({
-                 htmls: [],
+                 htmls: [
+                     [LINKS.flutterquiz, locations.PicGithub],
+                 ],
              }),
              PanelMainContent({
                  items: [

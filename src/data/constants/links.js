@@ -14,4 +14,6 @@ export const LINKS = {
 
   todolist: "https://github.com/DBerry07/SimpleToDoList",
   todolist_page: "https://dberry07.github.io/SimpleToDoList/",
+
+  flutterquiz: "https://github.com/DBerry07/flutter_quiz_game",
 };
